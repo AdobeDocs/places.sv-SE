@@ -2,7 +2,7 @@
 title: Adobe Target
 description: I det här avsnittet finns information om hur du använder Platstjänst med Adobe Target.
 translation-type: tm+mt
-source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+source-git-commit: d33e4e2d798c7048bdd275cdf6c0aabf3434f789
 
 ---
 
@@ -29,11 +29,8 @@ När platstillägget har skickats in händelser för poster och avslut kan du an
    I det här exemplet får regeln namnet **[!UICONTROL Attach Places Service Data to Target Content Requested]**.
 
 1. Klicka på under **[!UICONTROL Events]** avsnittet **[!UICONTROL Add]**.
-
 1. I listrutan **[!UICONTROL Extension]** väljer du **[!UICONTROL Adobe Target]**.
-
 1. I listrutan **[!UICONTROL Event Type]** väljer du **[!UICONTROL Content Requested]**.
-
 1. Klicka på **[!UICONTROL Keep Changes]**.
 
 ![lägg till en händelse](/help/assets/ad-setEvent_target.png)
@@ -47,13 +44,9 @@ När platstillägget har skickats in händelser för poster och avslut kan du an
 I följande exempel skapas ett villkor som gör att regeln bara aktiveras för användare som har startat programmet fem eller fler gånger.
 
 1. Klicka på under **[!UICONTROL Conditions]** avsnittet **[!UICONTROL Add]**.
-
 1. I listrutan **[!UICONTROL Extension]** väljer du **[!UICONTROL Mobile Core]**.
-
 1. I listrutan **[!UICONTROL Condition Type]** väljer du **[!UICONTROL Launches]**.
-
 1. I den högra rutan ändrar du listrutans- och nummerkontrollerna så att villkoret läses **[!UICONTROL User has launched the app greater than or equal to 5 times]**.
-
 1. Klicka på **[!UICONTROL Keep Changes]**.
 
 ![lägg till ett villkor](/help/assets/ad-setCondition_target.png)
@@ -61,13 +54,9 @@ I följande exempel skapas ett villkor som gör att regeln bara aktiveras för a
 ## 4. Definiera åtgärden
 
 1. Klicka på under **[!UICONTROL Actions]** avsnittet **[!UICONTROL Add]**.
-
 1. I listrutan **[!UICONTROL Extension]** väljer du **[!UICONTROL Mobile Core]**.
-
 1. I listrutan **[!UICONTROL Action Type]** väljer du **[!UICONTROL Attach Data]**.
-
 1. Skriv de data som ska läggas till i den här händelsen i **[!UICONTROL JSON Payload]** fältet till höger.
-
 1. Klicka på **[!UICONTROL Keep Changes]**.
 
 I den högra rutan kan du lägga till en JSON-nyttolast på frihand som lägger till data i en SDK-händelse innan tilläggen som lyssnar efter den här händelsen hör den.
@@ -89,5 +78,4 @@ När du är klar med konfigurationen kontrollerar du att regeln ser ut så här:
 ![slutförd regel](/help/assets/ad-ruleComplete-target.png)
 
 1. Klicka på **[!UICONTROL Save]**
-
 1. Återskapa Launch-egenskapen och distribuera den till rätt miljö.
