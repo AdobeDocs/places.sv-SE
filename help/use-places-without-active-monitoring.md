@@ -2,7 +2,7 @@
 title: Använd platstjänsten utan övervakning av aktiva regioner
 description: Det här avsnittet innehåller information om hur du använder platstjänsten utan övervakning av aktiva områden.
 translation-type: tm+mt
-source-git-commit: d123d16c822c48d8727de3c0c22bff8ea7c66981
+source-git-commit: 5846577f10eb1d570465ad7f888feba6dd958ec9
 
 ---
 
@@ -10,8 +10,6 @@ source-git-commit: d123d16c822c48d8727de3c0c22bff8ea7c66981
 # Använd platstjänsten utan övervakning av aktiva regioner {#use-places-without-active-monitoring}
 
 Användningsexempel för ditt program kanske inte kräver aktiv regionövervakning. Platstjänsten kan fortfarande användas för att integrera dina användares platsdata med andra Experience Platform-produkter.
-
-I det här avsnittet beskrivs hur du slutför en POI-medlemskapskontroll endast när du samlar in användarens plats (latitud och longitud).
 
 ## Förutsättning
 
@@ -84,7 +82,7 @@ public class LocationBroadcastReceiver extends BroadcastReceiver {
 
 ### Mål-C
 
-Här följer ett exempel på implementering i iOS från en [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager?language=objc) metod [`locationManager:didUpdateLocations:`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager?language=objc):
+Här är ett exempel på implementering för iOS. Koden visar implementering av [`locationManager:didUpdateLocations:`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager?language=objc) metoden i [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager?language=objc):
 
 ```objectivec
 - (void) locationManager:(CLLocationManager*)manager didUpdateLocations:(NSArray<CLLocation*>*)locations {
@@ -100,7 +98,7 @@ Här följer ett exempel på implementering i iOS från en [`CLLocationManagerDe
 
 ### Swift
 
-Här följer ett exempel på implementering i iOS från en [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager) metod [`locationManager(_:didUpdateLocations:)`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager):
+Här är ett exempel på implementering för iOS. Koden visar implementering av [`locationManager(_:didUpdateLocations:)`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager) metoden i [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager):
 
 ```swift
 func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -114,9 +112,21 @@ func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
 }
 ```
 
-## 3. Utlös anmälningshändelser när användaren befinner sig i en POI
+## 3. Bifoga platsdata till era Analytics-förfrågningar
 
-SDK returnerar en lista med närliggande POI, inklusive om användaren för närvarande befinner sig inom varje POI. Om användaren befinner sig i en POI kan du låta SDK utlösa en starthändelse för den regionen.
+Genom att anropa `getNearbyPointsOfInterest` API:t gör Places SDK alla POI-data som är relevanta för enheten tillgängliga via dataelement i Launch. Genom att använda en regel för [att bifoga data](https://aep-sdks.gitbook.io/docs/resources/user-guides/attach-data) kan platsdata automatiskt läggas till i framtida förfrågningar till Analytics. Detta eliminerar behovet av ett engångsanrop till Analytics när platsen för enheten samlas in.
+
+Mer information om det här ämnet finns i [Lägg till platskontext i Analytics-förfrågningar](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md) .
+
+## Valfritt - Utlös anmälningshändelser när användaren är i en POI
+
+>[!TIP]
+>
+>Det rekommenderade sättet att samla in platsdata är att [bifoga platsdata till era Analytics-förfrågningar](#attach-places-data-to-your-analytics-requests).
+>
+>Om ett [regionsinmatningshändelse](places-ext-aep-sdks/places-extension/places-event-ref.md#processregionevent) måste utlösas av SDK:n måste det göras manuellt enligt instruktionerna nedan.
+
+Den lista som returneras av `getNearbyPointsOfInterest` API innehåller [anpassade objekt](places-ext-aep-sdks/places-extension/cust-places-objects.md) som anger om användaren befinner sig i en POI. Om användaren befinner sig i en POI kan du låta SDK utlösa en starthändelse för den regionen.
 
 >[!IMPORTANT]
 >
@@ -229,7 +239,9 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 
 ## Fullständig exempelimplementering
 
-Kodexemplen nedan visar hur du hämtar enhetens aktuella plats, utlöser nödvändiga händelser och ser till att du inte får flera poster för samma plats vid ett besök.
+Kodexemplen nedan visar hur du hämtar enhetens aktuella plats, utlöser nödvändiga starthändelser och ser till att du inte får flera poster för samma plats vid ett besök.
+
+Detta kodexempel inkluderar det valfria steget att [utlösa en starthändelse när användaren befinner sig i en POI](#trigger-entry-events-when-the-user-is-in-a-poi).
 
 >[!IMPORTANT]
 >
