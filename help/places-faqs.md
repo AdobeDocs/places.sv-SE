@@ -1,15 +1,19 @@
 ---
-title: Frågor och svar
+title: Vanliga frågor
 description: Det här avsnittet innehåller ytterligare information om några vanliga frågor och svar.
 translation-type: tm+mt
-source-git-commit: 8691dbf061ac020a60d3880fe16951dcc79040cb
+source-git-commit: 5846577f10eb1d570465ad7f888feba6dd958ec9
 
 ---
 
 
-# Frågor och svar
+# Vanliga frågor
 
 Här är information och vanliga frågor om Platstjänst.
+
+## Migrera från trackLocation i v4 SDK
+
+Om du migrerar från v4 SDK och letar efter en ersättning till `trackLocation` API:t, se avsnittet [Använd platstjänst utan Active Region Monitoring](use-places-without-active-monitoring.md).
 
 ## Storlek och tillförlitlighet
 
@@ -34,4 +38,3 @@ I Places-tjänstens gränssnitt för hantering av POI kan kunderna lägga till u
 Var klok när du anger vilka områden som ska övervakas. Regionerna är en delad systemresurs och det totala antalet regioner som är tillgängliga i hela systemet är begränsat. Därför begränsas Core Location till 20 av antalet regioner som kan övervakas samtidigt av en enda app. För att kringgå denna gräns bör du överväga att endast registrera de regioner som finns i användarens omedelbara närhet.
 
 [Mer information finns på Apples utvecklarwebbplats] (https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/RegionMonitoring/RegionMonitoring.html#//apple_ref/doc/uid/TP40009497-CH9-SW11)
-
