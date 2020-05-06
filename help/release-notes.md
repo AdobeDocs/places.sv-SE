@@ -2,12 +2,32 @@
 title: Versionsinformation
 description: Versionsinformation för Platstjänst.
 translation-type: tm+mt
-source-git-commit: 36ea8616aa05f5b825a2a4c791a00c5b3f332e9f
+source-git-commit: f5fa6005396e3c5b5b8eb92c7c920d2d0d974743
+workflow-type: tm+mt
+source-wordcount: '1419'
+ht-degree: 1%
 
 ---
 
 
 # Versionsinformation {#release-notes}
+
+## 6 maj 2020
+
+* **PlacesMonitor 2.2.1**
+
+   * **Android**
+
+      * Förbättrad loggning
+
+## 5 maj 2020
+
+
+* **PlacesMonitor 2.1.3**
+
+   * **iOS**
+
+      * Förbättrad loggning
 
 ## 20 februari 2020
 
