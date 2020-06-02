@@ -2,13 +2,17 @@
 product: Places Service
 audience: end-user
 user-guide-title: Places Service
+user-guide-description: Places Service is a geo-location service that enables mobile apps with location awareness to understand the location context.
 translation-type: tm+mt
-source-git-commit: b0b48dcc7179e603ae403449a0f7c5441c987767
+source-git-commit: 43b1eb0d384e2e75e444b737c0ab15798492d0a8
+workflow-type: tm+mt
+source-wordcount: '297'
+ht-degree: 8%
 
 ---
 
 
-# Platstjänst {#using}
+# Places Service {#using}
 
 + [Platstjänst - översikt](home.md)
 + [Versionsinformation](release-notes.md)
