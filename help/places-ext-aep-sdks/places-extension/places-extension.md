@@ -2,9 +2,9 @@
 title: Tillägget Platser
 description: Med tillägget Platser kan du agera utifrån platsen för dina användare.
 translation-type: tm+mt
-source-git-commit: 0a9a4a713e7e7a49495d11cf26da8981e91b8ed2
+source-git-commit: 0ac139fce666540b36a8c82fe4c05974e12e987f
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '678'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ Med tillägget Platser kan du agera utifrån platsen för dina användare. Det h
 1. Markera de platsbibliotek som du vill använda i den här egenskapen. Det här är de bibliotek som kommer att vara tillgängliga i din app.
 1. Klicka på **[!UICONTROL Save]**.
 
-   När du klickar **[!UICONTROL Save]** söker Experience Platform SDK efter POI:er i de bibliotek som du har valt. POI-data inkluderas inte i hämtningen av biblioteket när du skapar appen, men en platsbaserad delmängd av POI hämtas till slutanvändarens enhet under körningen och baseras på användarens GPS-koordinater.
+   När du klickar **[!UICONTROL Save]** söker Experience Platform SDK efter POI i de bibliotek du har valt. POI-data inkluderas inte i hämtningen av biblioteket när du skapar appen, men en platsbaserad delmängd av POI hämtas till slutanvändarens enhet under körningen och baseras på användarens GPS-koordinater.
 
 1. Slutför publiceringsprocessen för att uppdatera SDK-konfigurationen.
 
@@ -35,9 +35,9 @@ Med tillägget Platser kan du agera utifrån platsen för dina användare. Det h
 
 Du kan lägga till tillägget Platser i dina Android- och iOS-appar. Stegen för att lägga till platser i iOS- eller Android-program visas nedan. Platser är också tillgängliga för Cordova och React Native. Om du vill lägga till platser i programmet när du utvecklar med någon av de här plattformarna läser du följande länkar:
 
-**Cordova ACPlaces**: https://github.com/adobe/cordova-acpplaces/blob/master/README.md
+**[Cordova Places Plugin](https://github.com/adobe/cordova-acpplaces/blob/master/README.md)**
 
-**React Native ACPlaces**: https://github.com/adobe/react-native-acpplaces/blob/master/README.md
+**[Plugin-programmet React Native Places](https://github.com/adobe/react-native-acpplaces/blob/master/README.md)**
 
 ### Android
 
