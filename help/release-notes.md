@@ -2,17 +2,33 @@
 title: Versionsinformation
 description: Versionsinformation för Platstjänst.
 translation-type: tm+mt
-source-git-commit: f5fa6005396e3c5b5b8eb92c7c920d2d0d974743
+source-git-commit: 3f986697179eb9c0af1d9b54daf67793a99b8491
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 1%
+source-wordcount: '1503'
+ht-degree: 2%
 
 ---
 
 
 # Versionsinformation {#release-notes}
 
-## 6 maj 2020
+## 8 juli 2020
+
+* **Bildtillägg för Platser och Platser**
+
+   * Tillägg för Platser och Platsövervakare har lagts till för [React Native-program](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#react-native)
+   * Tillägg för Platser och Platsövervakare har lagts till för [Cordova-program](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova)
+   * Mer information finns i: [Använda platstillägg](https://docs.adobe.com/content/help/en/places/using/places-ext-aep-sdks/places-extension/places-extension.html)
+
+
+## 12 maj 2020
+
+* **Places Service**
+
+   * Importera POI-filer gruppvis från en CSV-fil med knappen Importera POI-filer
+   * Markera flera POI och redigera eller lägg till metadatavärden gruppvis
+
+## 6 maj 2020
 
 * **PlacesMonitor 2.2.1**
 
@@ -20,7 +36,7 @@ ht-degree: 1%
 
       * Förbättrad loggning
 
-## 5 maj 2020
+## 5 maj 2020
 
 
 * **PlacesMonitor 2.1.3**
@@ -203,13 +219,13 @@ Följande uppdateringar gjordes i den här versionen:
 * Korrigerade ett problem som, efter en första start, ibland orsakade att Platshändelser gick förlorade på grund av felaktiga nätverksförhållanden.
 * Ett problem har korrigerats där tokenersättning via regelmotorn ibland refererar till fel POI när POI-anmälningshändelser bearbetas i snabb följd.
 
-## 30 maj 2019
+## 30 maj 2019
 
 **Android Places Monitor 1.0.1**
 
 * Korrigerade ett problem som förhindrade en starthändelse för POI när Platsövervakning startades.
 
-## 28 maj 2019
+## 28 maj 2019
 
 Följande problem i användargränssnittet för platser har korrigerats:
 
@@ -218,7 +234,7 @@ Följande problem i användargränssnittet för platser har korrigerats:
 * Ökade den minsta tillåtna radien i användargränssnittet till 10 meter.
 * Ett problem har korrigerats där radiefältet återställdes till 20 meter om du tar bort alla nummer i fältet.
 
-## 17 maj 2019
+## 17 maj 2019
 
 Följande uppdateringar gjordes i den här versionen:
 
@@ -235,7 +251,7 @@ Platsövervakaren hanterar plats-API:erna på operativsystemnivå och kommunicer
 Klicka här om du vill ha mer information om Platsövervakaren.
 
 
-## 2 maj 2019
+## 2 maj 2019
 
 **Android Platser 1.1.0**
 
@@ -246,7 +262,7 @@ Klicka här om du vill ha mer information om Platsövervakaren.
 * Lagring av den senast kända platsen respekterar nu användarens sekretessstatus
 
 
-## 9 april 2019
+## 9 apr 2019
 
 Följande uppdateringar gjordes i den här versionen:
 
@@ -283,7 +299,7 @@ Vi har släppt ett hanteringsgränssnitt där du kan visa och hantera dina intre
 
 #### Platstillägg
 
-Med hjälp av platstillägget kan du lägga till dina platsservicebibliotek i din mobilapp och agera utifrån deras POI. Med hjälp av regelbyggaren i Experience Platform Launch kan du utlösa åtgärder som ska utlösas när användare öppnar och avslutar POI.
+Med hjälp av platstillägget kan du lägga till dina platsservicebibliotek i din mobilapp och agera utifrån deras POI. Med hjälp av regelbyggaren i Experience Platform Launch kan du utlösa åtgärder som ska utlösas när användare går in i och avslutar POI.
 
 I tillägget Platser:
 
@@ -307,6 +323,6 @@ Mer information om Places-API:er finns i [Webbtjänste-API](/help/web-service-ap
 
 ### Kommer snart
 
-#### Analysintegrering
+#### Analytics-integrering
 
-Tillägget Analytics uppdateras för att automatiskt lägga till platskontextdata från platstjänstdatabasen till alla utgående Analytics-anrop när en användare befinner sig i en POI (passiva anrop). Uppdateringen tillåter även att regler skapas för att starta Analytics-spårningsanrop direkt vid POI-inträde eller -utträde (aktiva anrop).
+Analytics-tillägget uppdateras för att automatiskt lägga till platssammanhangsdata från din Places-tjänstdatabas till alla utgående Analytics-samtal när en användare befinner sig i en POI (passiva samtal). Uppdateringen tillåter även att regler skapas för att starta Analytics-spåranrop direkt vid POI-inträde eller -utträde (aktiva anrop).
