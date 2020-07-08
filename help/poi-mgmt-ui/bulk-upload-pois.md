@@ -2,12 +2,25 @@
 title: Massöverföring av POI
 description: I det här avsnittet finns information om hur du överför dina POI-filer satsvis.
 translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+source-git-commit: 1ffc1f4237dfb872614a4bffd43d3fdaefc62fa9
+workflow-type: tm+mt
+source-wordcount: '853'
+ht-degree: 0%
 
 ---
 
 
 # Massöverföring av POI {#bulk-upload-pois}
+
+Knappen **Importera POI** i platstjänsten kan användas för att massöverföra nya POI:er med hjälp av en CSV-fil. En exempelmall för kalkylblad finns för att visa vilka datakolumner som krävs och hur du lägger till valfria anpassade metadata.
+
+![Skärm för massimport](/help/assets/Bulk-import.png)
+
+En video som visar processen för massimport och massredigering finns nedan:
+
+>[!VIDEO](https://www.youtube.com/watch?v=75qVtirsXhg)
+
+## Python API-skript
 
 En uppsättning Python-skript har skapats för att förenkla batchimporten av POI från en CSV-fil till en POI-databas med hjälp av webbtjänstens API:er. Dessa skript kan laddas ned från den här öppna [Git-rapporten](https://github.com/adobe/places-scripts).
 
@@ -84,7 +97,7 @@ Värdena för följande kolumner används i användargränssnittet för platstj�
 
    * `org_id`
 
-      Det Experience Cloud-id som POI ska importeras till. Mer information om hur du hämtar organisation-ID:t finns i *Krav för användaråtkomst* i [Integreringsöversikt och villkor](/help/web-service-api/adobe-i-o-integration.md).
+      Det Experience Cloud orgID som POI ska importeras till. Mer information om hur du hämtar organisation-ID:t finns i *Krav för användaråtkomst* i [Integreringsöversikt och villkor](/help/web-service-api/adobe-i-o-integration.md).
 
    * `api_key`
 
