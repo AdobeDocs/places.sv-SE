@@ -2,7 +2,10 @@
 title: Använda tillägget Platsövervakare
 description: Information om hur du installerar, konfigurerar och använder tillägget Platsövervakare.
 translation-type: tm+mt
-source-git-commit: ac1d410a676557064d5390f8392f402541754478
+source-git-commit: 7fdaace59886225b7fd9b0eba8cc6c2a139fa2d7
+workflow-type: tm+mt
+source-wordcount: '491'
+ht-degree: 6%
 
 ---
 
@@ -11,7 +14,7 @@ source-git-commit: ac1d410a676557064d5390f8392f402541754478
 
 Utför följande uppgifter om du vill använda tillägget Platsövervakare:
 
-## Installera Places Monitor-tillägget i Experience Platform Launch
+## Installera tillägget Platsövervakaren i Experience Platform Launch
 
 1. Klicka på fliken **[!UICONTROL Extensions]** i Experience Platform Launch.
 1. Leta upp **[!UICONTROL Catalog]** tillägget på **[!UICONTROL Places Monitor]** fliken och klicka på **Installera**.
@@ -26,7 +29,15 @@ Det finns inga konfigurationsåtgärder för tillägget Platsövervakare.
 
 ## Lägg till tillägget Platsövervakare i din app {#add-monitor-extension-to-app}
 
-Du måste lägga till tillägget Platsövervakare i Android- eller iOS-appen.
+Anvisningar om hur du lägger till Places-tillägget i Android- eller iOS-programmet finns nedan.
+
+Ytterligare plattformsstöd för Places Monitor-tillägget omfattar:
+**[Cordova Platsövervakare](https://github.com/adobe/cordova-acpplaces-monitor/blob/master/README.md)**
+
+**[React Native Places Monitor](https://github.com/adobe/react-native-acpplaces-monitor/blob/master/README.md)**
+
+**[Övervakare för plustecken](https://github.com/adobe/flutter_acpplaces_monitor/blob/master/README.md)**
+
 
 ### Android
 
@@ -172,7 +183,7 @@ För alla versioner av Android anger du att din app behöver platsbehörighet ge
 ```
 
 
-## Aktivera platsuppdateringar i bakgrunden {#enable-location-updates-background}
+## Aktivera platsuppdateringar i bakgrunden  {#enable-location-updates-background}
 
 iOS stöder leverans av platshändelser till appar som är inaktiverade eller inte längre körs. Om du vill få platsuppdateringar i bakgrunden för Platsövervakartillägget konfigurerar du funktionen för platsuppdateringar för appen i `Xcode.background-location-updates`.
 
