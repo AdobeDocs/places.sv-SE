@@ -2,9 +2,9 @@
 title: Tillägget Platser
 description: Med tillägget Platser kan du agera utifrån platsen för dina användare.
 translation-type: tm+mt
-source-git-commit: 0ac139fce666540b36a8c82fe4c05974e12e987f
+source-git-commit: a7dddb78e1e00a0bde01ea668334932759a9dae8
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '694'
 ht-degree: 3%
 
 ---
@@ -33,11 +33,16 @@ Med tillägget Platser kan du agera utifrån platsen för dina användare. Det h
 
 ## Lägg till tillägget Platser i din app {#add-places-to-app}
 
-Du kan lägga till tillägget Platser i dina Android- och iOS-appar. Stegen för att lägga till platser i iOS- eller Android-program visas nedan. Platser är också tillgängliga för Cordova och React Native. Om du vill lägga till platser i programmet när du utvecklar med någon av de här plattformarna läser du följande länkar:
+Du kan lägga till tillägget Platser i dina Android- och iOS-appar. Stegen för att lägga till platser i iOS- eller Android-program visas nedan. Platstillägg är också tillgängliga för följande plattformar nedan. Om du vill lägga till platser i programmet när du utvecklar med någon av de här plattformarna läser du följande länkar:
 
 **[Cordova Places Plugin](https://github.com/adobe/cordova-acpplaces/blob/master/README.md)**
 
 **[Plugin-programmet React Native Places](https://github.com/adobe/react-native-acpplaces/blob/master/README.md)**
+
+**[Plugin-programmet Flutter Places](https://github.com/adobe/flutter-acpplaces_monitor)**
+
+**[Plugin-programmet Xamarin Places](https://github.com/adobe/xamarin-acpcore)**
+
 
 ### Android
 
