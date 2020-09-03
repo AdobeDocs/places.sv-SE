@@ -2,7 +2,10 @@
 title: Komma igång
 description: Komma igång med Platstjänst.
 translation-type: tm+mt
-source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
+source-git-commit: 30650c1e11a52f6bbc118d374b8ff6050b5d80ce
+workflow-type: tm+mt
+source-wordcount: '180'
+ht-degree: 3%
 
 ---
 
@@ -11,7 +14,11 @@ source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
 
 Här är en praktisk video med en översikt över Platstjänster:
 
->[!VIDEO](https://www.youtube.com/watch?v=aV6i_ayxWCw)
+<!--
+Test of different youtube link for exl
+-->
+
+>[!VIDEO](https://youtu.be/aV6i_ayxWCw)
 
 ## Använda Platstjänst
 
@@ -19,11 +26,11 @@ Utför följande uppgifter om du vill använda Platstjänst:
 
 ### 1. Se till att din användare har etablerats för att använda platstjänsten
 
-Platstjänstens produktkontext är tillgänglig för alla Experience Cloud-organisationer.
+Platstjänster-produktkontexten är tillgänglig för alla Experience Cloud-organisationer.
 
-* Se till att du är listad som en användare under produktkontexterna Platstjänst och Experience Platform Launch i Admin Console.
+* Se till att du är listad som användare under Platstjänst och produktkontexterna för Experience Platform Launch i Admin Console.
 
-   Mer information finns i *Lägga till en användare till Experience Platform Launch and Places Service* i [Vanliga frågor](/help/places-gain-access.md).
+   Mer information finns i *Lägga till en användare i tjänsten* Experience Platform Launch och Platser i [Vanliga frågor](/help/places-gain-access.md).
 
 
 ### 2. Skapa dina POI
