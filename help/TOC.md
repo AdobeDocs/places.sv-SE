@@ -1,13 +1,13 @@
 ---
 product: Places Service
 audience: end-user
-user-guide-title: Places Service
+user-guide-title: Handbok för platstjänster
 user-guide-description: Places Service is a geo-location service that enables mobile apps with location awareness to understand the location context.
 translation-type: tm+mt
-source-git-commit: 43b1eb0d384e2e75e444b737c0ab15798492d0a8
+source-git-commit: f9215fa3871d91166ad109a0708105f79536213c
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 8%
+source-wordcount: '298'
+ht-degree: 11%
 
 ---
 
@@ -66,8 +66,8 @@ ht-degree: 8%
       + [API-referens för platsövervakare](places-ext-aep-sdks/places-monitor-extension/places-monitor-api-reference.md)
 + [Använd Platstjänst med din egen övervakningslösning](using-your-own-monitor.md)
 + [Använd platstjänsten utan övervakning av aktiva regioner](use-places-without-active-monitoring.md)
-+ Använd Platstjänst som en del av Experience Platform Launch-arbetsflödet {#use-places-launch-workflow}
-   + [Använd Platstjänst som en del av Experience Platform Launch-arbetsflödet](use-places-launch-workflow/places-launch-workflow.md)
++ Använd platstjänsten som en del av arbetsflödet i Experience Platform Launch {#use-places-launch-workflow}
+   + [Använd platstjänsten som en del av arbetsflödet i Experience Platform Launch](use-places-launch-workflow/places-launch-workflow.md)
    + [Definiera dataelement](use-places-launch-workflow/define-data-elements.md)
    + [Skapa regler för inträde och utträde](use-places-launch-workflow/create-rule-places-property.md)
 + Använd Platstjänst med andra Adobe-lösningar {#use-places-with-other-solutions}
@@ -85,7 +85,7 @@ ht-degree: 8%
       + [Push-meddelanden](use-places-with-other-solutions/places-acs/places-acs-push-notifications.md)
       + [Meddelanden i appen](use-places-with-other-solutions/places-acs/places-acs-in-app-messages.md)
    + Adobe Target {#places-target}
-      + [Använd platstjänst med Adobe Target](use-places-with-other-solutions/places-target/places-target.md)
-+ Testning och validering {#places-testing-validation}
+      + [Använd Platstjänst med Adobe Target](use-places-with-other-solutions/places-target/places-target.md)
++ Testa och validera {#places-testing-validation}
    + [Testa och validera platstjänst](places-testing-validation/test-validate-places.md)
-+ [Frågor och svar](places-faqs.md)
++ [Vanliga frågor](places-faqs.md)
