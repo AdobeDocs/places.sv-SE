@@ -2,9 +2,9 @@
 title: Massöverföring av POI
 description: I det här avsnittet finns information om hur du överför dina POI-filer satsvis.
 translation-type: tm+mt
-source-git-commit: 1ffc1f4237dfb872614a4bffd43d3fdaefc62fa9
+source-git-commit: 462df20bb351795dc72009cc18d390cb45e262a8
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '859'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,11 @@ Knappen **Importera POI** i platstjänsten kan användas för att massöverföra
 
 ![Skärm för massimport](/help/assets/Bulk-import.png)
 
-En video som visar processen för massimport och massredigering finns nedan:
+I den här videon visas processen för massimport och massredigering:
 
->[!VIDEO](https://www.youtube.com/watch?v=75qVtirsXhg)
+<!--I changed this embed to a link to pass validation. We should not link to youtube videos, so please upload this to MCP-->
+
+[Platser för massimport och redigering av POI](https://www.youtube.com/watch?v=75qVtirsXhg)
 
 ## Python API-skript
 
@@ -101,7 +103,7 @@ Värdena för följande kolumner används i användargränssnittet för platstj�
 
    * `api_key`
 
-      Det här är den REST API-nyckel du fått från Adobe I/O Platser Integration. Mer information om hur du hämtar API-nyckeln finns i *Krav för användaråtkomst* i [Integreringsöversikt och villkor](/help/web-service-api/adobe-i-o-integration.md).
+      Det här är den REST-API-nyckel du får från Adobe I/O Platser Integration. Mer information om hur du hämtar API-nyckeln finns i *Krav för användaråtkomst* i [Integreringsöversikt och villkor](/help/web-service-api/adobe-i-o-integration.md).
    b. Spara ändringarna.
 
 1. Navigera till `…/places-scripts/import/` katalogen i ett terminalfönster.
