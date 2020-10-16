@@ -2,12 +2,12 @@
 product: Places Service
 audience: end-user
 user-guide-title: Handbok för platstjänster
-user-guide-description: Places Service is a geo-location service that enables mobile apps with location awareness to understand the location context.
+user-guide-description: Platstjänsten är en geopositioneringstjänst som gör det möjligt för mobilappar med platsmedvetenhet att förstå platskontexten.
 translation-type: tm+mt
 source-git-commit: f9215fa3871d91166ad109a0708105f79536213c
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 11%
+source-wordcount: '316'
+ht-degree: 10%
 
 ---
 
