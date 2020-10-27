@@ -1,16 +1,21 @@
 ---
 cloud: experience-cloud
 product: adobe experience platform
-solution-title: Läs mer & Support
-solution-hub-url: https://helpx.adobe.com/support/experience-cloud.html
+solution: Experience Platform, Data Collection
+type: Documentation
+solution-title: Läs mer och support
+solution-hub-url: https://helpx.adobe.com/se/support/experience-cloud.html
 getting-started-title: Komma igång
 getting-started-url: https://docs.adobe.com/content/help/en/places/using/getting-started.html
 tutorials-title: Självstudiekurser
 tutorials-url: https://experienceleague.adobe.com/#recommended/solutions/experience-platform
-git-repo: https://git.corp.adobe.com/AdobeDocs/places.en
+git-repo: https://git.corp.adobe.com/AdobeDocs/places.sv-SE
 index: true
 translation-type: tm+mt
-source-git-commit: 671f807f4ecf23271b1c66d3ac021788f1fba4f3
+source-git-commit: 0f3c43c8eb62fc620a71096c92a673bcf8407f94
+workflow-type: tm+mt
+source-wordcount: '169'
+ht-degree: 73%
 
 ---
 
@@ -19,24 +24,24 @@ source-git-commit: 671f807f4ecf23271b1c66d3ac021788f1fba4f3
 
 # Metadata för intern användning
 
-Filen metadata.md innehåller metadata på postnivå som skickas till TOC.md-filer för användarhandboken i svaret. Om du vill ändra metadata.md-innehåll för en användarhandbok gör du det i en TOC.md-fil.
+Filen metadata.md innehåller metadata på arkivnivå som skickas till användarhandbokens TOC.md-filer i arkivet. Om du vill ändra innehåll i metadata.md för någon användarhandbok gör du detta i en TOC.md-fil.
 
-| metadata | vad den gör |
+| metadata | vad gör den |
 |--- |--- |
-| solution-title | Används i artikelrubriken som länk |
-| solution-hub-url | Öppnar navet för hjälpfunktioner |
-| solution-icon | Visar lösningsikonen bredvid lösningsrubriken. Inte implementerat ännu |
-| getting-started-title | Används sällan när självstudiekurser inte är lämpliga |
-| getting-started-url | Länk till hjälpsidan Komma igång |
-| självstudiekurser-titel | Används sällan när självstudiekurser inte är lämpliga |
-| tutorials-url | Länka till videosjälvstudiekurser - antingen hjälpstudiekurser eller självstudiekurser på engelska |
-| mini-toc-nivåer | Anger antalet rubriknivåer som visas i den högra listen. standard är 2 |
-| git-repo | https://github.com/AdobeDocs/places.en |
+| lösning-titel | Används i artikelrubriken som en länk |
+| lösning-hubb-url | Öppnar den centrala helpx-sidan |
+| lösning-ikon | Visar lösningsikonen bredvid lösningstiteln Inte implementerat ännu |
+| getting-started-title | Används sällan när Tutorials inte är lämpligt |
+| komma-igång-url | Länk till startsidan i helpx |
+| självstudiekurser-titel | Används sällan när Tutorials inte är lämpligt |
+| självstudiekurser-url | Länk till videosjälvstudiekurser – antingen helpx-självstudiekurser eller KT-självstudiekurser |
+| mini-toc-nivåer | Anger antalet rubriknivåer som visas i det högra fältet. standard är två |
+| git-arkiv | https://github.com/AdobeDocs/places.en |
 | index | set index=no for soft launch |
 
 I filen TOC.md
 
-| metadata | vad den gör |
+| metadata | vad gör den |
 |--- |--- |
-| user-guide-title | Används i artikelrubriken som länk |
-| user-guide-url | Öppnar navet för hjälpfunktioner |
+| användar-handbok-titel | Används i artikelrubriken som en länk |
+| användar-handbok-url | Öppnar den centrala helpx-sidan |
