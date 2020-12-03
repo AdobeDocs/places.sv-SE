@@ -3,11 +3,14 @@ title: Sidhuvuden och parametrar
 description: Sidhuvuden och parametrar som är tillgängliga i platstjänstens REST-API:er.
 translation-type: tm+mt
 source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 3%
 
 ---
 
 
-# Sidhuvuden och parametrar {#headers-and-parameters}
+# Headers and parameters {#headers-and-parameters}
 
 Här är information om de rubriker och parametrar som är tillgängliga i Platstjänst REST API:
 
