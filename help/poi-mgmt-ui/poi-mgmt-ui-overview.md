@@ -3,6 +3,9 @@ title: Översikt över gränssnittet för hantering av intressepunkter
 description: I det här avsnittet finns information om hur du skapar och hanterar bibliotek och POI:er via användargränssnittet för platstjänster.
 translation-type: tm+mt
 source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
+workflow-type: tm+mt
+source-wordcount: '86'
+ht-degree: 0%
 
 ---
 
