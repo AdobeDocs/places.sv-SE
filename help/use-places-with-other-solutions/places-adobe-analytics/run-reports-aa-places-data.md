@@ -3,6 +3,9 @@ title: Lägg till platskontext i Analytics-begäranden
 description: I det här avsnittet finns information om hur du lägger till platskontext i Analytics-begäranden.
 translation-type: tm+mt
 source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+workflow-type: tm+mt
+source-wordcount: '444'
+ht-degree: 7%
 
 ---
 
@@ -29,7 +32,7 @@ När platstjänsten har skickat in- och avslutshändelserna kan du skapa regler 
 
    I det här exemplet får regeln namnet **[!UICONTROL Attach Places Service Data to Analytics Track Action Events]**.
 
-1. Klicka på under **[!UICONTROL Events]** avsnittet **[!UICONTROL Add]**.
+1. Under the **[!UICONTROL Events]** section, click **[!UICONTROL Add]**.
 
 1. I listrutan **[!UICONTROL Extension]** väljer du **[!UICONTROL Mobile Core]**.
 
@@ -48,7 +51,7 @@ Nu kan du bestämma vilka utlösare du vill ta med för den här regeln. I det h
 
 I det här exemplet skapas ett villkor som gör att regeln bara aktiveras för AT&amp;T-kunder.
 
-1. Klicka på under **[!UICONTROL Conditions]** avsnittet **[!UICONTROL Add]**.
+1. Under the **[!UICONTROL Conditions]** section, click **[!UICONTROL Add]**.
 
 1. I listrutan **[!UICONTROL Extension]** väljer du **[!UICONTROL Mobile Core]**.
 
@@ -62,7 +65,7 @@ I det här exemplet skapas ett villkor som gör att regeln bara aktiveras för A
 
 ## 4. Definiera åtgärden
 
-1. Klicka på under **[!UICONTROL Actions]** avsnittet **[!UICONTROL Add]**.
+1. Under the **[!UICONTROL Actions]** section, click **[!UICONTROL Add]**.
 
 1. I listrutan **[!UICONTROL Extension]** väljer du **[!UICONTROL Mobile Core]**.
 
