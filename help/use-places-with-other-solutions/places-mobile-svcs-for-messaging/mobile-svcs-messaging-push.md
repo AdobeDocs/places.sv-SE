@@ -3,13 +3,16 @@ title: Push-meddelanden
 description: I det här avsnittet visas hur du använder platstjänsten med push-meddelanden.
 translation-type: tm+mt
 source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+workflow-type: tm+mt
+source-wordcount: '228'
+ht-degree: 1%
 
 ---
 
 
 # Push-meddelanden
 
-Med mobiltjänster kan ni skicka push-meddelanden till Adobe Analytics-segment. I Platstjänst kan du segmentera målgruppen för ditt push-meddelande genom att använda deras historiska interaktioner med dina POI. Du kan till exempel skicka ett meddelande till användare som har varit i någon av dina butiker de senaste 30 dagarna.
+Med Mobiltjänster kan du skicka push-meddelanden till Adobe Analytics-segment. I Platstjänst kan du segmentera målgruppen för ditt push-meddelande genom att använda deras historiska interaktioner med dina POI. Du kan till exempel skicka ett meddelande till användare som har varit i någon av dina butiker de senaste 30 dagarna.
 
 Kontrollera att du har utfört följande uppgifter innan du börjar:
 
@@ -29,7 +32,7 @@ Kontrollera att du har utfört följande uppgifter innan du börjar:
 
 På fliken **[!UICONTROL Audience]** i arbetsflödet *Skapa push-meddelanden* kan du skapa målgruppen för det här meddelandet på något av följande sätt:
 
-* I **[!UICONTROL Analytics Segments]** listrutan väljer du ett tidigare skapat Adobe Analytics-segment.
+* I den **[!UICONTROL Analytics Segments]** nedrullningsbara listan väljer du ett tidigare skapat Adobe Analytics-segment.
 
 * I **[!UICONTROL Custom Segment]** avsnittet kan du skapa en målgrupp med hjälp av de tillgängliga anpassade segmentparametrarna.
 
