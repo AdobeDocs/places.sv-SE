@@ -3,6 +3,9 @@ title: Skicka POI-post och avsluta data till Analytics
 description: I det här avsnittet finns information om hur du skickar POI-post och avslutar data till Analytics.
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '382'
+ht-degree: 8%
 
 ---
 
@@ -31,7 +34,7 @@ När platstjänsten har skickat in- och avslutshändelserna kan du skapa regler 
 
    På så sätt kan regeln lätt kännas igen i listan Regler. I det här exemplet får regeln namnet **[!UICONTROL Send Data to Analytics]**.
 
-1. Klicka i **[!UICONTROL Events]** avsnittet **[!UICONTROL Add]**.
+1. In the **[!UICONTROL Events]** section, click **[!UICONTROL Add]**.
 
 1. I listrutan **[!UICONTROL Extension]** väljer du **[!UICONTROL Places Service]**.
 
@@ -50,7 +53,7 @@ När platstjänsten har skickat in- och avslutshändelserna kan du skapa regler 
 
 I det här exemplet skapas ett villkor som gör att regeln bara utlöses när den aktuella POI:ns namn är lika med **[!UICONTROL My POI]**.
 
-1. Klicka på under **[!UICONTROL Conditions]** avsnittet **[!UICONTROL Add]**.
+1. Under the **[!UICONTROL Conditions]** section, click **[!UICONTROL Add]**.
 
 1. I listrutan **[!UICONTROL Extension]** väljer du **[!UICONTROL Places Service]**.
 
@@ -65,7 +68,7 @@ I det här exemplet skapas ett villkor som gör att regeln bara utlöses när de
 
 ## 4. Definiera åtgärden
 
-1. Klicka på under **[!UICONTROL Actions]** avsnittet **[!UICONTROL Add]**.
+1. Under the **[!UICONTROL Actions]** section, click **[!UICONTROL Add]**.
 
 1. I listrutan **[!UICONTROL Extension]** väljer du **[!UICONTROL Adobe Analytics]**.
 
@@ -77,7 +80,7 @@ I det här exemplet skapas ett villkor som gör att regeln bara utlöses när de
 
 1. Klicka på **[!UICONTROL Keep Changes]**.
 
-   I följande exempel skickas ett `TrackAction` anrop till Analytics med ytterligare kontextdata `poi.name` som är lika med namnet på den POI som utlöste den här starthändelsen:
+   I följande exempel skickas ett `TrackAction` anrop till Analytics med ytterligare kontextdata `poi.name` som är lika med namnet på POI som utlöste den här starthändelsen:
 
    ![&quot;ange en åtgärd&quot;](/help/assets/pt-setAction.png)
 
