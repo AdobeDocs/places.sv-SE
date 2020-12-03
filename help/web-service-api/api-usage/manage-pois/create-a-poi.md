@@ -3,13 +3,16 @@ title: Skapa en POI
 description: Skapa en POI med hjälp av Places REST API:er.
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '47'
+ht-degree: 0%
 
 ---
 
 
 # Skapa en POI {#create-a-poi}
 
-En POST-metod som gör att du kan skapa en POI.
+En metod som gör att du kan skapa en POI-POST.
 
 ## Begäran
 
