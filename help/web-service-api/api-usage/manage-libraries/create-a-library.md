@@ -3,13 +3,16 @@ title: Skapa ett bibliotek
 description: Skapa ett bibliotek med hjälp av Plats REST API.
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '48'
+ht-degree: 0%
 
 ---
 
 
 # Skapa ett bibliotek {#create-a-library}
 
-En POST-metod som gör att du kan skapa ett bibliotek.
+En biblioteksmetod som du kan använda för att skapa ett POST.
 
 ## Begäran
 
