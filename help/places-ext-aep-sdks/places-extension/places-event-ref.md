@@ -3,6 +3,9 @@ title: Händelsereferens för platser
 description: 'En lista över händelser som hanteras av tillägget Platser. '
 translation-type: tm+mt
 source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+workflow-type: tm+mt
+source-wordcount: '248'
+ht-degree: 6%
 
 ---
 
@@ -43,10 +46,10 @@ Den här händelsen är en begäran om att få närliggande POI genom att ta hä
 
 | Nyckel | Värdetyp | Obligatoriskt | Standardvärde | Beskrivning |
 | :--- | :--- | :--- | :--- | :--- |
-| latitud | double | true | n/a | Innehåller latitudvärdet för mitten av sökningen efter närliggande POI. |
-| longitud | double | true | n/a | Innehåller longitudvärdet för mitten av sökningen efter närliggande POI. |
-| radie | heltal | false | n/a | Radie, i meter, används vid sökning efter närliggande POI. |
-| antal | heltal | false | 10 | Maximalt antal POI som ska returneras i den resulterande svarshändelsen. |
+| latitud | double | sant | n/a | Innehåller latitudvärdet för mitten av sökningen efter närliggande POI. |
+| longitud | double | sant | n/a | Innehåller longitudvärdet för mitten av sökningen efter närliggande POI. |
+| radie | heltal | falskt | n/a | Radie, i meter, används vid sökning efter närliggande POI. |
+| antal | heltal | falskt | 10 | Maximalt antal POI som ska returneras i den resulterande svarshändelsen. |
 
 ## ProcessRegionEvent
 
@@ -64,8 +67,8 @@ Den här händelsen gör att Platser-tillägget bearbetar en geofence-post eller
 
 | Nyckel | Värdetyp | Obligatoriskt | Beskrivning |
 | :--- | :--- | :--- | :--- |
-| regionid | string | true | ID för regionen som genererar händelsen. |
-| regionEventType | int | true | Typ av regionhändelse som genereras. 1 för inträde och 2 för utförsel. |
+| regionid | string | sant | ID för regionen som genererar händelsen. |
+| regionEventType | int | sant | Typ av regionhändelse som genereras. 1 för inträde och 2 för utförsel. |
 
 ## Händelser som skickas av tillägget Platser
 
