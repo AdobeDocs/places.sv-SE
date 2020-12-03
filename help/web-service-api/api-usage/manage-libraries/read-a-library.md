@@ -3,6 +3,9 @@ title: Läsa ett bibliotek
 description: Läs ett bibliotek med hjälp av Places REST API.
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '45'
+ht-degree: 0%
 
 ---
 
