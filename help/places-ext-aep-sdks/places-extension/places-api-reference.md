@@ -3,6 +3,9 @@ title: API-referens för platser
 description: Information om API-referenserna i Platser.
 translation-type: tm+mt
 source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+workflow-type: tm+mt
+source-wordcount: '583'
+ht-degree: 31%
 
 ---
 
