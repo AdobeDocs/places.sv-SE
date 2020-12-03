@@ -1,8 +1,11 @@
 ---
 title: Meddelanden i appen
-description: I det här avsnittet visas hur du använder tjänsten Platser med meddelanden i appen.
+description: I det här avsnittet visas hur du använder Platstjänst med meddelanden i appen.
 translation-type: tm+mt
 source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+workflow-type: tm+mt
+source-wordcount: '660'
+ht-degree: 1%
 
 ---
 
@@ -35,7 +38,7 @@ Innan du börjar förstår du hur du skickar och skapar ett meddelande i appen i
 
 ## Regler i Experience Platform Launch
 
-Ni kan skapa regler för Experience Platform Launch som skickar de data som ni vill kunna använda som en del av era utlösarregler för meddelanden i appen till Analytics. Du kan använda data från Places-tilläggen i Experience Platform Launch-reglerna som antingen händelser och/eller villkor beroende på ditt användningsfall.
+Du kan skapa Experience Platform Launch-regler som skickar data som du vill kunna använda som en del av dina utlösarregler för meddelanden i appen till Analytics. Du kan använda data från Places-tilläggen i dina Experience Platform Launch-regler som antingen händelser och/eller villkor beroende på ditt användningssätt.
 
 * Använda platsdata som utlösande händelse.
 
