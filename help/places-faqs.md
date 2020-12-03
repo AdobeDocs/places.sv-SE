@@ -1,13 +1,16 @@
 ---
-title: Vanliga frågor
+title: Frågor och svar
 description: Det här avsnittet innehåller ytterligare information om några vanliga frågor och svar.
 translation-type: tm+mt
 source-git-commit: 5846577f10eb1d570465ad7f888feba6dd958ec9
+workflow-type: tm+mt
+source-wordcount: '552'
+ht-degree: 1%
 
 ---
 
 
-# Vanliga frågor
+# Frågor och svar
 
 Här är information och vanliga frågor om Platstjänst.
 
