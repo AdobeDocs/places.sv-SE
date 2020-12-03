@@ -1,8 +1,11 @@
 ---
 title: Använd Platstjänst med Adobe Analytics
-description: I det här avsnittet finns information om hur du använder Platstjänst med Adobe Analytics.
+description: I det här avsnittet finns information om hur du använder tjänsten Platser med Adobe Analytics.
 translation-type: tm+mt
 source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+workflow-type: tm+mt
+source-wordcount: '60'
+ht-degree: 0%
 
 ---
 
