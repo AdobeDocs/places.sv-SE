@@ -1,15 +1,18 @@
 ---
-title: Översikt över integrering av Adobe I/O
+title: Adobe I/O integreringsöversikt
 description: Information om hur du skapar en Adobe I/O-integrering.
 translation-type: tm+mt
 source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
+workflow-type: tm+mt
+source-wordcount: '832'
+ht-degree: 6%
 
 ---
 
 
 # Översikt över integrationen och krav {#integration-prereqs}
 
-Den här informationen visar hur du skapar en integrering med Adobe I/O och Platstjänster.
+Den här informationen visar hur du skapar en integrering mellan Adobe I/O och en Platstjänst.
 
 ## Krav för användaråtkomst
 
@@ -19,11 +22,11 @@ Kontrollera med din organisations systemadministratör att följande åtgärder 
 * Du har lagts till i organisationen.
 * Du har lagts till som användare i Platser Core Service i din organisation.
 
-   Mer information finns i *Lägga till en användare eller en utvecklare till platstjänsten och Experience Platform Launch-profiler* i [Få tillgång till platstjänsten](/help/places-gain-access.md).
+   Mer information finns i *Lägga till en användare eller en utvecklare i platstjänsten och Experience Platform Launch-profiler* i [Få tillgång till platstjänsten](/help/places-gain-access.md).
 
 * Du har lagts till som utvecklare i Platser Core Service i din organisation.
 
-   Mer information om hur du lägger till utvecklare finns i *Lägga till en användare eller en utvecklare i Platstjänst och Startprofiler* för Experience Platform i [Få tillgång till Platstjänst](/help/places-gain-access.md).
+   Mer information om hur du lägger till utvecklare finns i *Lägga till en användare eller en utvecklare i platstjänsten och Experience Platform Launch-profiler* i [Få tillgång till platstjänsten](/help/places-gain-access.md).
 
    Mer information om utvecklarrollen finns i [Hantera utvecklare](https://helpx.adobe.com/enterprise/using/manage-developers.html).
 
@@ -39,7 +42,7 @@ En integrering med Adobe I/O innehåller dessa objekt och ett sätt att begära 
 
 * Mer information om JWT finns i [Introduktion till JSON Web Tokens](https://jwt.io/introduction/).
 * Om du vill skapa en integrering för Platstjänst läser du avsnittet *Skapa en Platstjänst-integrering* nedan.
-* Mer information om API-nyckelintegrering, generering av JWT och certifikat för offentlig nyckel finns i [Adobes I/O-autentiseringsöversikt](https://www.adobe.io/apis/cloudplatform/console/authentication/gettingstarted.html).
+* Mer information om API-nyckelintegrering, generering av JWT och certifikat för offentliga nycklar finns i [Adobe I/O Authentication Overview](https://www.adobe.io/apis/cloudplatform/console/authentication/gettingstarted.html).
 
 >[!IMPORTANT]
 >
@@ -97,15 +100,15 @@ I följande videofilm får du hjälp med att generera nyckelparet:
 
 Så här skapar du en platstjänstintegration:
 
-1. Gå till [https://console.adobe.io](https://console.adobe.io) och logga in med ditt Adobe ID.
+1. Gå till [https://console.adobe.io](https://console.adobe.io) och logga in med din Adobe ID.
 1. Klicka på **Skapa integrering** i delen **Snabbstart**.
-1. Markera **[!UICONTROL Access an API]** och klicka **[!UICONTROL Continue]**.
+1. Markera **[!UICONTROL Access an API]** och klicka på **[!UICONTROL Continue]**.
 
    **[!UICONTROL Access an API]** är standardplats.
 
 1. Om du har tillgång till mer än en Experience Cloud-organisation väljer du organisationen i listrutan högst upp till höger.
 1. Under **[!UICONTROL Experience Cloud]** väljer du **[!UICONTROL Places Service]** som den Adobe-tjänst som du vill integrera med och klickar sedan på **[!UICONTROL Continue]**.
-1. Markera **[!UICONTROL New integration]** och klicka **[!UICONTROL Continue]**.
+1. Markera **[!UICONTROL New integration]** och klicka på **[!UICONTROL Continue]**.
 1. Ange ett namn och en beskrivning på skärmen Skapa en ny integration.
 1. Dra och släpp `xxxx_public.crt` filen som du skapade ovan till **[!UICONTROL Public keys certificates]** släppzonen.
 1. Välj en produktprofil.
@@ -146,4 +149,4 @@ Så här skapar du en JWT-token:
 
 >[!IMPORTANT]
 >
->Adobes åtkomsttoken är **bara** giltiga i 24 timmar, så spara CURL-exempelkommandot (steg 5). Om åtkomsttoken inte längre är giltig måste du generera om token.
+>Åtkomsttoken för Adobe är **bara** giltiga i 24 timmar, så spara CURL-exempelkommandot (steg 5). Om åtkomsttoken inte längre är giltig måste du generera om token.
