@@ -3,6 +3,9 @@ title: Konfigurera SDK med tillägget Platser
 description: 'Du kan konfigurera SDK med tillägget Platser om du vill aktivera platsmedvetenhet i din mobilapp. '
 translation-type: tm+mt
 source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+workflow-type: tm+mt
+source-wordcount: '218'
+ht-degree: 9%
 
 ---
 
