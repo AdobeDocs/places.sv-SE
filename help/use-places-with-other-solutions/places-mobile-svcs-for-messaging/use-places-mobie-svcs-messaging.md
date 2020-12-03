@@ -3,6 +3,9 @@ title: Använda Platstjänst med Mobiltjänster för meddelanden
 description: I det här avsnittet visas hur du använder Platstjänst med Mobiltjänster för meddelanden.
 translation-type: tm+mt
 source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
+workflow-type: tm+mt
+source-wordcount: '354'
+ht-degree: 1%
 
 ---
 
@@ -27,13 +30,13 @@ Innan du kan använda mobiltjänsttillägget för meddelanden bör du kontroller
 
 * ACP SDK är korrekt konfigurerad med Platstjänst och/eller Places Monitor-tillägg.
 
-   Det innebär att data är tillgängliga som händelser och/eller villkor i Experience Platform Launch-regelmotorn för din mobilapp. Mer information finns i [Platstillägg](/help/places-ext-aep-sdks/places-extension/places-extension.md) eller [Platsmonitortillägg](/help/places-ext-aep-sdks/places-monitor-extension/using-places-monitor-extension.md).
+   Det innebär att data är tillgängliga som händelser och/eller villkor i regelmotorn Experience Platform Launch för din mobilapp. Mer information finns i [Platstillägg](/help/places-ext-aep-sdks/places-extension/places-extension.md) eller [Platsmonitortillägg](/help/places-ext-aep-sdks/places-monitor-extension/using-places-monitor-extension.md).
 
-* Bekanta dig med att skapa och publicera Experience Platform Launch-regler för ACP SDK i din mobilapp.
+* Bekanta dig med hur du skapar och publicerar Experience Platform Launch-regler för ACP SDK i din mobilapp.
 
    Mer information finns i [Regelmotorn](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine).
 
-* Experience Platform Launch-dataelement skapas från platstilläggsdata som ska användas i regelmotorn.
+* dataelement från Experience Platform Launch skapas från platstillägg som ska användas i regelmotorn.
 
    Mer information finns i [Dataelement](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine#data-elements).
 
@@ -51,9 +54,9 @@ Innan du kan använda rapportering måste du uppfylla följande krav:
 
 ## Visualisering av rapportering
 
-Du kan köra mobiltjänstrapporter med hjälp av platstjänstdata som skickas till Adobe Analytics. I följande exempel skickas händelser när användare har poster i en POI. I den här rapporten har ett filter för POI-händelsen lagts till i användarrapporten som är färdig:
+Du kan köra rapporter om mobila tjänster med hjälp av platsdata som skickas till Adobe Analytics. I följande exempel skickas händelser när användare har poster i en POI. I den här rapporten har ett filter för POI-händelsen lagts till i användarrapporten som är färdig:
 
 ![Rapportvisualisering](/help/assets/report-visualize.png)
 
-Ytterligare flexibilitet när det gäller att visualisera platsdata finns i Adobe Analytics-gränssnitten.
+Ytterligare flexibilitet när det gäller att visualisera platsdata finns i Adobe Analytics gränssnitt.
 
