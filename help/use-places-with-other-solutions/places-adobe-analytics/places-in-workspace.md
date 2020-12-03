@@ -1,8 +1,11 @@
 ---
 title: Rapport om platsdata på arbetsytan i Analytics
-description: Det här avsnittet innehåller information om hur du rapporterar platsdata i arbetsytan för analyser.
+description: I det här avsnittet finns information om hur du rapporterar platsdata i arbetsytan för Analytics.
 translation-type: tm+mt
 source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+workflow-type: tm+mt
+source-wordcount: '431'
+ht-degree: 6%
 
 ---
 
@@ -66,6 +69,6 @@ I det här exemplet har rapporten följande inställningar:
 
 * Dimension - **[!UICONTROL Action Name]**
 
-   * Nedbruten av Dimension - **[!UICONTROL Places POI Name]**
+   * Nedbruten som Dimension - **[!UICONTROL Places POI Name]**
 
 ![&quot;skapa en rapport på arbetsytan&quot;](/help/assets/aa-workspace.png)
