@@ -3,13 +3,16 @@ title: Läs alla POI:er i ett bibliotek
 description: Läs alla POI i ett bibliotek med hjälp av Places REST API:er.
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '54'
+ht-degree: 0%
 
 ---
 
 
 # Läs alla POI:er i ett bibliotek {#read-all-pois-library}
 
-En GET-metod som returnerar alla POI:er i ett bibliotek.
+En GET-metod som returnerar alla POI i ett bibliotek.
 
 ## Begäran
 
