@@ -1,8 +1,11 @@
 ---
 title: Definiera dataelement
-description: Det här avsnittet innehåller information om hur du skapar, använder och publicerar dataelement i Experience Platform Launch för Platser.
+description: I det här avsnittet finns information om hur du skapar, använder och publicerar dataelement i Experience Platform Launch för platser.
 translation-type: tm+mt
 source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
+workflow-type: tm+mt
+source-wordcount: '456'
+ht-degree: 1%
 
 ---
 
@@ -15,7 +18,7 @@ Följande information hjälper dig att förstå dataelement och hur du skapar oc
 
 Dataelement är byggstenarna för programmets dataordlista och används för att samla in, organisera och leverera data över marknadsförings- och annonseringsteknologi.
 
-Ett dataelement är en variabel där värdet kan mappas till ett besökar-ID, ett bärarnamn, ett annons-ID, ett push-ID och så vidare. I Experience Platform Launch kan du referera det här värdet med hjälp av dess variabelnamn. Den här samlingen dataelement blir ett lexikon med definierade data som du kan använda för att skapa regler (händelser, villkor och åtgärder), och det här lexikonet delas mellan Experience Platform Launch där det kan användas med valfritt tillägg i din egenskap.
+Ett dataelement är en variabel där värdet kan mappas till ett besökar-ID, ett bärarnamn, ett annons-ID, ett push-ID och så vidare. I Experience Platform Launch kan du referera till det här värdet med hjälp av dess variabelnamn. Den här samlingen dataelement blir en ordlista med definierade data som du kan använda för att skapa regler (händelser, villkor och åtgärder), och den här ordlistan delas över Experience Platform Launch där den kan användas med valfritt tillägg i din egenskap.
 
 Med tillägget Platser kan du referera till värden från följande mål:
 
