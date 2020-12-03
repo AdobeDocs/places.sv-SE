@@ -1,15 +1,18 @@
 ---
-title: Platstjänst
+title: Places Service
 description: 'Platstjänsten är ett viktigt sammanhang när det gäller att förstå mobilanvändarnas engagemang. Genom att använda det här sammanhanget kan utvecklare av mobilappar förbättra appdesignen och göra den till en mer personaliserad och engagerande upplevelse. '
 translation-type: tm+mt
 source-git-commit: 05b4d29aa7925f7a43e70c644e3cb88045cbe446
+workflow-type: tm+mt
+source-wordcount: '708'
+ht-degree: 8%
 
 ---
 
 
-# Platstjänst {#home}
+# Places Service {#home}
 
-![&quot;Platstjänst&quot;](/help/assets/places-service-header.png)
+![&quot;Places Service&quot;](/help/assets/places-service-header.png)
 
 Plats är en viktig kontext för att förstå och engagera mobilanvändare. Genom att använda det här sammanhanget kan utvecklare av mobilappar förbättra appdesignen och göra den till en mer personaliserad och engagerande upplevelse.
 
@@ -20,7 +23,7 @@ Med Platstjänst kan du uppnå följande:
 * Skapa och hantera en databas med POI som kan utnyttjas med andra Adobe Experience Cloud-lösningar.
 * Koppla anpassade metadata till POI:n för att göra dem mer omfattande och meningsfulla genom att ange ytterligare attribut.
 * Visualisera POI på en karta för att enkelt förstå det spatiala sammanhanget och lägga till/redigera metadataattribut.
-* Konfigurera SDK i Adobe Experience Platform Launch för att definiera era platsutlösta regler och metadatabaserade villkor.
+* Konfigurera SDK i Adobe Experience Platform Launch för att definiera dina platsutlösta regler och metadatabaserade villkor.
 * Minska koden som du behöver skriva för att övervaka en enhets plats och använd tillägget Platser för att automatiskt aktivera platsspecifika regler.
 
 Detta gör att du kan vidta åtgärder från platssignaler i realtid, när och var det gäller. Rätt sammanhang ger en mer berikande mobilupplevelse.
@@ -74,7 +77,7 @@ Här är några vanliga termer som används i den här dokumentationen:
 
 * Ett **bibliotek** är en samling intressepunkter, som grupperas för att enkelt koppla regler till en uppsättning i stället för till en intressepunkt.
 
-* Ett **tillägg** är det Experience Platform Launch-tillägg som krävs för att integrera Platser SDK i dina mobilappar.
+* Ett **tillägg** är det Experience Platform Launch-tillägg som krävs för att integrera platsens SDK i dina mobilappar.
 
    Det tillägg som används tillsammans med andra SDK:er för mobiler för att lägga till platskontext i era upplevelser.
 
@@ -86,6 +89,6 @@ Här är några vanliga termer som används i den här dokumentationen:
 
    Mer information finns i [Söka efter ditt orgID](https://forums.adobe.com/thread/2339895).
 
-* Med **Experience Cloud ID** -tjänsten får ni ett universellt, beständigt ID som identifierar era besökare i alla lösningar i Experience Cloud.
+* Tjänsten **Experience Cloud ID** ger ett universellt, beständigt ID som identifierar besökarna i alla lösningar i Experience Cloud.
 
    Mer information finns i [Översikt](https://docs.adobe.com/content/help/en/id-service/using/intro/overview.html).
