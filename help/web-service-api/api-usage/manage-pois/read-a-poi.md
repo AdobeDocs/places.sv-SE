@@ -3,13 +3,16 @@ title: Läsa ett POI
 description: Läs en POI med hjälp av Places REST API:er.
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '45'
+ht-degree: 0%
 
 ---
 
 
 # Läsa ett POI {#read-a-poi}
 
-En GET-metod som returnerar informationen för en POI.
+En GET-metod som returnerar information för en POI.
 
 ## Begäran
 
