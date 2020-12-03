@@ -3,6 +3,9 @@ title: Använda metadata med POI
 description: I det här avsnittet finns information och strategier om hur du använder metadata med POI.
 translation-type: tm+mt
 source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+workflow-type: tm+mt
+source-wordcount: '293'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +18,7 @@ POI-metadata kan användas på flera olika sätt. Ur POI-hanteringsperspektiv ka
 
 ## Placerar metadata för tjänsten i Launch
 
-I Experience Platform Launch kan du skapa dataelement för varje metadatafält för Platstjänst som är viktigt för spårnings- och meddelandesyften.
+I Experience Platform Launch kan du skapa dataelement för varje metadatafält för Platstjänster som är viktigt för spårning och meddelanden.
 
 ![dataelement för gymmet-anläggningen](/help/assets/gymfacility.png)
 
