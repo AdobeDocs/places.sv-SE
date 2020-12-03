@@ -1,8 +1,11 @@
 ---
 title: 'Använd Platstjänst med Adobe Campaign Standard '
-description: 'Det här avsnittet är en översikt över hur du använder Platstjänst med Campaign Standard. '
+description: 'I det här avsnittet finns en översikt över hur du använder Platstjänst med Campaign Standard. '
 translation-type: tm+mt
 source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+workflow-type: tm+mt
+source-wordcount: '53'
+ht-degree: 0%
 
 ---
 
