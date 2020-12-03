@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 3f986697179eb9c0af1d9b54daf67793a99b8491
 workflow-type: tm+mt
 source-wordcount: '1503'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 2%
 
    * Tillägg för Platser och Platsövervakare har lagts till för [React Native-program](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#react-native)
    * Tillägg för Platser och Platsövervakare har lagts till för [Cordova-program](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova)
-   * Mer information finns i: [Använda platstillägg](https://docs.adobe.com/content/help/en/places/using/places-ext-aep-sdks/places-extension/places-extension.html)
+   * Mer information finns i: [Använda platstillägg](https://docs.adobe.com/content/help/sv-SE/places/using/places-ext-aep-sdks/places-extension/places-extension.html)
 
 
 ## 12 maj 2020
@@ -93,7 +93,7 @@ ht-degree: 2%
 
 ## 25 november 2019
 
-* **PlacesMonitor 2.1.1**
+* **PlacesMonitor 2.2.1**
 
    * **iOS**
 
@@ -284,7 +284,7 @@ Platsövervakaren hanterar plats-API:erna på operativsystemnivå och kommunicer
 
 ### Betaversion
 
-Det här är den första versionen av Places Service, en uppsättning verktyg som gör att kunderna kan berika sina användarupplevelser med platsdata i verkligheten. I den första versionen är vårt främsta användningsexempel att göra det möjligt för mobilappar att hämta anpassade platsdata och agera utifrån dessa data via Adobe Experience Platform Launch.
+Det här är den första versionen av Places Service, en uppsättning verktyg som gör att kunderna kan berika sina användarupplevelser med platsdata i verkligheten. I den första versionen är vår främsta användningsmodell att göra det möjligt för mobilappar att hämta anpassade platsdata och agera utifrån dessa data via Adobe Experience Platform Launch.
 
 ### Viktiga funktioner
 
@@ -325,4 +325,4 @@ Mer information om Places-API:er finns i [Webbtjänste-API](/help/web-service-ap
 
 #### Analytics-integrering
 
-Analytics-tillägget uppdateras för att automatiskt lägga till platssammanhangsdata från din Places-tjänstdatabas till alla utgående Analytics-samtal när en användare befinner sig i en POI (passiva samtal). Uppdateringen tillåter även att regler skapas för att starta Analytics-spåranrop direkt vid POI-inträde eller -utträde (aktiva anrop).
+Tillägget Analytics uppdateras för att automatiskt lägga till platskontextdata från platstjänstdatabasen till alla utgående Analytics-anrop när en användare befinner sig i en POI (passiva anrop). Uppdateringen tillåter även att regler skapas för att starta Analytics-spårningsanrop direkt vid POI-inträde eller -utträde (aktiva anrop).
