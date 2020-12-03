@@ -3,6 +3,9 @@ title: Skapa en POI
 description: Skapa en POI med hjälp av användargränssnittet för platstjänster.
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '275'
+ht-degree: 1%
 
 ---
 
@@ -11,7 +14,7 @@ source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 
 En intressepunkt (POI) är en plats eller en punkt på en karta som är viktig för din organisation eller ditt företag. Det kan vara platser som kaféer, restauranger, butiker, arenor och så vidare. Företagen kan definiera intressepunkter för att hjälpa till att personalisera en användares mobilupplevelse när de har gått in i en geoavgränsad region för en viss intressepunkt. Förutom personaliserade upplevelser kan företag också skapa intressepunkter som hjälper dem att analysera och bättre förstå platstrafikmönster. En stor detaljhandelskedja kan välja att skapa POI för alla sina butiksplatser för att få analyser på användarens mobilappar OCH besöka en butiksplats.
 
-1. Logga in på användargränssnittet för Platstjänst med ditt Adobe ID.
+1. Logga in på användargränssnittet för Platstjänst med din Adobe ID.
 1. Klicka på uppe till höger **[!UICONTROL New]**.
 1. Ange ett namn för din POI.
 1. Ange eller markera en radie.
@@ -35,11 +38,12 @@ En intressepunkt (POI) är en plats eller en punkt på en karta som är viktig f
    1. Skriv namnet på landet.
    1. Välj eller ange en latitud eller longitud (krävs).
    1. Klicka på **[!UICONTROL Drop Pin on Map]**.
+
    Om du inte känner till exakt latitud och longitud kan det vara bra att släppa ett stift.
 
 1. Expandera **[!UICONTROL Metadata]** avsnittet och klicka **[!UICONTROL Add Metadata]**.
 
-   Med hjälp av metadata kan ni ytterligare definiera en plats och de kan användas i andra arbetsflöden från Adobe för att ytterligare förfina er målgrupp.
+   Metadata kan hjälpa er att ytterligare definiera en plats och kan användas i andra arbetsflöden för Adobe-lösningar för att ytterligare förfina er målgrupp.
 
    1. Skriv nyckelnamnet.
    1. Skriv nyckelvärdet.
