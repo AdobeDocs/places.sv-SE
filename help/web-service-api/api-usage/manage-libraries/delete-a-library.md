@@ -3,13 +3,16 @@ title: Ta bort ett bibliotek
 description: Ta bort ett bibliotek med hjälp av Plats REST API:er.
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '47'
+ht-degree: 0%
 
 ---
 
 
 # Ta bort ett bibliotek {#delete-a-library}
 
-En DELETE-metod som gör att du kan ta bort ett bibliotek.
+En DELETE-metod som du kan använda för att ta bort ett bibliotek.
 
 ## Begäran
 
