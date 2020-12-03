@@ -3,6 +3,9 @@ title: Använd platstjänsten utan övervakning av aktiva regioner
 description: Det här avsnittet innehåller information om hur du använder platstjänsten utan övervakning av aktiva områden.
 translation-type: tm+mt
 source-git-commit: 5846577f10eb1d570465ad7f888feba6dd958ec9
+workflow-type: tm+mt
+source-wordcount: '745'
+ht-degree: 0%
 
 ---
 
@@ -408,6 +411,6 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 }
 ```
 
-Förutom att utlösa Platstjänster-posthändelser i SDK, på grund av utlösande starthändelser, kan alla data som definierar dina POI användas av resten av SDK via `data elements` Experience Platform Launch. Med Experience Platform Launch `rules`kan ni dynamiskt bifoga platstjänstdata till inkommande händelser som behandlas av SDK. Du kan till exempel bifoga metadata för en POI där användaren befinner sig och skicka data till Analytics som kontextdata.
+Förutom att utlösa Platstjänster-posthändelser i SDK, på grund av utlösande starthändelser, kan alla data som definierar dina POI användas av resten av SDK via `data elements` Experience Platform Launch. Med Experience Platform Launch `rules`kan du dynamiskt bifoga platstjänstdata till inkommande händelser som bearbetas av SDK. Du kan till exempel bifoga metadata för en POI där användaren befinner sig och skicka data till Analytics som kontextdata.
 
 Mer information finns i [Använda Platstjänst med andra Adobe-lösningar](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md).
