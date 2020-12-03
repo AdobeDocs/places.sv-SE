@@ -1,13 +1,16 @@
 ---
 title: Adobe Target
-description: I det här avsnittet finns information om hur du använder Platstjänst med Adobe Target.
+description: I det här avsnittet finns information om hur du använder tjänsten Platser med Adobe Target.
 translation-type: tm+mt
 source-git-commit: d33e4e2d798c7048bdd275cdf6c0aabf3434f789
+workflow-type: tm+mt
+source-wordcount: '477'
+ht-degree: 7%
 
 ---
 
 
-# Använd platstjänst med Adobe Target {#places-target}
+# Använd Platstjänst med Adobe Target {#places-target}
 
 Det här dokumentet förutsätter att du har implementerat tillägget Platser i ditt program. Om du behöver hjälp med att implementera tillägget Platser, se [Platstillägg](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
@@ -28,7 +31,7 @@ När platstillägget har skickats in händelser för poster och avslut kan du an
 
    I det här exemplet får regeln namnet **[!UICONTROL Attach Places Service Data to Target Content Requested]**.
 
-1. Klicka på under **[!UICONTROL Events]** avsnittet **[!UICONTROL Add]**.
+1. Under the **[!UICONTROL Events]** section, click **[!UICONTROL Add]**.
 1. I listrutan **[!UICONTROL Extension]** väljer du **[!UICONTROL Adobe Target]**.
 1. I listrutan **[!UICONTROL Event Type]** väljer du **[!UICONTROL Content Requested]**.
 1. Klicka på **[!UICONTROL Keep Changes]**.
@@ -43,7 +46,7 @@ När platstillägget har skickats in händelser för poster och avslut kan du an
 
 I följande exempel skapas ett villkor som gör att regeln bara aktiveras för användare som har startat programmet fem eller fler gånger.
 
-1. Klicka på under **[!UICONTROL Conditions]** avsnittet **[!UICONTROL Add]**.
+1. Under the **[!UICONTROL Conditions]** section, click **[!UICONTROL Add]**.
 1. I listrutan **[!UICONTROL Extension]** väljer du **[!UICONTROL Mobile Core]**.
 1. I listrutan **[!UICONTROL Condition Type]** väljer du **[!UICONTROL Launches]**.
 1. I den högra rutan ändrar du listrutans- och nummerkontrollerna så att villkoret läses **[!UICONTROL User has launched the app greater than or equal to 5 times]**.
@@ -53,7 +56,7 @@ I följande exempel skapas ett villkor som gör att regeln bara aktiveras för a
 
 ## 4. Definiera åtgärden
 
-1. Klicka på under **[!UICONTROL Actions]** avsnittet **[!UICONTROL Add]**.
+1. Under the **[!UICONTROL Actions]** section, click **[!UICONTROL Add]**.
 1. I listrutan **[!UICONTROL Extension]** väljer du **[!UICONTROL Mobile Core]**.
 1. I listrutan **[!UICONTROL Action Type]** väljer du **[!UICONTROL Attach Data]**.
 1. Skriv de data som ska läggas till i den här händelsen i **[!UICONTROL JSON Payload]** fältet till höger.
@@ -67,7 +70,7 @@ I följande exempel läggs `poiCity` och `poiName` värden till i **[!UICONTROL 
 >
 >Den här JSON-nyttolasten använder en specialnotation för `request` objektet. I den ursprungliga händelsen `request` är en array med anonyma objekt. När du kopplar data till alla objekt i en array med hjälp av Bifoga data, tillämpas nyttolasten på alla objekt i arrayen om en nyckel som är känd som `[*]` innehåller en array.
 >
->Kommentaren för `request[*]` kan läsas upp högt som _för varje objekt i`request`arrayen_.
+>Kommentaren för `request[*]` kan läsas upp högt som _för varje objekt i `request` arrayen_.
 
 ![definiera åtgärden](/help/assets/ad-setAction-target.png)
 
