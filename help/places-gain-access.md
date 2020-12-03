@@ -49,11 +49,11 @@ Om det här är första gången du lägger till en användare utför du följand
 
 1. Under **[!UICONTROL Platform]**, klicka **[!UICONTROL Administration]**.
 
-   Om du inte ser **Administration** i listan är du ingen administratör. Du måste kontakta din organisationsadministratör för att slutföra den här proceduren.
+   Om du inte ser **Administration** i listan är du ingen administratör. Du måste kontakta din företagsadministratör för att slutföra den här proceduren.
 
-1. På Experience Cloud-administrationssidan på **[!UICONTROL Admin Console]** kortet klickar du på **[!UICONTROL Take me there]**.
+1. Klicka på **[!UICONTROL Admin Console]** kortet på sidan Administration i Experience Cloud **[!UICONTROL Take me there]**.
 
-1. Om du har åtkomst till flera organisationer i Admin Console ska du kontrollera att rätt organisation har valts längst upp till höger på sidan.
+1. Om du har åtkomst till flera organisationer i Admin Console ska du kontrollera att rätt organisation är markerad i sidans övre högra hörn.
 
    Det här är den organisation som du ska lägga till dina användare i. Om du inte har valt rätt organisation klickar du på organisationen och väljer organisation i listrutan.
 
