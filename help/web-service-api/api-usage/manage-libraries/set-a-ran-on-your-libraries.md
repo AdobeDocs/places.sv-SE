@@ -3,6 +3,9 @@ title: Ange en rankning i dina bibliotek
 description: Ange en rankning för dina bibliotek med hjälp av Places REST API.
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '56'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ En PUT-metod som gör att du kan ange en rangordning för alla dina bibliotek.
 -H 'Accept-Language: en-US'
 ```
 
-## PUT-data
+## PUT data
 
 ```
 "library_rank_order": ["dfcc5270-1d6d-4bc9-9cd9-85ecd5ebc12b","ea45781f-26af-44b1-b4f8-43baf5f0fe28"]  
