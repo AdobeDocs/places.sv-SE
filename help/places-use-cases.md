@@ -3,6 +3,9 @@ title: Användningsfall
 description: Det här avsnittet innehåller information om användningsexempel för Platser.
 translation-type: tm+mt
 source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+workflow-type: tm+mt
+source-wordcount: '48'
+ht-degree: 0%
 
 ---
 
