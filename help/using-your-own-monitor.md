@@ -3,6 +3,9 @@ title: Använda din egen skärm
 description: Du kan också använda dina övervakningstjänster och integrera med Platstjänst genom att använda API:erna för Platstjänsttillägg.
 translation-type: tm+mt
 source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+workflow-type: tm+mt
+source-wordcount: '264'
+ht-degree: 1%
 
 ---
 
