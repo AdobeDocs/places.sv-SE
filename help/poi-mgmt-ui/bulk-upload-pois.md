@@ -103,7 +103,7 @@ Värdena för följande kolumner används i användargränssnittet för platstj�
 
    * `api_key`
 
-      Det här är den REST-API-nyckel du får från Adobe I/O Platser Integration. Mer information om hur du hämtar API-nyckeln finns i *Krav för användaråtkomst* i [Integreringsöversikt och villkor](/help/web-service-api/adobe-i-o-integration.md).
+      Det här är den REST-API-nyckel du fått från Adobe I/O Plataces-integreringen. Mer information om hur du hämtar API-nyckeln finns i *Krav för användaråtkomst* i [Integreringsöversikt och villkor](/help/web-service-api/adobe-i-o-integration.md).
    b. Spara ändringarna.
 
 1. Navigera till `…/places-scripts/import/` katalogen i ett terminalfönster.
