@@ -21,7 +21,7 @@ Med tillägget Platser kan du agera utifrån platsen för dina användare. Det h
 1. Markera de platsbibliotek som du vill använda i den här egenskapen. Det här är de bibliotek som kommer att vara tillgängliga i din app.
 1. Klicka på **[!UICONTROL Save]**.
 
-   När du klickar **[!UICONTROL Save]** söker Experience Platform SDK efter POI i de bibliotek du har valt. POI-data inkluderas inte i hämtningen av biblioteket när du skapar appen, men en platsbaserad delmängd av POI hämtas till slutanvändarens enhet under körningen och baseras på användarens GPS-koordinater.
+   När du klickar **[!UICONTROL Save]** söker Experience Platform SDK efter POI i de bibliotek som du har valt. POI-data inkluderas inte i hämtningen av biblioteket när du skapar appen, men en platsbaserad delmängd av POI hämtas till slutanvändarens enhet under körningen och baseras på användarens GPS-koordinater.
 
 1. Slutför publiceringsprocessen för att uppdatera SDK-konfigurationen.
 
