@@ -60,7 +60,7 @@ Med regler i Experience Platform Launch kan du skapa komplexa arbetsflöden med 
 
    I det här avsnittet kan du filtrera eller placera begränsningar för när den här regeln ska utlösas.
 
-1. Klicka på under **[!UICONTROL Actions]** avsnittet **[!UICONTROL +]**.
+1. Under the **[!UICONTROL Actions]** section, click **[!UICONTROL +]**.
 1. I den **[!UICONTROL Extension]** nedrullningsbara listan markerar du **[!UICONTROL Mobile Core]** och väljer **[!UICONTROL Action Type]** i den **[!UICONTROL Send Postback]** nedrullningsbara listan.
 1. I **[!UICONTROL URL]** måste du skapa slutpunkten för Campaign Standardens platser.
 
