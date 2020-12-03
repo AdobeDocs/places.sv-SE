@@ -3,6 +3,9 @@ title: Översikt
 description: Förstå och använda API:er för frågor.
 translation-type: tm+mt
 source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+workflow-type: tm+mt
+source-wordcount: '217'
+ht-degree: 0%
 
 ---
 
@@ -10,7 +13,7 @@ source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 # Fråga API:er
 
-En GET-metod som gör att du kan fråga de POI som är närmast anroparen.
+En GET-metod som gör att du kan fråga de POI:er som är närmast anroparen.
 
 ## Begäran
 
@@ -106,7 +109,7 @@ Här följer ett exempel på det returnerade JSON-formatet:
 }
 ```
 
-POI under `places.pois` sorteras efter avståndet från anroparen till kanten av POI:n. POI under `places.userWithin` innehåller anroparen och dessa POI sorteras efter rangordning och sedan genom att radien ökas.
+POI:er under `places.pois` sorteras efter avståndet från anroparen till kanten på POI:n. POI under `places.userWithin` innehåller anroparen och dessa POI sorteras efter rangordning och sedan genom att radien ökas.
 
 ## Exempel på samtal
 
