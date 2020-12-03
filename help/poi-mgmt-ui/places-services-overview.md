@@ -3,6 +3,9 @@ title: Platstjänst - översikt
 description: 'I det här avsnittet finns information om hur du skapar och använder intressepunkter. '
 translation-type: tm+mt
 source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
+workflow-type: tm+mt
+source-wordcount: '53'
+ht-degree: 0%
 
 ---
 
