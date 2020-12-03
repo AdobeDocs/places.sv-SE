@@ -3,6 +3,9 @@ title: Ta bort flera POI
 description: Använd batch-API:erna för att ta bort flera POI:er.
 translation-type: tm+mt
 source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+workflow-type: tm+mt
+source-wordcount: '56'
+ht-degree: 0%
 
 ---
 
@@ -10,7 +13,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 # Ta bort flera POI {#delete-multiple-pois}
 
-En POST-metod som gör att du kan ta bort flera POI.
+En metod som gör att du kan ta bort flera POI-POSTER.
 
 ## Begäran
 
