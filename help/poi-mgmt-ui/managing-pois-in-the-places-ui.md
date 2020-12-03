@@ -3,6 +3,9 @@ title: Hantera befintliga POI
 description: I användargränssnittet för platstjänster kan du redigera, ta bort eller filtrera befintliga POI.
 translation-type: tm+mt
 source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
+workflow-type: tm+mt
+source-wordcount: '398'
+ht-degree: 6%
 
 ---
 
@@ -13,8 +16,8 @@ POI och bibliotek skapas och hanteras i platsdatabasen med hjälp av användargr
 
 ## Redigera en POI
 
-1. Logga in på platser med ditt Adobe-ID.
-1. Logga in på Platstjänst med ditt Adobe ID.
+1. Logga in på platser med din Adobe ID.
+1. Logga in på Platstjänst med din Adobe ID.
 1. Klicka på ikonen längst upp till höger som ser ut som en punktlista.
 1. Leta reda på den POI som du vill redigera.
 1. Klicka på **[!UICONTROL ...]** och välj **[!UICONTROL View Details]**.
@@ -22,8 +25,8 @@ POI och bibliotek skapas och hanteras i platsdatabasen med hjälp av användargr
 
 ## Ta bort en POI
 
-1. Logga in på platser med ditt Adobe-ID.
-1. Logga in på Platstjänst med ditt Adobe ID.
+1. Logga in på platser med din Adobe ID.
+1. Logga in på Platstjänst med din Adobe ID.
 1. Klicka på ikonen längst upp till höger som ser ut som en punktlista.
 1. Leta reda på den POI som du vill ta bort.
 1. Klicka på **[!UICONTROL ...]** och välj **[!UICONTROL Delete]**.
@@ -32,7 +35,7 @@ POI och bibliotek skapas och hanteras i platsdatabasen med hjälp av användargr
 
 ![filtrera en POI](/help/assets/filter_poi.png)
 
-1. Logga in på användargränssnittet för Platstjänst med ditt Adobe ID.
+1. Logga in på användargränssnittet för Platstjänst med din Adobe ID.
 1. Klicka på filterikonen längst upp till höger.
 1. Du kan filtrera POI på något av följande sätt:
 
