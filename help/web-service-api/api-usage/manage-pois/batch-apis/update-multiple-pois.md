@@ -3,13 +3,16 @@ title: Uppdatera flera POI
 description: Använd batch-API:erna för att uppdatera flera POI:er.
 translation-type: tm+mt
 source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+workflow-type: tm+mt
+source-wordcount: '56'
+ht-degree: 0%
 
 ---
 
 
 # Uppdatera flera POI {#update-multiple-pois}
 
-En POST-metod som gör att du kan uppdatera flera POI.
+En metod som gör att du kan uppdatera flera POI-POSTER.
 
 ## Begäran
 
