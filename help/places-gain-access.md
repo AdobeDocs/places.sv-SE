@@ -2,10 +2,10 @@
 title: 'Få åtkomst till platstjänsten '
 description: I det här avsnittet finns information om hur du lägger till en användare i Platstjänst och Experience Platform Launch så att användaren kan komma åt Platstjänst.
 translation-type: tm+mt
-source-git-commit: 26538602a73e806a4822705c7a3aa44d76351030
+source-git-commit: ecf50d67d4c08e79d9c3be64480f27d435fd7fcb
 workflow-type: tm+mt
-source-wordcount: '1079'
-ht-degree: 8%
+source-wordcount: '1074'
+ht-degree: 5%
 
 ---
 
@@ -24,7 +24,7 @@ Om du inte ser Platstjänst på någon av dessa menyer kontaktar du en administr
 
 ## Lägga till en användare i Platstjänst och Experience Platform Launch
 
-För att användare ska kunna få tillgång till användargränssnittet [i](https://launch.adobe.com)Experience Platform Launch måste de läggas till som användare i bastjänsten för platser i Admin Console. För att användare ska kunna få tillgång till Experience Platform Launch, konfigurera mobila egenskaper och använda platser med Adobe Experience Platform SDK måste de läggas till Experience Platform Launch i Admin Console och få följande behörigheter för Experience Platform Launch:
+För att användare ska kunna komma åt [Experience Platform Launch-gränssnittet](https://launch.adobe.com) måste de läggas till i Platsens bastjänst i Admin Console som användare. För att användare ska kunna få tillgång till Experience Platform Launch, konfigurera mobila egenskaper och använda platser med Adobe Experience Platform SDK måste de läggas till Experience Platform Launch i Admin Console och få följande behörigheter för Experience Platform Launch:
 
 * Alla egenskapsrättigheter:
    * Utveckla
@@ -47,13 +47,13 @@ Om det här är första gången du lägger till en användare utför du följand
 
    ![skalväxlare](/help/assets/places_shell_switcher1.png)
 
-1. Under **[!UICONTROL Platform]**, klicka **[!UICONTROL Administration]**.
+1. Klicka på **[!UICONTROL Administration]** under **[!UICONTROL Platform]**.
 
-   Om du inte ser **Administration** i listan är du ingen administratör. Du måste kontakta din företagsadministratör för att slutföra den här proceduren.
+   Om du inte ser **[!UICONTROL Administration]** i listan är du ingen administratör. Du måste kontakta din organisationsadministratör för att slutföra den här proceduren.
 
-1. Klicka på **[!UICONTROL Admin Console]** kortet på sidan Administration i Experience Cloud **[!UICONTROL Take me there]**.
+1. På sidan Administration i Experience Cloud klickar du på **[!UICONTROL Admin Console]** på **[!UICONTROL Take me there]**-kortet.
 
-1. Om du har åtkomst till flera organisationer i Admin Console ska du kontrollera att rätt organisation är markerad i sidans övre högra hörn.
+1. Om du har åtkomst till flera organisationer i Admin Console ska du kontrollera att rätt organisation har valts längst upp till höger på sidan.
 
    Det här är den organisation som du ska lägga till dina användare i. Om du inte har valt rätt organisation klickar du på organisationen och väljer organisation i listrutan.
 
@@ -72,12 +72,12 @@ Om det här är första gången du lägger till en användare utför du följand
 
 1. Konfigurera en Experience Platform Launch-profil, som tillåter användare som har lagts till i profilen att använda Experience Platform Launch och dess mobila egenskaper med Experience Platform SDK.
 
-   a. Klicka på i menyraden **[!UICONTROL Product]**.
+   a. Klicka på **[!UICONTROL Product]** på menyraden.
 
-   b. Klicka på i den vänstra rutan i produktlistan **[!UICONTROL Adobe Experience Platform Launch]**.
+   b. Klicka på **[!UICONTROL Adobe Experience Platform Launch]** i den vänstra rutan i produktlistan.
 
    * Profilen/profilerna för Experience Platform Launch visas till höger.
-   * Experience Platform Launch har en standardprofil som heter *Launch - (organisationsnamn)* .
+   * Experience Platform Launch har en standardprofil med namnet *Launch - (organisationsnamn)*.
 
       Om du tidigare har lagt till användare i Experience Platform Launch kan du se flera profiler.
 
@@ -85,19 +85,19 @@ Om det här är första gången du lägger till en användare utför du följand
 
    a. Klicka på namnet på standardprofilen.
 
-   b. Klicka på **[!UICONTROL Permissions]** fliken.
+   b. Klicka på fliken **[!UICONTROL Permissions]**.
 
    c. Klicka på **[!UICONTROL Edit]** bredvid **[!UICONTROL Property Rights]**.
 
-   d. Klicka på i den vänstra rutan **[!UICONTROL + Add all]**.
+   d. Klicka på **[!UICONTROL + Add all]** i den vänstra rutan.
 
    I det här steget flyttas alla tillgängliga behörigheter till den inkluderade behörighetslistan.
 
-   e. Klicka **[!UICONTROL Company Rights]**.
+   e. Klicka på **[!UICONTROL Company Rights]**.
 
-   f. Klicka på i den vänstra rutan **[!UICONTROL + Manage Properties]**.
+   f. Klicka på **[!UICONTROL + Manage Properties]** i den vänstra rutan.
 
-   g. Klicka **[!UICONTROL Save]**.
+   g. Klicka på **[!UICONTROL Save]**.
 
 >[!IMPORTANT]
 >
@@ -115,15 +115,15 @@ Så här lägger du till en användare i platstjänsten och Experience Platform 
 
 1. Lägg till en användare i profilen Experience Platform Launch.
 
-   a. Klicka på i menyraden **[!UICONTROL Overview]**.
+   a. Klicka på **[!UICONTROL Overview]** på menyraden.
 
-   b. On the **[!UICONTROL Adobe Experience Platform Launch]** card, verify the following:
+   b. Kontrollera följande på **[!UICONTROL Adobe Experience Platform Launch]**-kortet:
 
    * Två punkter visas längst ned på kortet.
    * Punkten till vänster är svart.
 
       Om punkten till höger är svart kan du bara lägga till utvecklare. Om du vill lägga till en användare klickar du på punkten till vänster.
-   c. Klicka **[!UICONTROL + Add Users]**.
+   c. Klicka på **[!UICONTROL + Add Users]**.
 
    d. Ange användarens Adobe ID.
 
@@ -132,9 +132,9 @@ Så här lägger du till en användare i platstjänsten och Experience Platform 
    * Om du lägger till en ny användare klickar du på **[!UICONTROL New user]** och anger användarens för- och efternamn.
    * Om du lägger till en befintlig användare klickar du på användarens namn som visas.
 
-   f. Välj den profil du redigerade tidigare i listrutan **[!UICONTROL Please select a profile for this product]** .
+   f. I listrutan **[!UICONTROL Please select a profile for this product]** väljer du den profil som du redigerade tidigare.
 
-   g. Klicka **[!UICONTROL Save]**.
+   g. Klicka på **[!UICONTROL Save]**.
 
 1. Lägg till en användare i **[!UICONTROL Places Core Services]**.
 
@@ -142,12 +142,12 @@ Så här lägger du till en användare i platstjänsten och Experience Platform 
    >
    >För närvarande har alla användare av platstjänster samma behörigheter, så du behöver inte redigera behörigheterna.
 
-   a. On the **[!UICONTROL Places Core Services]** card, verify the following:
+   a. Kontrollera följande på **[!UICONTROL Places Core Services]**-kortet:
 
    * Två punkter visas längst ned på kortet.
    * Punkten till vänster är svart.
 
-   b. Klicka **[!UICONTROL + Assign Users]**.
+   b. Klicka på **[!UICONTROL + Assign Users]**.
 
    c. Ange användarens Adobe ID.
 
@@ -156,9 +156,9 @@ Så här lägger du till en användare i platstjänsten och Experience Platform 
    * Om du lägger till en ny användare klickar du på **[!UICONTROL New user]** och anger användarens för- och efternamn.
    * Om du lägger till en befintlig användare klickar du på användarens namn som visas.
 
-   e. Välj profilen Platser i den **[!UICONTROL Please select a profile for this product]** nedrullningsbara listan.
+   e. Välj profilen Platser i listrutan **[!UICONTROL Please select a profile for this product]**.
 
-   f. Klicka **[!UICONTROL Save]**.
+   f. Klicka på **[!UICONTROL Save]**.
 
 ### Lägg till en utvecklare
 
@@ -169,7 +169,7 @@ Så här lägger du till en utvecklare:
 1. Kontrollera följande på **[!UICONTROL Places Core Services]**-kortet:
 
    * Två punkter visas längst ned på kortet.
-   * Klicka på punkten till höger så att den **[!UICONTROL Assign Developers]** visas längst ned på kortet.
+   * Klicka på punkten till höger så att **[!UICONTROL Assign Developers]** visas längst ned på kortet.
 
 1. Klicka på **[!UICONTROL + Assign Developers]**.
 
@@ -180,8 +180,8 @@ Så här lägger du till en utvecklare:
    * Om du lägger till en ny användare klickar du på **[!UICONTROL New user]** och anger användarens för- och efternamn.
    * Om du lägger till en befintlig användare klickar du på användarens namn som visas.
 
-1. Välj profilen Platstjänst i **[!UICONTROL Please select a profile for this product]** listrutan.
+1. I listrutan **[!UICONTROL Please select a profile for this product]** väljer du Platstjänstprofilen.
 
-1. Klicka på **Spara**.
+1. Klicka på **[!UICONTROL Save]**.
 
-Användarna får ett e-postmeddelande som talar om för dem att de har tillgång till Experience Platform Launch. They can can log in to the [Experience Platform Launch](https://launch.adobe.com) or the [Places Service](https://places.adobe.com) UIs for this organization. Om du slutför steg 4 i proceduren **Lägg till en utvecklare** kan användaren även logga in på [Adobe I/O-konsolen](https://console.adobe.io) för att skapa en Places-integrering och använda Places REST API.
+Användarna får ett e-postmeddelande som talar om för dem att de har tillgång till Experience Platform Launch. De kan logga in på användargränssnitten [Experience Platform Launch](https://launch.adobe.com) eller [Platstjänst](https://places.adobe.com) för den här organisationen. Om du slutför steg 4 i proceduren **[!UICONTROL Add a developer]** kan användaren även logga in på [Adobe I/O-konsolen](https://console.adobe.io) för att skapa en platsintegrering och använda Places REST API.
