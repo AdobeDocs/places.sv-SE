@@ -1,8 +1,8 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 product: adobe experience platform
 solution: Experience Platform, Data Collection
-type: Documentation
+type: Dokumentation
 solution-title: Läs mer och support
 solution-hub-url: https://helpx.adobe.com/se/support/experience-cloud.html
 getting-started-title: Komma igång
@@ -12,10 +12,10 @@ tutorials-url: https://experienceleague.adobe.com/#recommended/solutions/experie
 git-repo: https://git.corp.adobe.com/AdobeDocs/places.sv-SE
 index: true
 translation-type: tm+mt
-source-git-commit: 0f3c43c8eb62fc620a71096c92a673bcf8407f94
+source-git-commit: b9ee84f7a1fa262611a8bf2b5ae0dd9be9341ce5
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 73%
+source-wordcount: '170'
+ht-degree: 74%
 
 ---
 
@@ -43,5 +43,5 @@ I filen TOC.md
 
 | metadata | vad gör den |
 |--- |--- |
-| användar-handbok-titel | Används i artikelrubriken som en länk |
+| user-guide-title | Används i artikelrubriken som en länk |
 | användar-handbok-url | Öppnar den centrala helpx-sidan |
