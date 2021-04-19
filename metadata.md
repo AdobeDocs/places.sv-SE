@@ -1,8 +1,8 @@
 ---
 cloud: Experience Cloud
-product: adobe experience platform
+product: places service
 solution: Experience Platform, Data Collection
-type: Dokumentation
+type: Documentation
 solution-title: Läs mer och support
 solution-hub-url: https://helpx.adobe.com/se/support/experience-cloud.html
 getting-started-title: Komma igång
@@ -12,10 +12,10 @@ tutorials-url: https://experienceleague.adobe.com/#recommended/solutions/experie
 git-repo: https://git.corp.adobe.com/AdobeDocs/places.sv-SE
 index: true
 translation-type: tm+mt
-source-git-commit: b9ee84f7a1fa262611a8bf2b5ae0dd9be9341ce5
+source-git-commit: 12283d11829ee70a808bc11d2bc1241cb1770ac3
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 74%
+source-wordcount: '169'
+ht-degree: 73%
 
 ---
 
@@ -28,15 +28,15 @@ Filen metadata.md innehåller metadata på arkivnivå som skickas till användar
 
 | metadata | vad gör den |
 |--- |--- |
-| lösning-titel | Används i artikelrubriken som en länk |
-| lösning-hubb-url | Öppnar den centrala helpx-sidan |
-| lösning-ikon | Visar lösningsikonen bredvid lösningstiteln Inte implementerat ännu |
+| solution-title | Används i artikelrubriken som en länk |
+| solution-hub-url | Öppnar den centrala helpx-sidan |
+| solution-icon | Visar lösningsikonen bredvid lösningstiteln Inte implementerat ännu |
 | getting-started-title | Används sällan när Tutorials inte är lämpligt |
-| komma-igång-url | Länk till startsidan i helpx |
+| getting-started-url | Länk till startsidan i helpx |
 | självstudiekurser-titel | Används sällan när Tutorials inte är lämpligt |
-| självstudiekurser-url | Länk till videosjälvstudiekurser – antingen helpx-självstudiekurser eller KT-självstudiekurser |
-| mini-toc-nivåer | Anger antalet rubriknivåer som visas i det högra fältet. standard är två |
-| git-arkiv | https://github.com/AdobeDocs/places.en |
+| tutorials-url | Länk till videosjälvstudiekurser – antingen helpx-självstudiekurser eller KT-självstudiekurser |
+| mini-toc-levels | Anger antalet rubriknivåer som visas i det högra fältet. standard är två |
+| git-repo | https://github.com/AdobeDocs/places.en |
 | index | set index=no for soft launch |
 
 I filen TOC.md
@@ -44,4 +44,4 @@ I filen TOC.md
 | metadata | vad gör den |
 |--- |--- |
 | user-guide-title | Används i artikelrubriken som en länk |
-| användar-handbok-url | Öppnar den centrala helpx-sidan |
+| user-guide-url | Öppnar den centrala helpx-sidan |
