@@ -1,14 +1,13 @@
 ---
 title: Tillägget Platser
 description: Med tillägget Platser kan du agera utifrån platsen för dina användare.
-translation-type: tm+mt
-source-git-commit: a7dddb78e1e00a0bde01ea668334932759a9dae8
+exl-id: 09c02753-09b3-4e07-82b2-b6c72c4e0e42
+source-git-commit: 795808b38851d5afcedc03f58e9a1d6342830934
 workflow-type: tm+mt
 source-wordcount: '694'
 ht-degree: 3%
 
 ---
-
 
 # Tillägget Platser {#places-extension}
 
@@ -17,23 +16,23 @@ Med tillägget Platser kan du agera utifrån platsen för dina användare. Det h
 ## Installera tillägget Platser i Adobe Experience Platform Launch
 
 1. Klicka på fliken **[!UICONTROL Extensions]** i Experience Platform Launch.
-1. Leta upp **[!UICONTROL Catalog]** tillägget på **[!UICONTROL Places]** fliken och klicka på **[!UICONTROL Install]**.
+1. På **[!UICONTROL Catalog]** -fliken, leta upp **[!UICONTROL Places]** och klicka på **[!UICONTROL Install]**.
 1. Markera de platsbibliotek som du vill använda i den här egenskapen. Det här är de bibliotek som kommer att vara tillgängliga i din app.
 1. Klicka på **[!UICONTROL Save]**.
 
-   När du klickar **[!UICONTROL Save]** söker Experience Platform SDK efter POI i de bibliotek som du har valt. POI-data inkluderas inte i hämtningen av biblioteket när du skapar appen, men en platsbaserad delmängd av POI hämtas till slutanvändarens enhet under körningen och baseras på användarens GPS-koordinater.
+   När du klickar **[!UICONTROL Save]** söker Experience Platform SDK efter POI i de bibliotek du har valt. POI-data inkluderas inte i hämtningen av biblioteket när du skapar appen, men en platsbaserad delmängd av POI hämtas till slutanvändarens enhet under körningen och baseras på användarens GPS-koordinater.
 
 1. Slutför publiceringsprocessen för att uppdatera SDK-konfigurationen.
 
-   Mer information om publicering i Experience Platform Launch finns i [Publicera](https://docs.adobe.com/content/help/en/launch/using/reference/publish/overview.html).
+   Mer information om publicering i Experience Platform Launch finns i [Publicering](https://docs.adobe.com/content/help/en/launch/using/reference/publish/overview.html).
 
 ### Konfigurera tillägget Platser {#configure-places-extension}
 
-![](//help/assets/places-extension.png)
+![](/help/assets/places-extension.png)
 
 ## Lägg till tillägget Platser i din app {#add-places-to-app}
 
-Du kan lägga till tillägget Platser i dina Android- och iOS-appar. Stegen för att lägga till platser i iOS- eller Android-program visas nedan. Platstillägg är också tillgängliga för följande plattformar nedan. Om du vill lägga till platser i programmet när du utvecklar med någon av de här plattformarna läser du följande länkar:
+Du kan lägga till tillägget Platser i dina Android- och iOS-appar. Stegen för att lägga till platser i ditt iOS- eller Android-program visas nedan. Platstillägg är också tillgängliga för följande plattformar nedan. Om du vill lägga till platser i programmet när du utvecklar med någon av de här plattformarna läser du följande länkar:
 
 **[Cordova Places Plugin](https://github.com/adobe/cordova-acpplaces/blob/master/README.md)**
 
@@ -66,14 +65,14 @@ Så här lägger du till tillägget Platser i ditt program med Java:
 
 Så här lägger du till platstillägg i appen med Mål-C eller Skift:
 
-1. Lägg till platserna och [Mobile Core](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core) -biblioteken i ditt projekt. Du måste lägga till följande punkter `Podfile`:
+1. Lägg till platserna och [Mobile Core](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core) bibliotek till ditt projekt. Du måste lägga till följande punkter i `Podfile`:
 
    ```objective-c
    pod 'ACPPlaces', '~> 1.0'
    pod 'ACPCore', '~> 2.0'    # minimum Core version for Places is 2.0.3
    ```
 
-   Om du inte använder Cocopods kan du även inkludera Mobile Core och Places-biblioteken manuellt från vår [releasesida](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) på Github.
+   Om du inte använder Cocopods kan du även inkludera Mobile Core och Places-biblioteken manuellt från våra [släpper sida](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) på Github.
 
 1. Uppdatera dina Cocopods:
 
@@ -103,7 +102,7 @@ Du måste registrera Platser-tillägget med Mobile Core i Android och iOS.
 
 #### Android
 
-Registrera platstilläggen i appens `OnCreate` metod:
+I appen `OnCreate` metod för att registrera platstilläggen:
 
 ```java
 public class PlacesTestApp extends Application {
@@ -125,7 +124,7 @@ public class PlacesTestApp extends Application {
 
 #### iOS
 
-Registrera tillägget Platser med dina andra SDK-registreringsanrop i appens `application:didFinishLaunchingWithOptions:` metod:
+I appen `application:didFinishLaunchingWithOptions:` registrerar du platstillägget med dina andra SDK-registreringsanrop:
 
 **Mål-C**
 
@@ -151,11 +150,11 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 Platsdata kan snabbt bli inaktuella, särskilt om enheten inte tar emot bakgrundsuppdateringar.
 
-Styr tiden för live-visning för platsmedlemskapsdata på enheten genom att ange `places.membershipttl` konfigurationsinställningen. Värdet som skickas representerar antalet sekunder som platsläget förblir giltigt för enheten.
+Styr tiden för live-visning för platsmedlemsdata på enheten genom att ställa in `places.membershipttl` konfigurationsinställning. Värdet som skickas representerar antalet sekunder som platsläget förblir giltigt för enheten.
 
 #### Android
 
-Inuti återanropet för att `MobileCore.start()` uppdatera konfigurationen med nödvändiga ändringar innan anrop görs `lifecycleStart`:
+Inuti återanropet av `MobileCore.start()` uppdatera konfigurationen med nödvändiga ändringar innan anrop görs `lifecycleStart`:
 
 ```java
 public class PlacesTestApp extends Application {
@@ -189,7 +188,7 @@ public class PlacesTestApp extends Application {
 
 #### iOS
 
-På den första raden i callback-funktionen för `ACPCore`&#39;s `start:` method anropar du `updateConfiguration:`
+På den första raden i återanropet av `ACPCore`&#39;s `start:` metod, anrop `updateConfiguration:`
 
 **Mål-C**
 
@@ -231,7 +230,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 ## Konfigurationsnycklar
 
-Om du vill uppdatera SDK-konfigurationen programmatiskt vid körning använder du följande information för att ändra platsens tilläggskonfigurationsvärden. Mer information finns i [Configuration API Reference](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/configuration/configuration-api-reference).
+Om du vill uppdatera SDK-konfigurationen programmatiskt vid körning använder du följande information för att ändra platsens tilläggskonfigurationsvärden. Mer information finns i [API-referens för konfiguration](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/configuration/configuration-api-reference).
 
 | Nyckel | Obligatoriskt | Beskrivning |
 | :--- | :--- | :--- |
