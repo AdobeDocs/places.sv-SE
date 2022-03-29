@@ -1,21 +1,20 @@
 ---
 cloud: Experience Cloud
 product: places service
-solution: Experience Platform, Data Collection
+solution: Data Collection
 type: Documentation
-solution-title: Läs mer och support
-solution-hub-url: https://helpx.adobe.com/se/support/experience-cloud.html
-getting-started-title: Komma igång
+solution-title: Learn & Support
+solution-hub-url: https://helpx.adobe.com/support/experience-cloud.html
+getting-started-title: Getting Started
 getting-started-url: https://docs.adobe.com/content/help/en/places/using/getting-started.html
-tutorials-title: Självstudiekurser
+tutorials-title: Tutorials
 tutorials-url: https://experienceleague.adobe.com/#recommended/solutions/experience-platform
-git-repo: https://git.corp.adobe.com/AdobeDocs/places.sv-SE
+git-repo: https://github.com/AdobeDocs/places.sv-SE
 index: true
-translation-type: tm+mt
-source-git-commit: 12283d11829ee70a808bc11d2bc1241cb1770ac3
+source-git-commit: 832888ab4b45aa054069a69eaf4c8b9cc059d9a7
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 73%
+source-wordcount: '147'
+ht-degree: 78%
 
 ---
 
