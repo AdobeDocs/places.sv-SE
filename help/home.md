@@ -1,18 +1,15 @@
 ---
 title: Places Service
-description: 'Platstjänsten är ett viktigt sammanhang när det gäller att förstå mobilanvändarnas engagemang. Genom att använda det här sammanhanget kan utvecklare av mobilappar förbättra appdesignen och göra den till en mer personaliserad och engagerande upplevelse. '
-translation-type: tm+mt
-source-git-commit: 05b4d29aa7925f7a43e70c644e3cb88045cbe446
+description: Platstjänsten är ett viktigt sammanhang när det gäller att förstå mobilanvändarnas engagemang. Genom att använda det här sammanhanget kan utvecklare av mobilappar förbättra appdesignen och göra den till en mer personaliserad och engagerande upplevelse.
+exl-id: 7369176f-c072-437a-9ee3-b463c5ff1d12
+source-git-commit: c13da9ea3dc0cd574f2f9a496405867f7d36eae0
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 8%
+source-wordcount: '706'
+ht-degree: 7%
 
 ---
 
-
-# Places Service {#home}
-
-![&quot;Places Service&quot;](/help/assets/places-service-header.png)
+# Platstjänst {#home}
 
 Plats är en viktig kontext för att förstå och engagera mobilanvändare. Genom att använda det här sammanhanget kan utvecklare av mobilappar förbättra appdesignen och göra den till en mer personaliserad och engagerande upplevelse.
 
@@ -30,7 +27,7 @@ Detta gör att du kan vidta åtgärder från platssignaler i realtid, när och v
 
 Här är några sätt att använda platser:
 
-* Skicka ett meddelande i realtid när någon går in i en POI, *&quot;Hej...Välkommen till stadion.&quot;*
+* Skicka ett meddelande i realtid när någon anger ett POI, *&quot;Hallå..Välkommen till stadion.&quot;*
 * Analysera fottrafiken i era egna butiker jämfört med konkurrentbutikerna.
 * Segmentera en målgrupp baserat på offlinebeteende genom att använda målgruppsprofiler med positionskontext.
 * Rikta en användare med en butiksupplevelse när det är relevant.
@@ -63,21 +60,21 @@ Platstjänsten omfattar följande komponenter:
 
 Här är några vanliga termer som används i den här dokumentationen:
 
-* En **intressepunkt (POI)** är en geografisk plats som är av intresse för din organisation.
+* A **Intressepunkt (POI)** är en geografisk plats som är av intresse för din organisation.
 
    Du kan definiera POI med attribut som namn, radie, adress, kategori och metadatataggar.
 
-* En **geofence** är en typ av POI.
+* A **geofence** är en typ av POI.
 
    Denna POI-typ är en virtuell geografisk gräns som definieras av latitud- och longitudkoordinater.
 
-* En **fyr** är en typ av POI.
+* A **beacon** är en typ av POI.
 
    Den här POI-typen är en fysisk enhet som representerar en plats genom att skicka en blå tand med låg effekt. Stöd för beacons kommer i en kommande version.
 
 * Ett **bibliotek** är en samling intressepunkter, som grupperas för att enkelt koppla regler till en uppsättning i stället för till en intressepunkt.
 
-* Ett **tillägg** är det Experience Platform Launch-tillägg som krävs för att integrera platsens SDK i dina mobilappar.
+* An **extension** är tillägget Experience Platform Launch som krävs för att integrera platsens SDK i dina mobilappar.
 
    Det tillägg som används tillsammans med andra SDK:er för mobiler för att lägga till platskontext i era upplevelser.
 
@@ -87,8 +84,8 @@ Här är några vanliga termer som används i den här dokumentationen:
 
 * **orgID** är det ID som representerar din organisation i Adobe Experience Platform.
 
-   Mer information finns i [Söka efter ditt orgID](https://forums.adobe.com/thread/2339895).
+   Mer information finns i [Hitta ditt orgID](https://forums.adobe.com/thread/2339895).
 
-* Tjänsten **Experience Cloud ID** ger ett universellt, beständigt ID som identifierar besökarna i alla lösningar i Experience Cloud.
+* The **Experience Cloud ID** en universell, beständig ID som identifierar besökarna i alla lösningar i Experience Cloud.
 
    Mer information finns i [Översikt](https://docs.adobe.com/content/help/en/id-service/using/intro/overview.html).
