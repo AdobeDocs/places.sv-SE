@@ -1,187 +1,97 @@
 ---
-title: 'Få åtkomst till platstjänsten '
+title: Få åtkomst till platstjänsten
 description: I det här avsnittet finns information om hur du lägger till en användare i Platstjänst och Experience Platform Launch så att användaren kan komma åt Platstjänst.
-translation-type: tm+mt
-source-git-commit: ecf50d67d4c08e79d9c3be64480f27d435fd7fcb
+exl-id: f388945e-cf26-4694-9697-9fe564ae4b69
+source-git-commit: c9058e9b70c2ef97151078f43913963471730bd2
 workflow-type: tm+mt
-source-wordcount: '1074'
-ht-degree: 5%
+source-wordcount: '871'
+ht-degree: 0%
 
 ---
 
 # Få åtkomst till platstjänsten {#adding-user-launch-places}
 
-Du kommer åt Platstjänsten via snabbmenyn på [Adobe Experience Cloud home](https://experience.adobe.com).
-Om ditt användar-ID har åtkomst visas ikonen Platstjänst enligt nedan:
+Platstjänsten är nu tillgänglig i användargränssnittet för datainsamling. Du kommer åt Datainsamling via snabbmenyn på [Adobe Experience Cloud - startsida](https://experience.adobe.com).
 
 ![snabbmeny](/help/assets/quickaccess.png)
 
-Du kan även få åtkomst till platstjänsten från Adobe Experience Platform-menyn:
+Du kan även komma åt Datainsamling via Adobe Experience Platform-menyn:
 
 ![Experience Platform-menyn](/help/assets/solutionaccessmenu.png)
 
-Om du inte ser Platstjänst på någon av dessa menyer kontaktar du en administratör i din organisation för att lägga till ditt användar-ID i Platsens bastjänst i Admin Console.
+Om ditt användar-ID har åtkomst visas ikonen Platstjänst i den vänstra panelen under Datahantering i datainsamling enligt nedan:
 
-## Lägga till en användare i Platstjänst och Experience Platform Launch
+![Vänster panel för datainsamling](/help/assets/places_in_data_collection.png)
 
-För att användare ska kunna komma åt [Experience Platform Launch-gränssnittet](https://launch.adobe.com) måste de läggas till i Platsens bastjänst i Admin Console som användare. För att användare ska kunna få tillgång till Experience Platform Launch, konfigurera mobila egenskaper och använda platser med Adobe Experience Platform SDK måste de läggas till Experience Platform Launch i Admin Console och få följande behörigheter för Experience Platform Launch:
+Om du inte ser platstjänsten på den här platsen kontaktar du en administratör i din organisation för att lägga till ditt användar-ID i Adobe Experience Platform på Admin Console.
 
-* Alla egenskapsrättigheter:
-   * Utveckla
+## Lägga till en användare för åtkomst till Platstjänst och Upplev Adobe Experience Platform Data Collection
+
+Platser ingår nu i Adobe Experience Platform. Ge användarna åtkomst till [Platstjänst](https://experience.adobe.com/#/data-collection/places)måste de läggas till i Adobe Experience Platform i Admin Console som användare. Om du vill ge användare åtkomst till Experience Platform Data Collection med de behörigheter som krävs för att konfigurera mobila egenskaper och använda platser med Adobe Experience Platform SDK, måste de även läggas till i Adobe Experience Platform Data Collection i Admin Console och få följande behörigheter för Adobe Experience Platform Data Collection:
+
+* Alla behörigheter under Egenskaper Rights:
    * Godkänn
-   * Publicera
-   * Hantera tillägg
+   * Utveckla
+   * Redigera egenskap
    * Hantera miljöer
+   * Hantera tillägg
+   * Publicera
 * Hantera egenskapsbehörighet under Företagsrättigheter
 
-Om det här är första gången du lägger till en användare utför du följande steg för att lägga till användare i tjänsten Experience Platform Launch och Platser. Om du har lagt till användare tidigare kan flera profiler visas, så se till att du väljer rätt profil.
+Om det är första gången du lägger till en användare utför du följande steg för att lägga till användare i Adobe Experience Platform Data Collection och Adobe Experience Platform. Om du har lagt till användare tidigare kan flera profiler visas, så se till att du väljer rätt profil.
 
 >[!IMPORTANT]
 >
 >Endast organisationsadministratörer kan komma åt Admin Console och lägga till användare.
 
-### 1. Kontrollera att Platstjänst och Experience Platform Launch har etablerats
+### 1. Verifiera att Adobe Experience Platform och Adobe Experience Platform Data Collection har etablerats
 
-1. Logga in på din Experience Cloud-organisation.
-1. Klicka på Experience Cloud-skalväljaren längst upp till höger.
+1. Logga in på din Experience Cloud-organisation, [Adobe Experience Cloud - startsida](https://experience.adobe.com).
+1. Klicka på Experience Cloud-skalväljaren längst upp till höger för att visa en nedrullningsbar meny.
 
    ![skalväxlare](/help/assets/places_shell_switcher1.png)
 
-1. Klicka på **[!UICONTROL Administration]** under **[!UICONTROL Platform]**.
+1. Klicka på längst ned i listan **[!UICONTROL Admin Console]**. (En länk till **[!UICONTROL Admin Console]** finns även i snabbåtkomstavsnittet).
 
-   Om du inte ser **[!UICONTROL Administration]** i listan är du ingen administratör. Du måste kontakta din organisationsadministratör för att slutföra den här proceduren.
+   Om du inte ser **[!UICONTROL Admin Console]** i listan är du inte administratör. Du måste kontakta din organisationsadministratör för att slutföra den här proceduren.
 
-1. På sidan Administration i Experience Cloud klickar du på **[!UICONTROL Admin Console]** på **[!UICONTROL Take me there]**-kortet.
+1. Om du har åtkomst till flera organisationer i Admin Console ska du kontrollera att rätt organisation är markerad i sidans övre högra hörn.
 
-1. Om du har åtkomst till flera organisationer i Admin Console ska du kontrollera att rätt organisation har valts längst upp till höger på sidan.
-
-   Det här är den organisation som du ska lägga till dina användare i. Om du inte har valt rätt organisation klickar du på organisationen och väljer organisation i listrutan.
+   Det här är den organisation som du ska lägga till dina användare i. Om rätt organisation inte har valts klickar du på organisationen och väljer rätt organisation i listrutan.
 
    >[!IMPORTANT]
    >
-   >Om du inte har tillgång till en organisation betyder det att du inte har administratörsåtkomst till den organisationen.
+   >Om önskad organisation inte finns med i listrutan betyder det att du inte har administratörsåtkomst till den organisationen.
 
-1. Kontrollera att korten för **[!UICONTROL Adobe Experience Platform Launch]** och **[!UICONTROL Places Core Services]** visas.
+1. Klicka på fliken Produkter i Admin Console och kontrollera att korten **[!UICONTROL Adobe Experience Platform Data Collection]** och **[!UICONTROL Adobe Experience Platform]** visas.
 
    ![](/help/assets/places_provisioned1.png)
 
-   Om de visas har Platstjänst och Experience Platform Launch etablerats för din organisation. Om de inte visas måste de etableras för din organisation.
+   Dessa två produkter tillhandahålls automatiskt till alla organisationer, så de bör vara närvarande.
 
 
-### 2. Konfigurera profilen och lägg till behörigheter
+### 2. Lägg till användare i de här produkterna
 
-1. Konfigurera en Experience Platform Launch-profil, som tillåter användare som har lagts till i profilen att använda Experience Platform Launch och dess mobila egenskaper med Experience Platform SDK.
+#### Lägg till användare för att ge åtkomst till användargränssnittet för platstjänster
 
-   a. Klicka på **[!UICONTROL Product]** på menyraden.
+1. På fliken Produkter klickar du på **[!UICONTROL Adobe Experience Platform]** kort.
+2. En användare kan läggas till i vilken profil som helst i **[!UICONTROL Adobe Experience Platform]** Om du vill få åtkomst till Platser behöver du inte ange några specifika behörigheter.
+3. Välj en profil (om det finns fler än en) och klicka på den för att öppna den.
+4. Klicka på den blå **Lägg till användare** fyller du i användarens AdobeID och namn och klickar sedan på Spara för att slutföra tillägget.
 
-   b. Klicka på **[!UICONTROL Adobe Experience Platform Launch]** i den vänstra rutan i produktlistan.
+#### Lägg till användare i datainsamling
 
-   * Profilen/profilerna för Experience Platform Launch visas till höger.
-   * Experience Platform Launch har en standardprofil med namnet *Launch - (organisationsnamn)*.
+1. På fliken Produkter klickar du på **[!UICONTROL Adobe Experience Platform Data Collection]** kort.
+2. Som standard en profil med namnet **Standarddatainsamling, all åtkomst** kommer att ha skapats. Om du lägger till en användare i den här profilen ser du till att de har rätt behörighet att arbeta med platstjänsten och datainsamlingen. Om du väljer en annan profil måste du se till att de behörigheter som nämns ovan ingår.
+3. Välj en profil (om det finns fler än en) och klicka på den för att öppna den.
+4. Klicka på den blå **Lägg till användare** fyller du i användarens AdobeID och namn och klickar sedan på Spara för att slutföra tillägget.
 
-      Om du tidigare har lagt till användare i Experience Platform Launch kan du se flera profiler.
+#### Lägg till en användare som utvecklare för Platstjänst.
 
-1. Välj rätt profil:
+För användare som också behöver tillgång till platstjänstens REST API måste du lägga till dem som en utvecklare.
+1. På fliken Produkter klickar du på **[!UICONTROL Adobe Experience Platform]** kort.
+2. Om användaren redan har lagts till i **[!UICONTROL Adobe Experience Platform]** Välj samma profil som du använde tidigare och klicka på den via instruktionerna ovan.
+3. Klicka på **Utvecklare** tab
+4. Klicka på den blå **Lägg till utvecklare** fyller du i användarens AdobeID och namn och klickar sedan på Spara för att slutföra tillägget.
 
-   a. Klicka på namnet på standardprofilen.
-
-   b. Klicka på fliken **[!UICONTROL Permissions]**.
-
-   c. Klicka på **[!UICONTROL Edit]** bredvid **[!UICONTROL Property Rights]**.
-
-   d. Klicka på **[!UICONTROL + Add all]** i den vänstra rutan.
-
-   I det här steget flyttas alla tillgängliga behörigheter till den inkluderade behörighetslistan.
-
-   e. Klicka på **[!UICONTROL Company Rights]**.
-
-   f. Klicka på **[!UICONTROL + Manage Properties]** i den vänstra rutan.
-
-   g. Klicka på **[!UICONTROL Save]**.
-
->[!IMPORTANT]
->
->Det finns en standardprofil för Platstjänst, men du behöver inte lägga till några behörigheter.
-
-Du har lagt till behörigheter till profilen som du skapade.
-
-### 3. Lägg till en användare eller en utvecklare i platstjänsten och Experience Platform Launch-profilerna
-
-Du kan lägga till en användare och/eller en utvecklare i platstjänsten och Experience Platform Launch-profilerna.
-
-### Lägg till en användare
-
-Så här lägger du till en användare i platstjänsten och Experience Platform Launch-profilerna:
-
-1. Lägg till en användare i profilen Experience Platform Launch.
-
-   a. Klicka på **[!UICONTROL Overview]** på menyraden.
-
-   b. Kontrollera följande på **[!UICONTROL Adobe Experience Platform Launch]**-kortet:
-
-   * Två punkter visas längst ned på kortet.
-   * Punkten till vänster är svart.
-
-      Om punkten till höger är svart kan du bara lägga till utvecklare. Om du vill lägga till en användare klickar du på punkten till vänster.
-   c. Klicka på **[!UICONTROL + Add Users]**.
-
-   d. Ange användarens Adobe ID.
-
-   e. Gör något av följande:
-
-   * Om du lägger till en ny användare klickar du på **[!UICONTROL New user]** och anger användarens för- och efternamn.
-   * Om du lägger till en befintlig användare klickar du på användarens namn som visas.
-
-   f. I listrutan **[!UICONTROL Please select a profile for this product]** väljer du den profil som du redigerade tidigare.
-
-   g. Klicka på **[!UICONTROL Save]**.
-
-1. Lägg till en användare i **[!UICONTROL Places Core Services]**.
-
-   >[!TIP]
-   >
-   >För närvarande har alla användare av platstjänster samma behörigheter, så du behöver inte redigera behörigheterna.
-
-   a. Kontrollera följande på **[!UICONTROL Places Core Services]**-kortet:
-
-   * Två punkter visas längst ned på kortet.
-   * Punkten till vänster är svart.
-
-   b. Klicka på **[!UICONTROL + Assign Users]**.
-
-   c. Ange användarens Adobe ID.
-
-   d. Gör något av följande:
-
-   * Om du lägger till en ny användare klickar du på **[!UICONTROL New user]** och anger användarens för- och efternamn.
-   * Om du lägger till en befintlig användare klickar du på användarens namn som visas.
-
-   e. Välj profilen Platser i listrutan **[!UICONTROL Please select a profile for this product]**.
-
-   f. Klicka på **[!UICONTROL Save]**.
-
-### Lägg till en utvecklare
-
-För användare som också behöver tillgång till webbtjänstens API måste du lägga till dem som utvecklare.
-
-Så här lägger du till en utvecklare:
-
-1. Kontrollera följande på **[!UICONTROL Places Core Services]**-kortet:
-
-   * Två punkter visas längst ned på kortet.
-   * Klicka på punkten till höger så att **[!UICONTROL Assign Developers]** visas längst ned på kortet.
-
-1. Klicka på **[!UICONTROL + Assign Developers]**.
-
-1. Ange användarens Adobe ID.
-
-1. Gör något av följande:
-
-   * Om du lägger till en ny användare klickar du på **[!UICONTROL New user]** och anger användarens för- och efternamn.
-   * Om du lägger till en befintlig användare klickar du på användarens namn som visas.
-
-1. I listrutan **[!UICONTROL Please select a profile for this product]** väljer du Platstjänstprofilen.
-
-1. Klicka på **[!UICONTROL Save]**.
-
-Användarna får ett e-postmeddelande som talar om för dem att de har tillgång till Experience Platform Launch. De kan logga in på användargränssnitten [Experience Platform Launch](https://launch.adobe.com) eller [Platstjänst](https://places.adobe.com) för den här organisationen. Om du slutför steg 4 i proceduren **[!UICONTROL Add a developer]** kan användaren även logga in på [Adobe I/O-konsolen](https://console.adobe.io) för att skapa en platsintegrering och använda Places REST API.
+När ovanstående steg har slutförts får användaren ett e-postmeddelande som meddelar att de har åtkomst till **[!UICONTROL Adobe Experience Platform]** och **[!UICONTROL Adobe Experience Platform Data Collection]**. De kan sedan logga in på [Adobe Experience Cloud](https://experience.adobe.com) för den här organisationen och få tillgång till Platstjänst och Datainsamling. Om du även slutför stegen **[!UICONTROL Add a developer]** kan användaren också logga in på [Adobe Developer Console](https://developer.adobe.com/console/home) om du vill skapa ett projekt som ger åtkomst till platstjänstens REST API.
