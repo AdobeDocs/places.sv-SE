@@ -2,10 +2,9 @@
 audience: end-user
 user-guide-title: Handbok för platstjänster
 user-guide-description: Platstjänsten är en geopositioneringstjänst som gör det möjligt för mobilappar med platsmedvetenhet att förstå platskontexten.
-translation-type: tm+mt
-source-git-commit: 12283d11829ee70a808bc11d2bc1241cb1770ac3
+source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '301'
 ht-degree: 10%
 
 ---
@@ -17,7 +16,7 @@ ht-degree: 10%
 + [Versionsinformation](release-notes.md)
 + [Komma igång](getting-started.md)
 + [Få åtkomst till platstjänsten](places-gain-access.md)
-+ Platstjänstens gränssnitt {#poi-mgmt-ui}
++ Användargränssnitt för platstjänst {#poi-mgmt-ui}
    + [Översikt över användargränssnittet för Platstjänst](poi-mgmt-ui/poi-mgmt-ui-overview.md)
    + [Skapa en POI](poi-mgmt-ui/create-a-poi-ui.md)
    + [Hantera tidigare skapade POI](poi-mgmt-ui/managing-pois-in-the-places-ui.md)
@@ -53,23 +52,19 @@ ht-degree: 10%
             + [Uppdatera flera POI](web-service-api/api-usage/manage-pois/batch-apis/update-multiple-pois.md)
             + [Ta bort flera POI](web-service-api/api-usage/manage-pois/batch-apis/delete-multiple-pois.md)
       + [Fråga API:er](web-service-api/api-usage/query-apis.md)
-+ Tillägg för Mobile SDK:er {#places-ext-aep-sdks}
++ Tillägg för mobil SDK {#places-ext-aep-sdks}
    + Tillägget Platser {#places-extension}
       + [Tillägget Platser](places-ext-aep-sdks/places-extension/places-extension.md)
       + [API-referens för platser](places-ext-aep-sdks/places-extension/places-api-reference.md)
       + [Händelsereferens för platser](places-ext-aep-sdks/places-extension/places-event-ref.md)
       + [Egna platsobjekt](places-ext-aep-sdks/places-extension/cust-places-objects.md)
-   + Platsövervakartillägg {#places-monitor-extension}
-      + [Platsövervakartillägg](places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)
-      + [Använda tillägget Platsövervakare](places-ext-aep-sdks/places-monitor-extension/using-places-monitor-extension.md)
-      + [API-referens för platsövervakare](places-ext-aep-sdks/places-monitor-extension/places-monitor-api-reference.md)
 + [Använd Platstjänst med din egen övervakningslösning](using-your-own-monitor.md)
 + [Använd platstjänsten utan övervakning av aktiva regioner](use-places-without-active-monitoring.md)
-+ Använd platstjänsten som en del av arbetsflödet för Experience Platform Launch {#use-places-launch-workflow}
++ Använd platstjänsten som en del av arbetsflödet i Experience Platform Launch {#use-places-launch-workflow}
    + [Använd platstjänsten som en del av arbetsflödet i Experience Platform Launch](use-places-launch-workflow/places-launch-workflow.md)
    + [Definiera dataelement](use-places-launch-workflow/define-data-elements.md)
    + [Skapa regler för inträde och utträde](use-places-launch-workflow/create-rule-places-property.md)
-+ Använd platstjänst med andra Adobe-lösningar {#use-places-with-other-solutions}
++ Använd Platstjänst med andra Adobe-lösningar {#use-places-with-other-solutions}
    + Adobe Analytics {#places-adobe-analytics}
       + [Använd Platstjänst med Adobe Analytics](use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md)
       + [Skicka POI-post och avsluta data till Analytics](use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
@@ -87,4 +82,4 @@ ht-degree: 10%
       + [Använd Platstjänst med Adobe Target](use-places-with-other-solutions/places-target/places-target.md)
 + Testa och validera {#places-testing-validation}
    + [Testa och validera platstjänst](places-testing-validation/test-validate-places.md)
-+ [Vanliga frågor](places-faqs.md)
++ [Frågor och svar](places-faqs.md)

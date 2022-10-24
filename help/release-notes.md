@@ -1,14 +1,13 @@
 ---
 title: Versionsinformation
 description: Versionsinformation för Platstjänst.
-translation-type: tm+mt
-source-git-commit: 3f986697179eb9c0af1d9b54daf67793a99b8491
+exl-id: 76da9548-4e32-4b23-9a15-7012973915f3
+source-git-commit: 2b5c53887c9ed0f2a672c377121a39537ee58f01
 workflow-type: tm+mt
-source-wordcount: '1503'
+source-wordcount: '1492'
 ht-degree: 3%
 
 ---
-
 
 # Versionsinformation {#release-notes}
 
@@ -16,8 +15,8 @@ ht-degree: 3%
 
 * **Bildtillägg för Platser och Platser**
 
-   * Tillägg för Platser och Platsövervakare har lagts till för [React Native-program](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#react-native)
-   * Tillägg för Platser och Platsövervakare har lagts till för [Cordova-program](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova)
+   * Tillägg för Platser och Platsövervakare har lagts till för [Reagera på originalprogram](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#react-native)
+   * Tillägg för Platser och Platsövervakare har lagts till för [Cordova-applikationer](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova)
    * Mer information finns i: [Använda platstillägg](https://docs.adobe.com/content/help/sv-SE/places/using/places-ext-aep-sdks/places-extension/places-extension.html)
 
 
@@ -50,13 +49,13 @@ ht-degree: 3%
 * **ACPlaces 1.3.1 (iOS)**
 
    * Platstillägget rapporterar nu versionsinformation till händelsehubben i Core SDK.
-   * Information om enhetens POI-medlemskap har nu en standardtid för direktuppspelning på en timme från den tidpunkt då den samlas in. Mer information finns i [Ändra platser för medlemskap med tidsbegränsad publicering](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
+   * Information om enhetens POI-medlemskap har nu en standardtid för direktuppspelning på en timme från den tidpunkt då den samlas in. Mer information finns i [Ändra plats för medlemskap från tid till publicering](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
 
 
 * **Platser 1.4.1 (Android)**
 
    * Platstillägget rapporterar nu versionsinformation till händelsehubben i Core SDK.
-   * Information om enhetens POI-medlemskap har nu en standardtid för direktuppspelning på en timme från den tidpunkt då den samlas in. Mer information finns i [Ändra platser för medlemskap med tidsbegränsad publicering](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
+   * Information om enhetens POI-medlemskap har nu en standardtid för direktuppspelning på en timme från den tidpunkt då den samlas in. Mer information finns i [Ändra plats för medlemskap från tid till publicering](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
 
 ## 27 januari 2020
 
@@ -73,7 +72,7 @@ ht-degree: 3%
 
    * **Android**
 
-      * En ny API har lagts till `setAuthorizationStatus`för att ange enhetsauktoriseringsstatus för Platstjänster. Värdet lagras och används i läget Platser delade.
+      * Lagt till ett nytt API, `setAuthorizationStatus`, för att ange enhetens auktoriseringsstatus för Platstjänster. Värdet lagras och används i läget Platser delade.
 
 ## 4 december 2019
 
@@ -89,11 +88,11 @@ ht-degree: 3%
 
    * **iOS**
 
-      * En ny API har lagts till `setAuthorizationStatus`för att ange enhetsauktoriseringsstatus för Platstjänster. Värdet lagras och används i läget Platser delade.
+      * Lagt till ett nytt API, `setAuthorizationStatus`, för att ange enhetens auktoriseringsstatus för Platstjänster. Värdet lagras och används i läget Platser delade.
 
 ## 25 november 2019
 
-* **PlacesMonitor 2.2.1**
+* **PlacesMonitor 2.1.1**
 
    * **iOS**
 
@@ -114,10 +113,10 @@ ht-degree: 3%
 
    * **iOS**
 
-      * En ny API har lagts till `setRequestAuthorizationLevel`för att ange vilken typ av platsauktoriseringsbegäran som användaren ska tillfrågas om.
+      * Lagt till ett nytt API, `setRequestAuthorizationLevel`, för att ange den typ av platsauktoriseringsbegäran som användaren uppmanas att göra.
    * **Android**
 
-      * En ny API har lagts till `setLocationPermission`för att ange vilken typ av platsbehörighetsbegäran som användaren ska tillfrågas om.
+      * Lagt till ett nytt API, `setLocationPermission`, för att ange den typ av platsbehörighetsbegäran som användaren uppmanas att göra.
       * Platsövervakaren har nu stöd för Android 10.
 
 
@@ -167,7 +166,7 @@ Följande uppdateringar gjordes i den här versionen:
 
    Nytt API: `public static void stop (final boolean clearData);`
 
-* API:t har uppdaterats för att hantera felscenarier mer effektivt. `getNearbyPointsOfInterest`
+* Uppdaterad användning av `getNearbyPointsOfInterest` API för att hantera felscenarier effektivare.
 
 ## 25 juli 2019
 
@@ -179,7 +178,7 @@ Följande uppdateringar gjordes i den här versionen:
 
    i ACPlacesMonitor ersatte ett befintligt API `+ (void) stop;` med`+ (void) stop: (BOOL) clearData;`.
 
-* API:t för ACPlaces `getNearbyPointsOfInterest` har uppdaterats för att hantera felscenarier mer effektivt.
+* Uppdaterat användningen av ACPlaces `getNearbyPointsOfInterest` API för att hantera felscenarier effektivare.
 
 ## 22 juli 2019
 
@@ -189,14 +188,14 @@ Följande uppdateringar gjordes i den här versionen:
 
 * Ett nytt API har lagts till som tar bort alla platsrelaterade data från delat läge, minne i appen och delade inställningar.
 * Ett problem där det delade tillståndet inte uppdaterades när programmet startades har åtgärdats.
-* Korrigerade ett fel där `getNearbyPointsOfInterest` återanropet returnerade felkod `SERVER_RESPONSE_ERROR instead of CONNECTIVITY_ERROR` på Internet.
-* `getNearbyPointsOfInterest` API (utan errorCallback) anropas med en tom poi-lista om det uppstår fel när närliggande intressepunkter hämtas. `successCallback`
+* Korrigerade ett fel där `getNearbyPointsOfInterest` callback returnerade felkod `SERVER_RESPONSE_ERROR instead of CONNECTIVITY_ERROR` på internet.
+* `getNearbyPointsOfInterest` API (utan errorCallback) har `successCallback` anropas med tom poi-lista om fel uppstår när närliggande intressepunkter hämtas.
 
 ## 19 juli 2019
 
 Följande uppdateringar gjordes i den här versionen:
 
-**iOS Platser 1.2.0**
+**iOS Places 1.2.0**
 
 Ett nytt API har lagts till som rensar bort alla platsrelaterade data från delat läge, minne i appen och `NSUserDefaults`.
 
@@ -212,7 +211,7 @@ Följande uppdateringar gjordes i den här versionen:
 
 Följande uppdateringar gjordes i den här versionen:
 
-**iOS Platser 1.1.0**
+**iOS Places 1.1.0**
 
 * En ny API har lagts till för att returnera en felkod när det uppstår ett fel när närliggande platser hämtas.
 * När sekretessstatus ändras till avanmälan kommer alla platsrelaterade data nu att rensas från enheten.
@@ -276,9 +275,9 @@ Följande uppdateringar gjordes i den här versionen:
 
 iOS Places Monitor 1.0.0
 
-Första versionen av Platsövervakaren för iOS.
+Första versionen av Places Monitor för iOS.
 
-Platsövervakaren hanterar plats-API:erna på operativsystemnivå och kommunicerar direkt med platstillägget. Med båda tilläggen installerade kan kunderna ha körklar regionövervakning i sina program. Mer information om Platsövervakaren finns i [Platsövervakartillägg](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md).
+Platsövervakaren hanterar plats-API:erna på operativsystemnivå och kommunicerar direkt med platstillägget. Med båda tilläggen installerade kan kunderna ha körklar regionövervakning i sina program.
 
 ## 28 februari 2019
 
@@ -307,7 +306,7 @@ I tillägget Platser:
 * Regelhändelser som utlöses vid POI-inträde eller -utträde.
 * Skapa dataelement som pekar på användarens aktuella POI.
 
-For more information about the Places extension, see [Places extension](/help/places-ext-aep-sdks/places-extension/places-extension.md).
+Mer information om tillägget Platser finns i [Platstillägg](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
 #### Placerar API:er
 
@@ -319,7 +318,7 @@ Du kan använda Places-API:erna för att göra följande:
 
    Du kan använda det medföljande Python-verktyget för att slutföra bulkimporten.
 
-Mer information om Places-API:er finns i [Webbtjänste-API](/help/web-service-api/places-web-services.md).
+Mer information om Places-API:erna finns i [Webbtjänstens API](/help/web-service-api/places-web-services.md).
 
 ### Kommer snart
 

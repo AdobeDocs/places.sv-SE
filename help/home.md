@@ -2,10 +2,10 @@
 title: Places Service
 description: Platstjänsten är ett viktigt sammanhang när det gäller att förstå mobilanvändarnas engagemang. Genom att använda det här sammanhanget kan utvecklare av mobilappar förbättra appdesignen och göra den till en mer personaliserad och engagerande upplevelse.
 exl-id: 7369176f-c072-437a-9ee3-b463c5ff1d12
-source-git-commit: c13da9ea3dc0cd574f2f9a496405867f7d36eae0
+source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 7%
+source-wordcount: '673'
+ht-degree: 8%
 
 ---
 
@@ -51,10 +51,6 @@ Platstjänsten omfattar följande komponenter:
 * **Starta regler**
 
    De geointelligenta startreglerna som gör att du kan aktivera åtgärder med start- och avslutningshändelser. Reglerna gör det även möjligt att använda geo-attribut i villkor för att personalisera upplevelsen.
-
-* **Platsövervakartillägg**
-
-   Den mobila SDK som kan bäddas in i din mobilapp för att automatiskt övervaka din användares platsändringar och aktivera Platsregler. Mer information finns i [Platsövervakartillägg](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md).
 
 ## Terminologi
 

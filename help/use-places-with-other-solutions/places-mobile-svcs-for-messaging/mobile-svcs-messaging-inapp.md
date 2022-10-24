@@ -1,14 +1,13 @@
 ---
 title: Meddelanden i appen
 description: I det här avsnittet visas hur du använder Platstjänst med meddelanden i appen.
-translation-type: tm+mt
-source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+exl-id: c655e64b-0737-44d5-b453-2ac02fb9cbcc
+source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '653'
 ht-degree: 1%
 
 ---
-
 
 # Meddelanden i appen {#places-push-messaging}
 
@@ -30,7 +29,7 @@ Här är en lista över tillgängliga meddelandetyper i appen:
 * Varning
 * Lokala meddelanden
 
-Dessa typer är meddelanden i appen eftersom de aktiveras av SDK:n. Lokala meddelanden ser ut och känns som push-meddelanden eftersom de visas när programmet är i bakgrunden. Dessa meddelanden skickar även meddelanden i realtid när användare anger eller avslutar dina POI-dokument när programmet är i bakgrunden. Mer information finns i [Platsmonitortillägg](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md).
+Dessa typer är meddelanden i appen eftersom de aktiveras av SDK:n. Lokala meddelanden ser ut och känns som push-meddelanden eftersom de visas när programmet är i bakgrunden. Dessa meddelanden skickar även meddelanden i realtid när användare anger eller avslutar dina POI-dokument när programmet är i bakgrunden.
 
 ### Förutsättningar
 
@@ -54,16 +53,16 @@ När regeln har konfigurerats med rätt händelse- och villkorsparametrar slutf�
 
 Så här skapar du en åtgärd:
 
-1. Markera **[!UICONTROL Adobe Analytics]** tillägget.
+1. Välj **[!UICONTROL Adobe Analytics]** tillägg.
 1. I listrutan **[!UICONTROL Action type]** väljer du **[!UICONTROL Track.]**
 1. Skriv ett namn för åtgärden.
-1. I den högra rutan i **[!UICONTROL Context Data]** väljer du nyckelvärdepar för att ange de kontextdata som ska skickas till Analytics.
+1. I den högra rutan, i **[!UICONTROL Context Data]** väljer du nyckelvärdepar för att ange de kontextdata som ska skickas till Analytics.
 
-Du kan till exempel välja `poiname` som tangent och `{%%Last Entered POI Name}` som värde.
+Du kan till exempel välja `poiname` som tangenten och `{%%Last Entered POI Name}` som värdet.
 
 >[!TIP]
 >
->Analysbearbetningsregler kan anges för att hämta kontextdata. Mer information finns i [Bearbetningsregler](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-processing-rules.html). I exemplet i *Skapa en åtgärd* skickar åtgärden `poiname` som kontext för att beskriva POI-händelsen som skickas till Analytics.
+>Analysbearbetningsregler kan anges för att hämta kontextdata. Mer information finns i [Bearbetar regler](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-processing-rules.html). I exemplet i *Skapa en åtgärd* skickar funktionsmakrot `poiname` som kontext för att beskriva POI-händelsen som skickas till Analytics.
 
 ![skapa ett funktionsmakro](/help/assets/configure-action.png)
 
@@ -84,6 +83,6 @@ Som en del av dina utlösarparametrar kan du skapa målgruppen för meddelandet 
 
    ![trigger parameters](/help/assets/trigger-parameters.png)
 
-* Parametrar i platstjänstens rubriker på sidan *Utlösare och traits* i Mobiltjänster fungerar inte med data från platstjänsten.
+* Parametrar i platstjänstens rubriker i *Utlösare och traits* sidan i Mobiltjänster fungerar inte med data från Platstjänst.
 
    De här parametrarna gäller endast för den gamla platstjänstdatabasen som skapades i Mobile Services.

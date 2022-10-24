@@ -1,14 +1,13 @@
 ---
 title: Använd platstjänsten utan övervakning av aktiva regioner
 description: Det här avsnittet innehåller information om hur du använder platstjänsten utan övervakning av aktiva områden.
-translation-type: tm+mt
-source-git-commit: 5846577f10eb1d570465ad7f888feba6dd958ec9
+exl-id: 0ba7949a-447e-4754-9b45-945e58e29541
+source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '748'
 ht-degree: 0%
 
 ---
-
 
 # Använd platstjänsten utan övervakning av aktiva regioner {#use-places-without-active-monitoring}
 
@@ -20,13 +19,13 @@ Utvecklaren samlar in enhetens plats med de API:er som finns i målplattformens 
 
 >[!TIP]
 >
->Om appens användningsfall kräver övervakning av aktiva områden, se [Använda tillägget](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)Platsövervakare.
+>Om appens användningsfall kräver övervakning av aktiva områden finns mer information i [Använd Platstjänst med din egen övervakningslösning](/help/using-your-own-monitor.md).
 
 Så här använder du platstjänsten utan övervakning av aktiva områden:
 
 ## 1. Samla in användarens plats
 
-Apputvecklaren måste samla in enhetens aktuella plats med hjälp av `CoreLocation.framework` (iOS) eller de API: `Location` er som tillhandahålls av Google Play Services (Android).
+Apputvecklaren måste samla in enhetens aktuella plats med hjälp av `CoreLocation.framework` (iOS) eller `Location` API:er från Google Play Services (Android).
 
 Mer information finns i följande dokumentation:
 
@@ -117,29 +116,29 @@ func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
 
 ## 3. Bifoga platsdata till era Analytics-förfrågningar
 
-Genom att anropa `getNearbyPointsOfInterest` API:t gör Places SDK alla POI-data som är relevanta för enheten tillgängliga via dataelement i Launch. Genom att använda en regel för [att bifoga data](https://aep-sdks.gitbook.io/docs/resources/user-guides/attach-data) kan platsdata automatiskt läggas till i framtida förfrågningar till Analytics. Detta eliminerar behovet av ett engångsanrop till Analytics när platsen för enheten samlas in.
+Genom att ringa `getNearbyPointsOfInterest` API: Platser-SDK gör alla POI-data som är relevanta för enheten tillgängliga via dataelement i Launch. Genom att använda en [Bifoga data](https://aep-sdks.gitbook.io/docs/resources/user-guides/attach-data) placeringsdata kan automatiskt läggas till i framtida förfrågningar till Analytics. Detta eliminerar behovet av ett engångsanrop till Analytics när platsen för enheten samlas in.
 
-Mer information om det här ämnet finns i [Lägg till platskontext i Analytics-förfrågningar](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md) .
+Se [Lägg till platskontext i analysbegäranden](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md) om du vill veta mer om det här ämnet.
 
 ## Valfritt - Utlös anmälningshändelser när användaren är i en POI
 
 >[!TIP]
 >
->Det rekommenderade sättet att samla in platsdata är att [bifoga platsdata till era Analytics-förfrågningar](#attach-places-data-to-your-analytics-requests).
+>Rekommenderat sätt att samla in platsdata är att [Bifoga platsdata till era Analytics-förfrågningar](#attach-places-data-to-your-analytics-requests).
 >
->Om ett [regionsinmatningshändelse](places-ext-aep-sdks/places-extension/places-event-ref.md#processregionevent) måste utlösas av SDK:n måste det göras manuellt enligt instruktionerna nedan.
+>Om användningsfallet kräver en [regionsinmatningshändelse](places-ext-aep-sdks/places-extension/places-event-ref.md#processregionevent) för att aktiveras av SDK måste detta göras manuellt enligt nedan.
 
-Den lista som returneras av `getNearbyPointsOfInterest` API innehåller [anpassade objekt](places-ext-aep-sdks/places-extension/cust-places-objects.md) som anger om användaren befinner sig i en POI. Om användaren befinner sig i en POI kan du låta SDK utlösa en starthändelse för den regionen.
+Listan som returneras av `getNearbyPointsOfInterest` API innehåller [anpassade objekt](places-ext-aep-sdks/places-extension/cust-places-objects.md) som anger om användaren befinner sig inom en POI. Om användaren befinner sig i en POI kan du låta SDK utlösa en starthändelse för den regionen.
 
 >[!IMPORTANT]
 >
 >Om du vill förhindra att din app utlöser flera anmälningshändelser vid ett besök, ska du hålla en lista över de områden där du vet att användaren har angivit. När du bearbetar svar från närliggande POI:er från SDK utlöser du bara en starthändelse när regionen inte finns i din lista.
 >
->I följande kodexempel används `NSUserDefaults` (iOS) och `SharedPreferences` (Android) för att hantera listan med regioner:
+>I följande kodexempel `NSUserDefaults` (iOS) och `SharedPreferences` (Android) används för att hantera listan med regioner:
 
 ### Android
 
-I följande kodexempel visas hur det resultat som angavs i återanropet av `getNearbyPointsOfInterest`en `List<PlacesPOI>`:
+I följande kodexempel visas hur det resultat som angavs i återanropet till `getNearbyPointsOfInterest`, a `List<PlacesPOI>`:
 
 ```java
 void handleUpdatedPOIs(final List<PlacesPOI> nearbyPois) {
@@ -177,7 +176,7 @@ void handleUpdatedPOIs(final List<PlacesPOI> nearbyPois) {
 
 ### Mål-C
 
-I följande kodexempel visas hur det resultat som angavs i återanropet av `getNearbyPointsOfInterest:limit:callback:errorCallback:`och `NSArray<ACPPlacesPoi *> *`:
+I följande kodexempel visas hur det resultat som angavs i återanropet till `getNearbyPointsOfInterest:limit:callback:errorCallback:`, en `NSArray<ACPPlacesPoi *> *`:
 
 ```objectivec
 - (void) handleUpdatedPOIs:(NSArray<ACPPlacesPoi *> *)nearbyPois {
@@ -211,7 +210,7 @@ I följande kodexempel visas hur det resultat som angavs i återanropet av `getN
 
 ### Swift
 
-I följande kodexempel visas hur det resultat som angavs i återanropet av `getNearbyPoints(_ ofInterest: CLLocation, limit: UInt, callback: (([ACPPlacesPoi]?) -> Void)?, errorCallback: ((ACPPlacesRequestError) -> Void)?)`och `[ACPPlacesPoi]`:
+I följande kodexempel visas hur det resultat som angavs i återanropet till `getNearbyPoints(_ ofInterest: CLLocation, limit: UInt, callback: (([ACPPlacesPoi]?) -> Void)?, errorCallback: ((ACPPlacesRequestError) -> Void)?)`, en `[ACPPlacesPoi]`:
 
 ```swift
 func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
@@ -244,11 +243,11 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 
 Kodexemplen nedan visar hur du hämtar enhetens aktuella plats, utlöser nödvändiga starthändelser och ser till att du inte får flera poster för samma plats vid ett besök.
 
-Detta kodexempel inkluderar det valfria steget att [utlösa en starthändelse när användaren befinner sig i en POI](#trigger-entry-events-when-the-user-is-in-a-poi).
+Det här kodexemplet innehåller det valfria steget i [utlösa en starthändelse när användaren befinner sig i en POI](#trigger-entry-events-when-the-user-is-in-a-poi).
 
 >[!IMPORTANT]
 >
->De här fragmenten är **bara** exempel. Utvecklarna måste bestämma hur de vill implementera funktionen, och i beslutet bör man ta hänsyn till de bästa metoderna som rekommenderas av måloperativsystemet.
+>Dessa fragment är **endast** exempel. Utvecklarna måste bestämma hur de vill implementera funktionen, och i beslutet bör man ta hänsyn till de bästa metoderna som rekommenderas av måloperativsystemet.
 
 ### Android
 
@@ -411,6 +410,6 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 }
 ```
 
-Förutom att utlösa Platstjänster-posthändelser i SDK, på grund av utlösande starthändelser, kan alla data som definierar dina POI användas av resten av SDK via `data elements` Experience Platform Launch. Med Experience Platform Launch `rules`kan du dynamiskt bifoga platstjänstdata till inkommande händelser som bearbetas av SDK. Du kan till exempel bifoga metadata för en POI där användaren befinner sig och skicka data till Analytics som kontextdata.
+Förutom att utlösa platstjänstinmatningshändelser i SDK kan alla data som definierar dina POI-poster användas av resten av SDK via `data elements` i Experience Platform Launch. Med Experience Platform Launch `rules`kan du bifoga platsdata dynamiskt till inkommande händelser som bearbetas av SDK. Du kan till exempel bifoga metadata för en POI där användaren befinner sig och skicka data till Analytics som kontextdata.
 
 Mer information finns i [Använda Platstjänst med andra Adobe-lösningar](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md).
