@@ -1,9 +1,8 @@
 ---
-source-git-commit: 8688bd4a613b71f205909588bd2a3391e1cc8793
+source-git-commit: c79135bed83932095df42869017ed2cc20be6e22
 workflow-type: tm+mt
-translation-type: tm+mt
-source-wordcount: '435'
-ht-degree: 71%
+source-wordcount: '433'
+ht-degree: 72%
 
 ---
 # Artikel om att bidra
@@ -16,15 +15,15 @@ Detta projekt har antagit [Adobe Open Source Code of Conduct](code-of-conduct.md
 
 ## Om dina bidrag till innehåll hos Adobe
 
-Se [Guiden för bidragsgivare till Adobe Docs](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html).
+Se [Guiden för bidragsgivare till Adobe Docs](https://docs.adobe.com/help/sv-SE/contributor/contributor-guide/introduction.html).
 
 Hur du bidrar beror på vem du är och vilken typ av ändringar du vill bidra med:
 
 ### Mindre ändringar eller förfrågningar
 
-Om du vill skicka en begäran klickar du på länken **Logga ett problem** i en artikel som öppnar ett problem i GitHub. Ange en titel och en beskrivning och klicka sedan på **Skicka nytt utgåva**.
+Klicka på **Logga ett problem** i en artikel som öppnar ett problem i GitHub. Ange en titel och en beskrivning och klicka sedan på **Skicka ny utgåva**.
 
-Om du vill begära mindre uppdateringar klickar du på länken **Redigera den här sidan** i en artikel som öppnar källartikeln i GitHub. Använd GitHub-gränssnittet för att göra uppdateringar. Mer information finns i den allmänna [guiden för bidragsgivare till Adobe Docs](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html).
+Klicka på knappen **Redigera den här sidan** i en artikel som öppnar källartikeln i GitHub. Använd GitHub-gränssnittet för att göra uppdateringar. Mer information finns i den allmänna [guiden för bidragsgivare till Adobe Docs](https://docs.adobe.com/help/sv-SE/contributor/contributor-guide/introduction.html).
 
 Mindre korrigeringar och förtydliganden som du lämnar in för dokumentation och kodexempel i den här databasen omfattas av Adobes användarvillkor.
 
@@ -38,7 +37,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Stora förändringar från anställda hos Adobe
 
-If you are a technical writer, program manager, or developer from the product team for an [!UICONTROL Adobe Experience Cloud] solution, and it&#39;s your job to contribute to or author technical articles, you should use the private repository at `https://git.corp.adobe.com/AdobeDocs`. Se [Intern Collaboration Guide](https://docs.adobe.com/content/help/en/collaborative-doc-instructions/collaboration-guide/home.html).
+Om du är teknikskribent, programchef eller utvecklare för en [!UICONTROL Adobe Experience Cloud] och det är ditt jobb att bidra till eller skriva tekniska artiklar, du bör använda den privata databasen på `https://git.corp.adobe.com/AdobeDocs`. Se [Handbok för internt samarbete](https://experienceleague.adobe.com/docs/collaborative-doc-instructions/collaboration-guide/home.html).
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
@@ -46,7 +45,7 @@ If you are a technical writer, program manager, or developer from the product te
 
 Deltagare i vårt community kan använda GitHub-gränssnittet för grundläggande redigeringar eller förgrena databasen för att göra större bidrag.
 
-Mer information finns i [guiden för bidragsgivare till Adobe Docs](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html).
+Mer information finns i [guiden för bidragsgivare till Adobe Docs](https://docs.adobe.com/help/sv-SE/contributor/contributor-guide/introduction.html).
 
 ## Så använder du markdown för att formatera ditt ämne
 
