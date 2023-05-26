@@ -1,16 +1,15 @@
 ---
 title: Sidhuvuden och parametrar
 description: Sidhuvuden och parametrar som är tillgängliga i platstjänstens REST-API:er.
-translation-type: tm+mt
-source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+exl-id: 3c7e76de-f0ff-4966-a3ec-7f64d819c140
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 3%
 
 ---
 
-
-# Headers and parameters {#headers-and-parameters}
+# Sidhuvuden och parametrar {#headers-and-parameters}
 
 Här är information om de rubriker och parametrar som är tillgängliga i Platstjänst REST API:
 
@@ -31,7 +30,7 @@ Här är information om de rubriker och parametrar som är tillgängliga i Plats
 | `id` | ID för bibliotek | tilldelad | n/a | Svar | `"id": "b2488788-2d2a-462b-b1a2-305272777dda"` |
 | `name` | Bibliotekets namn | string | 256 tecken | båda, krävs på begäran | `"name": "Amazing Places"` |
 | `orgID` | Experience cloud orgID för organisationen | tilldelad | n/a | Svar | `"orgID": "777F20F55BACA09E0A495D8F@AdobeOrg"` |
-| `poiCount` | Antal POI i bibliotek | heltal | Högst 150 000 | Svar | `"poiCount": 25149` |
+| `poiCount` | Antal POI i biblioteket | heltal | Högst 150 000 | Svar | `"poiCount": 25149` |
 | `metadataDescriptors` | Antal för varje unikt nyckelvärdepar för POI-metadata | blandad | n/a | Svar |  |
 | `poiCountInCities` | Antal för varje unikt POI-stadsvärde | blandad | n/a | Svar |  |
 
@@ -58,4 +57,3 @@ Här är information om de rubriker och parametrar som är tillgängliga i Plats
 | `lib_id` | ID för det bibliotek som POI finns i | n/a | n/a | båda, krävs | `"lib_id": "ac7a0b25-c6c2-43ba-bbc6-2b1777b80fe9"` |
 
 * Om parametervärdet inte inkluderas ställs värdet in på `empty` i databasen. Om det befintliga nyckel/värde-paret inte inkluderas, tas nyckel/värde-paret bort för den POI-informationen i databasen.
-

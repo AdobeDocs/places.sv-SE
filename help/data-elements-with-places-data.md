@@ -1,7 +1,6 @@
 ---
 title: Dataelement för Experience Platform Launch med platsdata
-description: 'Dataelement är byggstenarna för dataordlistan (eller datamappningen). '
-translation-type: tm+mt
+description: Dataelement är byggstenarna för dataordlistan (eller datamappningen).
 source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 workflow-type: tm+mt
 source-wordcount: '150'

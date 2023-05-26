@@ -1,14 +1,13 @@
 ---
 title: API-användningsöversikt
 description: I det här avsnittet finns information om REST API:er som är tillgängliga för Platstjänst.
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+exl-id: f2823ea5-9fbf-45b7-8206-6cb82ca22ecf
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '38'
 ht-degree: 0%
 
 ---
-
 
 # API-användningsöversikt {#api-usage-overview}
 

@@ -1,14 +1,13 @@
 ---
 title: Använda din egen skärm
 description: Du kan också använda dina övervakningstjänster och integrera med Platstjänst genom att använda API:erna för Platstjänsttillägg.
-translation-type: tm+mt
-source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+exl-id: 8ca4d19b-0f23-4291-b335-af47f03179fa
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 1%
 
 ---
-
 
 # Använda din egen skärm {#using-your-monitor}
 
@@ -20,11 +19,11 @@ Om du bestämmer dig för att använda dina övervakningstjänster registrerar d
 
 ### iOS
 
-I iOS utför du följande steg:
+Gör så här i iOS:
 
-1. Skicka platsuppdateringarna som hämtades från Core location-tjänsterna för iOS till Platser-tillägget.
+1. Skicka platsuppdateringar som hämtats från iOS bastjänst till Platser-tillägget.
 
-1. Använd API:t för `getNearbyPointsOfInterest` Platser-tillägg för att hämta arrayen med objekt runt den aktuella `ACPPlacesPoi` platsen.
+1. Använd `getNearbyPointsOfInterest` Placerar tilläggs-API:t för att hämta arrayen med `ACPPlacesPoi` objekt runt den aktuella platsen.
 
    ```objective-c
    - (void) locationManager: (CLLocationManager*) manager didUpdateLocations: (NSArray<CLLocation*>*) locations {
@@ -34,7 +33,7 @@ I iOS utför du följande steg:
    }
    ```
 
-1. Extrahera informationen från de hämtade `ACPPlacesPOI` objekten och börja övervaka dessa POI.
+1. Extrahera informationen från de `ACPPlacesPOI` och börja övervaka dessa POI.
 
    ```objective-c
    - (void) startMonitoringGeoFences: (NSArray*) newGeoFences {
@@ -58,9 +57,9 @@ I iOS utför du följande steg:
 
 ### Android
 
-1. Skicka platsuppdateringar som hämtats från Google Play-tjänsterna eller Android-platstjänsterna till platstillägget.
+1. Skicka platsuppdateringar som hämtats från Google Play eller Android-platstjänsterna till platstillägget.
 
-1. Använd API:t för `getNearbyPointsOfInterest` Platser-tillägg för att få en lista över `PlacesPoi` objekt runt den aktuella platsen.
+1. Använd `getNearbyPointsOfInterest` Placerar tilläggs-API:t för att hämta listan över `PlacesPoi` objekt runt den aktuella platsen.
 
    ```java
    LocationCallback callback = new LocationCallback() {
@@ -78,7 +77,7 @@ I iOS utför du följande steg:
    };
    ```
 
-1. Extrahera data från de hämtade `PlacesPOI` objekten och börja övervaka dessa POI.
+1. Extrahera data från de `PlacesPOI` och börja övervaka dessa POI.
 
    ```java
    private void startMonitoringFences(final List<PlacesPOI> nearByPOIs) {
@@ -103,7 +102,7 @@ I iOS utför du följande steg:
    ```
 
 
-Anrop av API:t leder till ett nätverksanrop som hämtar platsen runt den aktuella platsen. `getNearbyPointsOfInterest`
+Anropar `getNearbyPointsOfInterest` API resulterar i ett nätverksanrop som hämtar platsen runt den aktuella platsen.
 
 >[!IMPORTANT]
 >
@@ -113,7 +112,7 @@ Anrop av API:t leder till ett nätverksanrop som hämtar platsen runt den aktuel
 
 ### iOS
 
-I iOS anropar du `processGeofenceEvent` Places-API:t i `CLLocationManager` delegaten. Detta API meddelar dig om användaren har angivit eller avslutat en viss region.
+I iOS ringer du `processGeofenceEvent` Placerar API i `CLLocationManager` delegat. Detta API meddelar dig om användaren har angivit eller avslutat en viss region.
 
 ```objective-c
 - (void) locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region {
@@ -127,7 +126,7 @@ I iOS anropar du `processGeofenceEvent` Places-API:t i `CLLocationManager` deleg
 
 ### Android
 
-I Android anropar du `processGeofence` metoden tillsammans med lämplig övergångshändelse i Geofence-sändningsmottagaren. Du kanske vill strukturera listan över geofences som tagits emot för att förhindra dubblettposter/-utträden.
+I Android ringer du `processGeofence` tillsammans med lämplig övergångshändelse i Geofence-sändningsmottagaren. Du kanske vill strukturera listan över geofences som tagits emot för att förhindra dubblettposter/-utträden.
 
 ```java
 void onGeofenceReceived(final Intent intent) {

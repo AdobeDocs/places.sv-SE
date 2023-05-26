@@ -1,11 +1,11 @@
 ---
 audience: end-user
-user-guide-title: Handbok för platstjänster
-user-guide-description: Platstjänsten är en geopositioneringstjänst som gör det möjligt för mobilappar med platsmedvetenhet att förstå platskontexten.
+user-guide-title: Användarhandbok för tjänsten Places
+user-guide-description: Tjänsten Places är en geopositioneringstjänst som gör det möjligt för mobila appar med platsmedvetenhet att förstå platskontexten.
 source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
 workflow-type: tm+mt
 source-wordcount: '301'
-ht-degree: 10%
+ht-degree: 17%
 
 ---
 

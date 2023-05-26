@@ -1,14 +1,13 @@
 ---
 title: Adobe I/O integreringsöversikt
-description: Information om hur du skapar en Adobe I/O-integrering.
-translation-type: tm+mt
-source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
+description: Information om hur du skapar en integrering med Adobe I/O.
+exl-id: d7d31938-6c0e-40f8-a9d3-30af96043119
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 6%
 
 ---
-
 
 # Översikt över integrationen och krav {#integration-prereqs}
 
@@ -22,13 +21,13 @@ Kontrollera med din organisations systemadministratör att följande åtgärder 
 * Du har lagts till i organisationen.
 * Du har lagts till som användare i Platser Core Service i din organisation.
 
-   Mer information finns i *Lägga till en användare eller en utvecklare i platstjänsten och Experience Platform Launch-profiler* i [Få tillgång till platstjänsten](/help/places-gain-access.md).
+   Mer information finns i *Lägg till en användare eller en utvecklare i platstjänsten och Experience Platform Launch-profilerna* in [Få åtkomst till platstjänsten](/help/places-gain-access.md).
 
 * Du har lagts till som utvecklare i Platser Core Service i din organisation.
 
-   Mer information om hur du lägger till utvecklare finns i *Lägga till en användare eller en utvecklare i platstjänsten och Experience Platform Launch-profiler* i [Få tillgång till platstjänsten](/help/places-gain-access.md).
+   Mer information om hur du lägger till utvecklare finns i *Lägg till en användare eller en utvecklare i platstjänsten och Experience Platform Launch-profilerna* in [Få åtkomst till platstjänsten](/help/places-gain-access.md).
 
-   Mer information om utvecklarrollen finns i [Hantera utvecklare](https://helpx.adobe.com/enterprise/using/manage-developers.html).
+   Mer information om utvecklarrollen finns i [Hantera utvecklare](https://helpx.adobe.com/se/enterprise/using/manage-developers.html).
 
 ### REST API-begäranden
 
@@ -41,12 +40,12 @@ Varje begäran till platstjänstens REST API kräver följande:
 En integrering med Adobe I/O innehåller dessa objekt och ett sätt att begära bearer-token med hjälp av en JSON Web Token (JWT).
 
 * Mer information om JWT finns i [Introduktion till JSON Web Tokens](https://jwt.io/introduction/).
-* Om du vill skapa en integrering för Platstjänst läser du avsnittet *Skapa en Platstjänst-integrering* nedan.
-* Mer information om API-nyckelintegrering, generering av JWT och certifikat för offentliga nycklar finns i [Adobe I/O Authentication Overview](https://www.adobe.io/apis/cloudplatform/console/authentication/gettingstarted.html).
+* Information om hur du skapar en integrering för Platstjänst finns i *Skapa en platsintegrering* nedan.
+* Mer information om API-nyckelintegrering, generering av JWT och certifikat för offentlig nyckel finns i [Autentiseringsöversikt för Adobe I/O](https://www.adobe.io/apis/cloudplatform/console/authentication/gettingstarted.html).
 
 >[!IMPORTANT]
 >
->Om du inte kan logga in på Adobe I/O-konsolen, eller om Platstjänst inte är ett alternativ på sidan ** Skapa integreringar, se *Organisationskrav* i [Web Services API-översikt](/help/web-service-api/places-web-services.md).
+>Om du inte kan logga in på Adobe I/O-konsolen eller om Platstjänst inte är ett alternativ på *Skapa integreringssida*, se *Organisationskrav* in [API-översikt för webbtjänster](/help/web-service-api/places-web-services.md).
 
 ## Skapa en platsintegrering
 
@@ -58,7 +57,7 @@ Om du vill skapa en integrering med platstjänster behöver du ett offentligt oc
 
 Så här skapar du egna självsignerade nycklar:
 
-1. I ett terminalfönster kopierar och klistrar du in följande rader och trycker på **[!UICONTROL Enter]** när du har klistrat in varje rad:
+1. I ett terminalfönster kopierar och klistrar du in följande rader och trycker på **[!UICONTROL Enter]** efter inklistring av varje rad:
 
    ```text
       mkdir keys
@@ -88,9 +87,9 @@ Så här skapar du egna självsignerade nycklar:
    >
    >Informationen du anger inkluderas i nycklarna.
 
-1. Navigera till katalogen där `.key` filerna och `.crt` filerna finns.
+1. Navigera till katalogen där `.key` och `.crt` filer finns.
 
-   For example, in MacOS, go to **[!UICONTROL Macintosh HD]** > **[!UICONTROL users]** > **[!UICONTROL (your user name)]** > **[!UICONTROL Keys]**.
+   I MacOS går du till exempel till **[!UICONTROL Macintosh HD]** > **[!UICONTROL users]** > **[!UICONTROL (your user name)]** > **[!UICONTROL Keys]**.
 
 I följande videofilm får du hjälp med att generera nyckelparet:
 
@@ -101,7 +100,7 @@ I följande videofilm får du hjälp med att generera nyckelparet:
 Så här skapar du en platstjänstintegration:
 
 1. Gå till [https://console.adobe.io](https://console.adobe.io) och logga in med din Adobe ID.
-1. Klicka på **Skapa integrering** i delen **Snabbstart**.
+1. I **Snabbstart** avsnitt, klicka på **Skapa integrering**.
 1. Markera **[!UICONTROL Access an API]** och klicka på **[!UICONTROL Continue]**.
 
    **[!UICONTROL Access an API]** är standardplats.
@@ -110,23 +109,23 @@ Så här skapar du en platstjänstintegration:
 1. Under **[!UICONTROL Experience Cloud]** väljer du **[!UICONTROL Places Service]** som den Adobe-tjänst som du vill integrera med och klickar sedan på **[!UICONTROL Continue]**.
 1. Markera **[!UICONTROL New integration]** och klicka på **[!UICONTROL Continue]**.
 1. Ange ett namn och en beskrivning på skärmen Skapa en ny integration.
-1. Dra och släpp `xxxx_public.crt` filen som du skapade ovan till **[!UICONTROL Public keys certificates]** släppzonen.
+1. Dra och släpp `xxxx_public.crt` filen som du skapade ovan, till **[!UICONTROL Public keys certificates]** släppzon.
 1. Välj en produktprofil.
 
    Kontakta systemadministratören om du är osäker på vilken profil du ska välja.
 1. Klicka på längst ned på sidan **[!UICONTROL Create integration]**.
-1. Efter några sekunder kontrollerar du att följande meddelande visas på skärmen *Integrering skapad* :
+1. Efter några sekunder i *Integrationen har skapats* kontrollerar du att följande meddelande visas:
 
    `Your integration has been created.`
 
 1. Integrationsinformationssidan visas med integreringens namn högst upp.
 
-   Fliken visas som standard och visar API-nyckeln, ditt organisations-ID, det tekniska konto-ID:t och annan information om integreringarna. **[!UICONTROL Overview]**
+   The **[!UICONTROL Overview]** -fliken visas som standard och API-nyckeln, ditt organisations-ID, det tekniska konto-ID:t och annan information om dina integreringar visas.
 
 ### Registrera organisations-ID och API-nyckeln
 
-1. På sidan med integreringsinformation klickar du på **[!UICONTROL Services]** fliken och bekräftar att **[!UICONTROL Places Service]** visas under **[!UICONTROL Configured Services]**.
-1. Leta reda på och spela in API-nyckeln (klient-ID) och organisations-ID på **[!UICONTROL Overview]** fliken.
+1. På sidan med integreringsinformation klickar du på **[!UICONTROL Services]** och bekräfta att **[!UICONTROL Places Service]** visas under **[!UICONTROL Configured Services]**.
+1. På **[!UICONTROL Overview]** Leta reda på och spela in API-nyckeln (klient-ID) och organisations-ID:t.
 
    Dessa ID:n behövs för varje platstjänstens REST API-begäran.
 
@@ -134,19 +133,19 @@ Så här skapar du en platstjänstintegration:
 
 ### Generera en JWT-token
 
-På sidan med integreringsinformation klickar du på **[!UICONTROL JWT]** fliken så att du kan testa integreringen genom att generera en JWT och ange utbytes-URL:en.
+På sidan med integreringsinformation klickar du på **[!UICONTROL JWT]** så att du kan testa integrationen genom att generera en JWT och ange utbytes-URL:en.
 
 Så här skapar du en JWT-token:
 
-1. Öppna den skapade `private.key` filen i en textredigerare.
+1. Öppna `private.key` filen som du skapade ovan.
 1. På fliken **[!UICONTROL JWT]** kopierar du innehållet i nyckeln och klistrar in det i fältet **[!UICONTROL Paste private key]**.
 1. Klicka på **[!UICONTROL Generate JWT]**.
 1. I avsnittet **[!UICONTROL Sample CURL command]** klickar du på **[!UICONTROL Copy]** och klistrar in innehållet i kommandotolken eller terminalfönstret.
-1. Kör kommandot genom att trycka **[!UICONTROL Enter]** på tangentbordet.
-1. Leta reda på `"token_type": "bearer"` och `"access_token"` värdet.
+1. Kör kommandot genom att trycka på **[!UICONTROL Enter]** på tangentbordet.
+1. Leta reda på `"token_type": "bearer"` och `"access_token"` värde.
 
    Värdet för innehavaråtkomsttoken är det som du kommer att använda i dina platstjänstens API-begäranden.
 
 >[!IMPORTANT]
 >
->Åtkomsttoken för Adobe är **bara** giltiga i 24 timmar, så spara CURL-exempelkommandot (steg 5). Om åtkomsttoken inte längre är giltig måste du generera om token.
+>Åtkomsttoken för Adobe är giltiga **endast** i 24 timmar, så spara CURL-exempelkommandot (steg 5). Om åtkomsttoken inte längre är giltig måste du generera om token.

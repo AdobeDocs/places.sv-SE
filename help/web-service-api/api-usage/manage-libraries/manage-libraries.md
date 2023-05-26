@@ -1,8 +1,8 @@
 ---
 title: Hantera bibliotek
 description: Hantera platstjänstens REST API-bibliotek.
-translation-type: tm+mt
-source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+exl-id: fe637239-7137-4d22-b8b5-5695d8222ffe
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '53'
 ht-degree: 0%

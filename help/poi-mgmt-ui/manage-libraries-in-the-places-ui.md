@@ -1,14 +1,13 @@
 ---
 title: Hantera bibliotek i användargränssnittet för platstjänster
 description: Hantera dina bibliotek med hjälp av användargränssnittet för platstjänster.
-translation-type: tm+mt
-source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
+exl-id: 2fb999b4-854a-430f-bb89-4c786d1a89cc
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 23%
 
 ---
-
 
 # Hantera bibliotek {#manage-libraries-places-ui}
 
@@ -27,7 +26,7 @@ Bibliotek definieras av följande:
 ## Skapa ett bibliotek
 
 1. Logga in på platser med din Adobe ID.
-1. Klicka på **[!UICONTROL ...]** > **[!UICONTROL Manage Libraries]** längst upp till höger.
+1. Klicka på längst upp till höger **[!UICONTROL ...]**  > **[!UICONTROL Manage Libraries]**.
 1. Klicka på **[!UICONTROL New]**.
 1. Skriv namnet.
 1. Klicka på **[!UICONTROL Confirm]**.
@@ -35,13 +34,13 @@ Bibliotek definieras av följande:
 ## Ändra rangordningen för ett bibliotek i användargränssnittet för platser
 
 1. Logga in på Platser med din Adobe ID.
-1. Klicka på **[!UICONTROL ...]** > **[!UICONTROL Manage Libraries]** längst upp till höger.
+1. Klicka på längst upp till höger **[!UICONTROL ...]**  > **[!UICONTROL Manage Libraries]**.
 1. Klicka på ikonen till vänster om biblioteksnamnet och dra biblioteket till den nya ordningen.
 
 ## Byta namn på ett bibliotek
 
 1. Logga in på Platser med din Adobe ID.
-1. Klicka på **[!UICONTROL ...]** > **[!UICONTROL Manage Libraries]** längst upp till höger.
+1. Klicka på längst upp till höger **[!UICONTROL ...]** > **[!UICONTROL Manage Libraries]**.
 1. Leta reda på det bibliotek som du vill ta bort.
 1. Klicka på **[!UICONTROL ...]** och välj **[!UICONTROL Rename]**.
 1. Uppdatera namnet och klicka på **[!UICONTROL Save]**.
@@ -49,7 +48,6 @@ Bibliotek definieras av följande:
 ## Ta bort ett bibliotek
 
 1. Logga in på Platser med din Adobe ID.
-1. Klicka på **[!UICONTROL ...]** > **[!UICONTROL Manage Libraries]** längst upp till höger.
+1. Klicka på längst upp till höger **[!UICONTROL ...]** > **[!UICONTROL Manage Libraries]**.
 1. Leta reda på det bibliotek som du vill ta bort.
 1. Klicka på **[!UICONTROL ...]** och välj **[!UICONTROL Delete]**.
-

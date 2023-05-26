@@ -1,14 +1,13 @@
 ---
 title: Hantera befintliga POI
 description: I användargränssnittet för platstjänster kan du redigera, ta bort eller filtrera befintliga POI.
-translation-type: tm+mt
-source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
+exl-id: a4cf28ae-1e3c-4724-bca3-ac1d0cd6da09
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 6%
 
 ---
-
 
 # Hantera befintliga POI {#managing-existing-pois}
 
@@ -45,11 +44,11 @@ POI och bibliotek skapas och hanteras i platsdatabasen med hjälp av användargr
 
    * Efter egenskap:
 
-      a. I listrutan Egenskap väljer du **[!UICONTROL Country]**, **[!UICONTROL State]** eller **[!UICONTROL City]**.
+      a. I listrutan Egenskaper väljer du **[!UICONTROL Country]**, **[!UICONTROL State]**, eller **[!UICONTROL City]**.
 
       b. Ange ett värde på nästa rad.
 
-      Du kan till exempel markera **[!UICONTROL State]** och skriva **[!UICONTROL California]**.
+      Du kan till exempel välja **[!UICONTROL State]** och text **[!UICONTROL California]**.
 
    * Med metadata:
 

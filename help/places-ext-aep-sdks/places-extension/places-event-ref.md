@@ -1,14 +1,13 @@
 ---
 title: Händelsereferens för platser
-description: 'En lista över händelser som hanteras av tillägget Platser. '
-translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+description: En lista över händelser som hanteras av tillägget Platser.
+exl-id: 98210ef4-5ff1-4792-b97b-2845ce02e78a
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '248'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
-
 
 # Händelsereferens för platser {#places-event-reference}
 
@@ -49,7 +48,7 @@ Den här händelsen är en begäran om att få närliggande POI genom att ta hä
 | latitud | double | sant | n/a | Innehåller latitudvärdet för mitten av sökningen efter närliggande POI. |
 | longitud | double | sant | n/a | Innehåller longitudvärdet för mitten av sökningen efter närliggande POI. |
 | radie | heltal | falskt | n/a | Radie, i meter, används vid sökning efter närliggande POI. |
-| antal | heltal | falskt | 10 | Maximalt antal POI som ska returneras i den resulterande svarshändelsen. |
+| count | heltal | falskt | 10 | Maximalt antal POI som ska returneras i den resulterande svarshändelsen. |
 
 ## ProcessRegionEvent
 
@@ -73,4 +72,3 @@ Den här händelsen gör att Platser-tillägget bearbetar en geofence-post eller
 ## Händelser som skickas av tillägget Platser
 
 Den här informationen pågår för närvarande.
-

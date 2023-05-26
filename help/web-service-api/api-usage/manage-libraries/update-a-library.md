@@ -1,14 +1,13 @@
 ---
 title: Uppdatera ett bibliotek
 description: Uppdatera ett bibliotek med hjälp av Places REST API.
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+exl-id: 37ca2be2-39e1-4f8e-87c2-ef4cb366db0d
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '48'
 ht-degree: 0%
 
 ---
-
 
 # Uppdatera ett bibliotek {#update-a-library}
 
@@ -49,4 +48,3 @@ curl -X PUT 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYI
 >[!IMPORTANT]
 >
 >Ersätt variabler som `<lIBRARYID>`, `<API KEY>`, `<TOKEN>`och `<ORGID>` med faktiska värden.
-

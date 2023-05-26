@@ -1,14 +1,13 @@
 ---
 title: Uppdatera en POI
 description: Uppdatera en POI med hjälp av Places REST API:er.
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+exl-id: f155d1d3-88a3-47bc-bffe-a35842a639e2
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '45'
 ht-degree: 0%
 
 ---
-
 
 # Uppdatera en POI {#update-a-poi}
 

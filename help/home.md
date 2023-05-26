@@ -9,7 +9,7 @@ ht-degree: 8%
 
 ---
 
-# Platstjänst {#home}
+# Places Service {#home}
 
 Plats är en viktig kontext för att förstå och engagera mobilanvändare. Genom att använda det här sammanhanget kan utvecklare av mobilappar förbättra appdesignen och göra den till en mer personaliserad och engagerande upplevelse.
 

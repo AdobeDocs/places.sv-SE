@@ -1,18 +1,17 @@
 ---
 title: Massöverföring av POI
 description: I det här avsnittet finns information om hur du överför dina POI-filer satsvis.
-translation-type: tm+mt
-source-git-commit: 462df20bb351795dc72009cc18d390cb45e262a8
+exl-id: 72704bfc-5837-4439-bdb2-e77ddf935639
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '859'
 ht-degree: 0%
 
 ---
 
-
 # Massöverföring av POI {#bulk-upload-pois}
 
-Knappen **Importera POI** i platstjänsten kan användas för att massöverföra nya POI:er med hjälp av en CSV-fil. En exempelmall för kalkylblad finns för att visa vilka datakolumner som krävs och hur du lägger till valfria anpassade metadata.
+The **Importera POI** -knappen i platstjänsten kan användas för att massöverföra nya POI-filer med hjälp av en CSV-fil. En exempelmall för kalkylblad finns för att visa vilka datakolumner som krävs och hur du lägger till valfria anpassade metadata.
 
 ![Skärm för massimport](/help/assets/Bulk-import.png)
 
@@ -24,19 +23,19 @@ I den här videon visas processen för massimport och massredigering:
 
 ## Python API-skript
 
-En uppsättning Python-skript har skapats för att förenkla batchimporten av POI från en CSV-fil till en POI-databas med hjälp av webbtjänstens API:er. Dessa skript kan laddas ned från den här öppna [Git-rapporten](https://github.com/adobe/places-scripts).
+En uppsättning Python-skript har skapats för att förenkla batchimporten av POI från en CSV-fil till en POI-databas med hjälp av webbtjänstens API:er. Dessa skript kan laddas ned från den här öppna källkoden [git repo](https://github.com/adobe/places-scripts).
 
-Innan du kör dessa skript läser du *Krav för användaråtkomst* i [Integreringsöversikt och -krav](/help/web-service-api/adobe-i-o-integration.md)för att få åtkomst till webbtjänstens API:er.
+Innan du kör dessa skript kan du få åtkomst till webbtjänstens API:er på *Krav för användaråtkomst* in [Översikt över integrationen och krav](/help/web-service-api/adobe-i-o-integration.md).
 
 Här är lite information om skripten:
 
 >[!TIP]
 >
->Den här informationen ingår också i en Viktigt-fil i [Git-rapporten](https://github.com/adobe/places-scripts).
+>Den här informationen finns även i en Viktigt-fil i [git repo](https://github.com/adobe/places-scripts).
 
 ## CSV-fil
 
-Ett exempel på en CSV-fil `places_sample.csv`är en del av det här paketet och innehåller de sidhuvuden som krävs och en rad med exempeldata. Dessa rubriker är små och motsvarar reserverade metadatanycklar som används i platsdatabasen. Kolumner som du lägger till i CSV-filen läggs till i POI-databasen i ett separat metadataavsnitt för varje POI som nyckel/värde-par, och rubrikvärdet används som nyckel.
+Ett exempel på en CSV-fil, `places_sample.csv`, är en del av det här paketet och innehåller de sidhuvuden och en rad med exempeldata. Dessa rubriker är små och motsvarar reserverade metadatanycklar som används i platsdatabasen. Kolumner som du lägger till i CSV-filen läggs till i POI-databasen i ett separat metadataavsnitt för varje POI som nyckel/värde-par, och rubrikvärdet används som nyckel.
 
 Här är en lista över kolumnerna och de värden som du behöver använda:
 
@@ -84,37 +83,37 @@ Värdena för följande kolumner används i användargränssnittet för platstj�
 
 ## Köra skriptet
 
-1. Hämta filer från [Git-rapporten](https://github.com/adobe/places-scripts) till din lokala katalog.
-1. Öppna `config.py` filen i en textredigerare och utför följande uppgifter:
+1. Hämta filer från [git repo](https://github.com/adobe/places-scripts) till din lokala katalog.
+1. I en textredigerare öppnar du `config.py` och utföra följande uppgifter:
 
    a. Redigera följande variabelvärden som strängar:
 
    * `csv_file_path`
 
-      Detta är sökvägen till din `.csv` fil.
+      Det här är vägen till `.csv`  -fil.
 
    * `access_code`
 
-      Det här är din åtkomstkod som hämtats från anropet till Adobe IMS. Mer information om hur du hämtar den här åtkomstkoden finns i *Krav för användaråtkomst* i [Integreringsöversikt och -villkor](/help/web-service-api/adobe-i-o-integration.md).
+      Det här är din åtkomstkod som hämtats från anropet till Adobe IMS. Mer information om hur du får åtkomst till den här åtkomstkoden finns i *Krav för användaråtkomst* in [Översikt över integrationen och krav](/help/web-service-api/adobe-i-o-integration.md).
 
    * `org_id`
 
-      Det Experience Cloud orgID som POI ska importeras till. Mer information om hur du hämtar organisation-ID:t finns i *Krav för användaråtkomst* i [Integreringsöversikt och villkor](/help/web-service-api/adobe-i-o-integration.md).
+      Det Experience Cloud orgID som POI ska importeras till. Mer information om hur du får tag i ditt företags-ID finns i *Krav för användaråtkomst* in [Översikt över integrationen och krav](/help/web-service-api/adobe-i-o-integration.md).
 
    * `api_key`
 
-      Det här är den REST-API-nyckel du fått från Adobe I/O Plataces-integreringen. Mer information om hur du hämtar API-nyckeln finns i *Krav för användaråtkomst* i [Integreringsöversikt och villkor](/help/web-service-api/adobe-i-o-integration.md).
+      Det här är den REST API-nyckel som du får från integreringen för Adobe I/O Platser. Mer information om hur du hämtar API-nyckeln finns i *Krav för användaråtkomst* in [Översikt över integrationen och krav](/help/web-service-api/adobe-i-o-integration.md).
    b. Spara ändringarna.
 
-1. Navigera till `…/places-scripts/import/` katalogen i ett terminalfönster.
-1. Skriv `python ./places_import.py` och tryck på **[!UICONTROL enter]** (**[!UICONTROL return]**).
+1. I ett terminalfönster går du till `…/places-scripts/import/` katalog.
+1. Retur `python ./places_import.py` och trycker på **[!UICONTROL enter]** (**[!UICONTROL return]**).
 
 
 ## CSV-kontroller före import
 
 Skriptet slutför först följande kontroller av CSV-filen:
 
-* Om en `.csv` fil har angetts.
+* Om `.csv` filen angavs.
 * Anger om filsökvägen är giltig.
 * Anger om reserverade metadatarubriker inkluderas.
 
@@ -130,4 +129,4 @@ Om fel hittas skrivs skriptet ut och avbryts. Om inga fel hittas försöker skri
 
 ## Enhetstester
 
-Enhetstester finns i `tests.py` filen, ska köras före varje pull-begäran och ska alla utföras. Ytterligare tester bör läggas till med ny kod. Om du vill köra testerna navigerar du till `…/places-scripts/import/` katalogen och anger `python ./places_import.py` i terminalen.
+Enhetstester finns i `tests.py` filen, ska köras före varje pull-begäran och ska alla skickas. Ytterligare tester bör läggas till med ny kod. Navigera till `…/places-scripts/import/` och ange `python ./places_import.py` i terminal.

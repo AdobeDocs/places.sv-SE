@@ -1,15 +1,13 @@
 ---
 title: Översikt
 description: Förstå och använda API:er för frågor.
-translation-type: tm+mt
-source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+exl-id: cc61a49c-1cf2-407f-b81a-3d38fcb622cc
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 0%
 
 ---
-
-
 
 # Fråga API:er
 
@@ -38,7 +36,7 @@ Argument anges som följande frågeparametrar:
 
    Uppringarens longitud, som måste vara mellan -180 och 180.
 
-* (**Optional**) `limit`
+* (**Valfritt**) `limit`
 
    Det maximala antalet POI som ska returneras.
 
@@ -109,7 +107,7 @@ Här följer ett exempel på det returnerade JSON-formatet:
 }
 ```
 
-POI:er under `places.pois` sorteras efter avståndet från anroparen till kanten på POI:n. POI under `places.userWithin` innehåller anroparen och dessa POI sorteras efter rangordning och sedan genom att radien ökas.
+POI under `places.pois` sorteras efter avstånd från anroparen till kanten på POI:n. POI under `places.userWithin` innehåller anroparen, och dessa POI:er ordnas efter rangordning och sedan efter radie.
 
 ## Exempel på samtal
 

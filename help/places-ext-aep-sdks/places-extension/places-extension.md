@@ -72,7 +72,7 @@ Så här lägger du till platstillägg i appen med Mål-C eller Skift:
    pod 'ACPCore', '~> 2.0'    # minimum Core version for Places is 2.0.3
    ```
 
-   Om du inte använder Cocoapods kan du även inkludera Mobile Core- och Places-biblioteken manuellt från våra [släpper sida](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) på Github.
+   Om du inte använder Cocopods kan du även inkludera Mobile Core och Places-biblioteken manuellt från våra [släpper sida](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) på Github.
 
 1. Uppdatera dina Cocopods:
 

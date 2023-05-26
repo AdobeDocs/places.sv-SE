@@ -1,7 +1,6 @@
 ---
 title: Använda Platstjänst med andra Adobe-lösningar
 description: I det här avsnittet visas hur du använder Platstjänst med andra Adobe-lösningar.
-translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 workflow-type: tm+mt
 source-wordcount: '103'

@@ -1,14 +1,13 @@
 ---
 title: Skapa en POI
 description: Skapa en POI med hjälp av Places REST API:er.
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+exl-id: 0f5b5b40-11f0-4122-b3d5-c3853a6e8ca5
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '47'
 ht-degree: 0%
 
 ---
-
 
 # Skapa en POI {#create-a-poi}
 
@@ -97,4 +96,4 @@ curl -X POST 'https://api-places.adobe.io/places/placesapi/v1/pois' -H 'x-api-ke
 
 >[!IMPORTANT]
 >
->Kom ihåg att ersätta `<API KEY>`, `<TOKEN>`, och `<SINGLEPOIDATA>` med faktiska värden.
+>Kom ihåg att ersätta `<API KEY>`, `<TOKEN>`,, och `<SINGLEPOIDATA>` med faktiska värden.

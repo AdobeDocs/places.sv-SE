@@ -1,14 +1,13 @@
 ---
 title: Läs alla POI:er i organisationen
 description: Läs alla POI i organisationen med hjälp av Places REST API:er.
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+exl-id: 8068a2bc-ce1c-4f3b-8a0c-c38998c1c2e2
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '54'
 ht-degree: 0%
 
 ---
-
 
 # Läs alla POI:er i organisationen {#read-all-pois-org}
 

@@ -1,14 +1,13 @@
 ---
 title: Ta bort ett bibliotek
 description: Ta bort ett bibliotek med hjälp av Plats REST API:er.
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+exl-id: ad45ea38-9e12-43d7-b05f-17d3e40abaf5
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '47'
 ht-degree: 0%
 
 ---
-
 
 # Ta bort ett bibliotek {#delete-a-library}
 
@@ -47,4 +46,3 @@ curl -X DELETE 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRA
 >[!IMPORTANT]
 >
 >Ersätt variabler som `<lIBRARYID>`, `<API KEY>`, `<TOKEN>`och `<ORGID>`med faktiska värden.
-

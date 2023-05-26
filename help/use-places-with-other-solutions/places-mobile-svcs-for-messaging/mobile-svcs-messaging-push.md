@@ -1,14 +1,13 @@
 ---
 title: Push-meddelanden
 description: I det här avsnittet visas hur du använder platstjänsten med push-meddelanden.
-translation-type: tm+mt
-source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+exl-id: c094fe9c-6148-45ba-850a-f4c520d3362c
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 1%
 
 ---
-
 
 # Push-meddelanden
 
@@ -30,10 +29,10 @@ Kontrollera att du har utfört följande uppgifter innan du börjar:
 
 ## Skicka ett meddelande
 
-På fliken **[!UICONTROL Audience]** i arbetsflödet *Skapa push-meddelanden* kan du skapa målgruppen för det här meddelandet på något av följande sätt:
+På **[!UICONTROL Audience]** -fliken i *Skapa push-meddelande* kan du skapa målgruppen för det här meddelandet på något av följande sätt:
 
-* I den **[!UICONTROL Analytics Segments]** nedrullningsbara listan väljer du ett tidigare skapat Adobe Analytics-segment.
+* I **[!UICONTROL Analytics Segments]** väljer du ett tidigare skapat Adobe Analytics-segment.
 
-* I **[!UICONTROL Custom Segment]** avsnittet kan du skapa en målgrupp med hjälp av de tillgängliga anpassade segmentparametrarna.
+* I **[!UICONTROL Custom Segment]** kan du skapa en målgrupp med hjälp av tillgängliga anpassade segmentparametrar.
 
 ![konfigurera ett push-meddelande](/help/assets/push-set-up.png)

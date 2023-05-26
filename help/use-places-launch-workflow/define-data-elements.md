@@ -1,14 +1,13 @@
 ---
 title: Definiera dataelement
 description: I det här avsnittet finns information om hur du skapar, använder och publicerar dataelement i Experience Platform Launch för platser.
-translation-type: tm+mt
-source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
+exl-id: 57e88a37-0b0b-4064-ab72-382a36a0d01d
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 1%
 
 ---
-
 
 # Definiera ett dataelement {#define-data-elements}
 
@@ -43,13 +42,13 @@ Varje POI innehåller följande datareferenser:
 
 ### Skapa ett dataelement
 
-1. Klicka på **[!UICONTROL Data Elements]** fliken Egenskaper för ditt program.
+1. På sidan Egenskaper för din app klickar du på **[!UICONTROL Data Elements]** -fliken.
 
 1. Klicka på **[!UICONTROL Create New Data Element]**.
 
 1. I listan med installerade tillägg hittar du **[!UICONTROL Places]**.
 
-1. Välj en datareferens för det här dataelementet i den **[!UICONTROL Data Element Type]** nedrullningsbara listan.
+1. I **[!UICONTROL Data Element Type]** väljer du en datareferens för det här dataelementet.
 
 1. Välj ett POI-mål.
 
@@ -66,8 +65,8 @@ När ett dataelement har skapats kan du, om det finns en dataelementväljare, an
 
 ![Använda dataelementet](/help/assets/use-de-v2.png)
 
-Om det inte finns någon dataelementväljare i regelkomponenten kan du använda dataelementet genom att radbryta dataelementnamnet med **[!UICONTROL %%]** tokens.
-Om dataelementnamnet till exempel är **[!UICONTROL Last POI City]** kan du lägga till **[!UICONTROL LAST POI City]** i en textinmatning.
+Om det inte finns någon dataelementväljare i regelkomponenten kan du använda dataelementet genom att radbryta dataelementets namn med **[!UICONTROL %%]** variabler.
+Om dataelementnamnet till exempel är **[!UICONTROL Last POI City]** kan du lägga till **[!UICONTROL LAST POI City]** till en textinmatning.
 
 
 ## Publicera dataelement

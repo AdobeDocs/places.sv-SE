@@ -1,14 +1,13 @@
 ---
-title: 'Översikt över API för Web Services '
+title: Översikt över API för Web Services
 description: Platstjänsten är en uppsättning tjänster som gör det enklare för Adobe-kunder att hysa ut Adobe Experience Cloud- och Adobe Experience Platform-lösningar med platsdata och rätt upplevelse för rätt person vid rätt tidpunkt och på rätt plats.
-translation-type: tm+mt
-source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+exl-id: 9e7358d1-3ba0-4304-aeb2-fed7162afb57
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 1%
 
 ---
-
 
 # API-översikt för Web Services {#places-web-services-api}
 
@@ -30,11 +29,11 @@ Innan du kan använda API:t för webbtjänster måste du kontrollera att följan
 
 * Platstjänsten tillhandahålls i din organisation och du har lämplig åtkomst som användare.
 
-   Mer information finns i *Krav för användaråtkomst* i [Integreringsöversikt och -krav](/help/web-service-api/adobe-i-o-integration.md).
+   Mer information finns i *Krav för användaråtkomst* in [Översikt över integrationen och krav](/help/web-service-api/adobe-i-o-integration.md).
 
 * När Platstjänst har etablerats i din organisation och du har åtkomst skapar du en Adobe-integrering för Platstjänst.
 
-   Mer information finns i *Skapa en platsintegrering* i [Integreringsöversikt och villkor](/help/web-service-api/adobe-i-o-integration.md).
+   Mer information finns i *Skapa en platsintegrering* in [Översikt över integrationen och krav](/help/web-service-api/adobe-i-o-integration.md).
 
 Ytterligare information:
 

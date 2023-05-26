@@ -1,14 +1,13 @@
 ---
 title: Använda metadata med POI
 description: I det här avsnittet finns information och strategier om hur du använder metadata med POI.
-translation-type: tm+mt
-source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+exl-id: e669e560-a999-43ff-aeb4-06e6308b0d5c
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 0%
 
 ---
-
 
 # Strategier för att använda metadata med POI {#using-metadata-pois}
 

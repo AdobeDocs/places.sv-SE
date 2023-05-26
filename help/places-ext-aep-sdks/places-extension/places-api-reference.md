@@ -1,14 +1,13 @@
 ---
 title: API-referens för platser
 description: Information om API-referenserna i Platser.
-translation-type: tm+mt
-source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+exl-id: ce1a113c-dee0-49df-8d2f-789ccc1c8322
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 31%
 
 ---
-
 
 # API-referens för platser {#places-api-reference}
 
@@ -20,7 +19,7 @@ När en enhet korsar en av dina apps fördefinierade gränser för platstjänste
 
 ### ProcessGeofence (Android)
 
-Bearbeta en `Geofence` områdeshändelse för den angivna `transitionType`.
+Bearbeta en `Geofence` regionshändelse för angiven `transitionType`.
 
 Skicka `transitionType` från `GeofencingEvent.getGeofenceTransition()`. För närvarande `Geofence.GEOFENCE_TRANSITION_ENTER` och `Geofence.GEOFENCE_TRANSITION_EXIT` stöds.
 
@@ -60,7 +59,7 @@ public class GeofenceTransitionsIntentService extends IntentService {
 
 ### ProcessRegionEvent (iOS)
 
-Den här metoden ska anropas i `CLLocationManager` delegaten, som anger om användaren har angett eller avslutat en viss region.
+Den här metoden ska anropas i `CLLocationManager` delegat, som anger om användaren har angett eller avslutat en viss region.
 
 **Syntax**
 
@@ -87,7 +86,7 @@ Här är kodexemplet för den här metoden:
 
 ### ProcessGeofencingEvent (Android)
 
-Bearbeta allt `Geofences` i `GeofencingEvent` en och samma gång.
+Bearbeta alla `Geofences` i `GeofencingEvent` samtidigt.
 
 **Syntax**
 
@@ -97,7 +96,7 @@ public static void processGeofenceEvent(final GeofencingEvent geofencingEvent);
 
 **Exempel**
 
-Anropa den här metoden i `IntentService` som är registrerad för att ta emot Android-geofence-händelser
+Anropa den här metoden i `IntentService` som registrerats för att ta emot Android-geofence-händelser
 
 ```java
 public class GeofenceTransitionsIntentService extends IntentService {
@@ -259,7 +258,7 @@ Begär platsen för enheten, som tidigare kallats, av tillägget Platser.
 
 >[!TIP]
 >
->Tillägget Platser känner bara till platser som det har fått via anrop till `GetNearbyPointsOfInterest`.
+>Platstillägget känner bara till platser som har skickats till det via anrop till `GetNearbyPointsOfInterest`.
 
 
 ### GetLastKnownLocation (Android)
@@ -386,7 +385,7 @@ Anger auktoriseringsstatus i tillägget Platser.
 Den angivna statusen lagras i läget Platser delad och är endast avsedd som referens.
 Anrop till den här metoden påverkar inte enhetens faktiska platsauktoriseringsstatus.
 
-När enhetens auktoriseringsstatus ändras `locationManager:didChangeAuthorizationStatus:` anropas metoden `CLLocationManagerDelegate` . I den här metoden bör du skicka det nya `CLAuthorizationStatus` värdet till ACPlaces- `setAuthorizationStatus:` API:t.
+När enhetens auktoriseringsstatus ändras visas `locationManager:didChangeAuthorizationStatus:` din `CLLocationManagerDelegate` anropas. I den här metoden bör du skicka det nya `CLAuthorizationStatus` värde till ACPlaces `setAuthorizationStatus:` API.
 
 **Syntax**
 

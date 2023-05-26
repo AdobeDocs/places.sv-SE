@@ -1,14 +1,13 @@
 ---
 title: Läs alla bibliotek i organisationen
 description: Läs alla bibliotek i organisationen med hjälp av Places REST API.
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+exl-id: 3384e1f2-9626-498d-85f7-84569d869c2c
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '60'
 ht-degree: 0%
 
 ---
-
 
 # Läs alla bibliotek i organisationen {#read-all-lib-in-org}
 
@@ -42,4 +41,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries' -H 'x-ap
 
 >[!IMPORTANT]
 >
->Ersätt variabler som `<API KEY>`och `<TOKEN>,` `<ORGID>` med faktiska värden.
+>Ersätt variabler som `<API KEY>`, `<TOKEN>,` och `<ORGID>` med faktiska värden.
