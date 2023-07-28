@@ -2,9 +2,9 @@
 title: Meddelanden i appen
 description: I det här avsnittet visas hur du använder Platstjänst med meddelanden i appen.
 exl-id: c655e64b-0737-44d5-b453-2ac02fb9cbcc
-source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
+source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '651'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Dessa typer är meddelanden i appen eftersom de aktiveras av SDK:n. Lokala medde
 
 ### Förutsättningar
 
-Innan du börjar förstår du hur du skickar och skapar ett meddelande i appen i Mobiltjänster och hur utlösarna fungerar. Mer information finns i [Skapa ett meddelande i appen.](https://docs.adobe.com/content/help/en/mobile-services/using/messaging-ug/inapp-messages/t-in-app-message.html)
+Innan du börjar förstår du hur du skickar och skapar ett meddelande i appen i Mobiltjänster och hur utlösarna fungerar. Mer information finns i [Skapa ett meddelande i appen.](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html)
 
 ## Regler i Experience Platform Launch
 
@@ -41,11 +41,11 @@ Du kan skapa Experience Platform Launch-regler som skickar data som du vill kunn
 
 * Använda platsdata som utlösande händelse.
 
-   Du kan till exempel skicka data till Analytics när en användare anger en POI.
+  Du kan till exempel skicka data till Analytics när en användare anger en POI.
 
 * Använda platsdata som villkor för en utlösande händelse.
 
-   Om du till exempel har skapat en anpassad metadatatagg i Platstjänst för vädret i olika POI:er kan du använda dessa metadata som parameter för regelvillkoret. Du kan använda det här villkoret med en POI-posthändelse som beskrivs ovan, men du kan även använda villkoret som kontext för alla händelser.
+  Om du till exempel har skapat en anpassad metadatatagg i Platstjänst för vädret i olika POI:er kan du använda dessa metadata som parameter för regelvillkoret. Du kan använda det här villkoret med en POI-posthändelse som beskrivs ovan, men du kan även använda villkoret som kontext för alla händelser.
 
 När regeln har konfigurerats med rätt händelse- och villkorsparametrar slutför du regelkonfigurationen genom att konfigurera åtgärden för att skicka data till Analytics.
 
@@ -58,11 +58,11 @@ Så här skapar du en åtgärd:
 1. Skriv ett namn för åtgärden.
 1. I den högra rutan, i **[!UICONTROL Context Data]** väljer du nyckelvärdepar för att ange de kontextdata som ska skickas till Analytics.
 
-Du kan till exempel välja `poiname` som tangenten och `{%%Last Entered POI Name}` som värdet.
+Du kan t.ex. välja `poiname` som tangenten och `{%%Last Entered POI Name}` som värdet.
 
 >[!TIP]
 >
->Analysbearbetningsregler kan anges för att hämta kontextdata. Mer information finns i [Bearbetar regler](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-processing-rules.html). I exemplet i *Skapa en åtgärd* skickar funktionsmakrot `poiname` som kontext för att beskriva POI-händelsen som skickas till Analytics.
+>Analysbearbetningsregler kan anges för att hämta kontextdata. Mer information finns i [Bearbetar regler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html). I exemplet i *Skapa en åtgärd* skickar funktionsmakrot `poiname` som kontext för att beskriva POI-händelsen som skickas till Analytics.
 
 ![skapa ett funktionsmakro](/help/assets/configure-action.png)
 
@@ -77,12 +77,12 @@ Som en del av dina utlösarparametrar kan du skapa målgruppen för meddelandet 
 * Använda platsspecifika åtgärder som en inmatning eller en avslutning.
 * Använda POI-metadata som skickas som kontextdata för att begränsa målgruppen.
 
-   Det här alternativet kan användas med en platsspecifik åtgärd, till exempel en post, eller som kontext till en annan händelse, till exempel en start eller ett knappklick.
+  Det här alternativet kan användas med en platsspecifik åtgärd, till exempel en post, eller som kontext till en annan händelse, till exempel en start eller ett knappklick.
 
-   Här är ett exempel på hur du konfigurerar ett meddelande i appen för att välkomna användare som anger ett POI som har **[!UICONTROL Adobe]** i namnet:
+  Här är ett exempel på hur du konfigurerar ett meddelande i appen för att välkomna användare som anger ett POI som har **[!UICONTROL Adobe]** i namnet:
 
-   ![trigger parameters](/help/assets/trigger-parameters.png)
+  ![trigger parameters](/help/assets/trigger-parameters.png)
 
 * Parametrar i platstjänstens rubriker i *Utlösare och traits* sidan i Mobiltjänster fungerar inte med data från Platstjänst.
 
-   De här parametrarna gäller endast för den gamla platstjänstdatabasen som skapades i Mobile Services.
+  De här parametrarna gäller endast för den gamla platstjänstdatabasen som skapades i Mobile Services.

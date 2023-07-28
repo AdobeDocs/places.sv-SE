@@ -2,9 +2,9 @@
 title: Push-meddelanden
 description: I det här avsnittet visas hur du använder platstjänsten med push-meddelanden.
 exl-id: c094fe9c-6148-45ba-850a-f4c520d3362c
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '220'
 ht-degree: 1%
 
 ---
@@ -15,17 +15,17 @@ Med Mobiltjänster kan du skicka push-meddelanden till Adobe Analytics-segment. 
 
 Kontrollera att du har utfört följande uppgifter innan du börjar:
 
-* Platstjänstdata har bearbetats av Adobe Analytics.
+* Platstjänster har bearbetats av Adobe Analytics.
 
-   Det innebär att din mobilapp har skickat platsdata till en rapportsserie och att data är tillgängliga för segmentering.
+  Det innebär att din mobilapp har skickat platsdata till en rapportsserie och att data är tillgängliga för segmentering.
 
 * Push-meddelandekanalen i Mobile Services har konfigurerats.
 
-   Mer information finns i [Skapa ett push-meddelande](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/prerequisites-push-messaging.html).
+  Mer information finns i [Skapa ett push-meddelande](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html).
 
 * Lär dig hur du skickar ett push-meddelande till ett Analytics-segment i Mobiltjänster.
 
-   Mer information finns i [Skapa ett push-meddelande](https://docs.adobe.com/content/help/en/mobile-services/using/messaging-ug/push-messages/t-create-push-message.html).
+  Mer information finns i [Skapa ett push-meddelande](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html).
 
 ## Skicka ett meddelande
 

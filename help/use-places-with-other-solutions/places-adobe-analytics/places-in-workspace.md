@@ -2,10 +2,10 @@
 title: Rapport om platsdata på arbetsytan i Analytics
 description: I det här avsnittet finns information om hur du rapporterar platsdata i arbetsytan för Analytics.
 exl-id: 45ca3c80-71b7-41de-9b00-645504061935
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 6%
+source-wordcount: '430'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ Det här dokumentet förutsätter följande:
 
 1. Adobe Analytics-användaren är administratör och har tillgång till bearbetningsregler.
 
-   Mer information om bearbetningsregler finns i [Översikt över bearbetningsregler](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html).
+   Mer information om bearbetningsregler finns i [Översikt över bearbetningsregler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html).
 
 1. I Launch-egenskapen har dataelement skapats för platstjänstvariablerna som du vill använda.
 
@@ -44,7 +44,7 @@ I det här exemplet har regelns åtgärd följande värden definierade för Anal
 
 ## 2. Skapa analysvariabler
 
-För att mappa kontextdata (skickas i steg 1) måste variabler först skapas för Analytics-rapportsviten. Mer information om hur du skapar variabler i Analytics finns i [Konverteringsvariabler (eVars)](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-conversion-variables-evar.html).
+För att mappa kontextdata (skickas i steg 1) måste variabler först skapas för Analytics-rapportsviten. Mer information om hur du skapar variabler i Analytics finns i [Konverteringsvariabler (eVars)](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html).
 
 I det här exemplet har en konverteringsvariabel, **[!UICONTROL Evar2]**, har skapats och namngetts **[!UICONTROL Places POI Name]**. Ytterligare variabler måste skapas för varje platsvariabel som du vill visa i rapporter.
 
@@ -52,7 +52,7 @@ I det här exemplet har en konverteringsvariabel, **[!UICONTROL Evar2]**, har sk
 
 ## 3. Skapa bearbetningsregler
 
-Det här steget behövs för att mappa kontextdata (steg 1) till analysvariabler (steg 2). Mer information om hur du skapar bearbetningsregler finns i [Översikt över bearbetningsregler](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html).
+Det här steget behövs för att mappa kontextdata (steg 1) till analysvariabler (steg 2). Mer information om hur du skapar bearbetningsregler finns i [Översikt över bearbetningsregler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html).
 
 I det här exemplet har en bearbetningsregel skapats för att mappa kontextdatavärdet **[!UICONTROL poi.name]** till **[!UICONTROL Places POI Name (eVar2)]**. Ytterligare bearbetningsregler måste skapas för varje platsvariabel som skapas.
 
@@ -60,13 +60,13 @@ I det här exemplet har en bearbetningsregel skapats för att mappa kontextdatav
 
 ## 4. Generera en rapport i Workspace
 
-I det här steget visas en grundläggande rapport på arbetsytan för analyser för att visa de data som samlats in i steg 1-3. Mer information om hur du använder arbetsytan i Analytics finns i [Översikt över arbetsytan i Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/analysis-workspace-features.html).
+I det här steget visas en grundläggande rapport på arbetsytan för analyser för att visa de data som samlats in i steg 1-3. Mer information om hur du använder arbetsytan i Analytics finns i [Översikt över arbetsytan i Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html).
 
 I det här exemplet har rapporten följande inställningar:
 
 * Mått - **[!UICONTROL Occurrences]**
 
-* Dimension - **[!UICONTROL Action Name]**
+* DIMENSION - **[!UICONTROL Action Name]**
 
    * Nedbruten som Dimension - **[!UICONTROL Places POI Name]**
 

@@ -2,18 +2,18 @@
 title: Places Service
 description: Platstjänsten är ett viktigt sammanhang när det gäller att förstå mobilanvändarnas engagemang. Genom att använda det här sammanhanget kan utvecklare av mobilappar förbättra appdesignen och göra den till en mer personaliserad och engagerande upplevelse.
 exl-id: 7369176f-c072-437a-9ee3-b463c5ff1d12
-source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
+source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '671'
 ht-degree: 8%
 
 ---
 
 # Places Service {#home}
 
-Plats är en viktig kontext för att förstå och engagera mobilanvändare. Genom att använda det här sammanhanget kan utvecklare av mobilappar förbättra appdesignen och göra den till en mer personaliserad och engagerande upplevelse.
+Plats är en viktig kontext för att förstå och interagera med mobilanvändare. Genom att använda det här sammanhanget kan utvecklare av mobilappar förbättra appdesignen och göra den till en mer personaliserad och engagerande upplevelse.
 
-Platstjänsten, som tidigare kallades Adobe Experience Platform Location Service, är en geolokaliseringstjänst som gör det möjligt för mobilappar med platsmedvetenhet att förstå platskontexten genom att använda avancerade och lättanvända SDK-gränssnitt tillsammans med en flexibel databas med intressepunkter (POI).
+Platstjänsten, som tidigare kallades Adobe Experience Platform Location Service, är en geolokaliseringstjänst som gör det möjligt för mobilappar med platsmedvetenhet att förstå platskontexten genom att använda avancerade och lättanvända SDK-gränssnitt tillsammans med en flexibel databas med intressepunkter.
 
 Med Platstjänst kan du uppnå följande:
 
@@ -38,50 +38,50 @@ Platstjänsten omfattar följande komponenter:
 
 * **Webbtjänst**
 
-   Du kan skapa och hantera POI med hjälp av Places REST API:er. Mer information om REST API:er finns i [Hantera bibliotek](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md) och [Hantera POI](/help/web-service-api/api-usage/manage-pois/manage-pois.md).
+  Du kan skapa och hantera POI med hjälp av Places REST API:er. Mer information om REST API:er finns i [Hantera bibliotek](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md) och [Hantera POI](/help/web-service-api/api-usage/manage-pois/manage-pois.md).
 
-* **Gränssnitt för POI-hantering**
+* **POI Management-gränssnitt**
 
-   Visualisera POI på en karta för att förstå det spatiala sammanhanget och för att lägga till/redigera POI och deras anpassade metadata.
+  Visualisera POI på en karta för att förstå det spatiala sammanhanget och för att lägga till/redigera POI och deras anpassade metadata.
 
 * **Tillägget Platser**
 
-   Det mobila API-gränssnittet för flera plattformar för att integrera platskontexten i era mobilappar. Mer information om SDK:er finns i [Platstillägg](/help/places-ext-aep-sdks/places-extension/places-extension.md).
+  Det mobila API-gränssnittet för flera plattformar för att integrera platskontexten i era mobilappar. Mer information om SDK:er finns i [Platstillägg](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
 * **Starta regler**
 
-   De geointelligenta startreglerna som gör att du kan aktivera åtgärder med start- och avslutningshändelser. Reglerna gör det även möjligt att använda geo-attribut i villkor för att personalisera upplevelsen.
+  De geointelligenta startreglerna som gör att du kan aktivera åtgärder med start- och avslutningshändelser. Reglerna gör det även möjligt att använda geo-attribut i villkor för att personalisera upplevelsen.
 
 ## Terminologi
 
 Här är några vanliga termer som används i den här dokumentationen:
 
-* A **Intressepunkt (POI)** är en geografisk plats som är av intresse för din organisation.
+* A **intressepunkt (POI)** är en geografisk plats som är av intresse för din organisation.
 
-   Du kan definiera POI med attribut som namn, radie, adress, kategori och metadatataggar.
+  Du kan definiera POI med attribut som namn, radie, adress, kategori och metadatataggar.
 
 * A **geofence** är en typ av POI.
 
-   Denna POI-typ är en virtuell geografisk gräns som definieras av latitud- och longitudkoordinater.
+  Denna POI-typ är en virtuell geografisk gräns som definieras av latitud- och longitudkoordinater.
 
 * A **beacon** är en typ av POI.
 
-   Den här POI-typen är en fysisk enhet som representerar en plats genom att skicka en blå tand med låg effekt. Stöd för beacons kommer i en kommande version.
+  Den här POI-typen är en fysisk enhet som representerar en plats genom att skicka en blå tand med låg effekt. Stöd för beacons kommer i en kommande version.
 
 * Ett **bibliotek** är en samling intressepunkter, som grupperas för att enkelt koppla regler till en uppsättning i stället för till en intressepunkt.
 
 * An **extension** är tillägget Experience Platform Launch som krävs för att integrera platsens SDK i dina mobilappar.
 
-   Det tillägg som används tillsammans med andra SDK:er för mobiler för att lägga till platskontext i era upplevelser.
+  Det tillägg som används tillsammans med andra SDK:er för mobiler för att lägga till platskontext i era upplevelser.
 
 * En **organisation** är den Adobe-enhet som identifierar ditt företag i Adobe Experience Cloud.
 
-   Vanligtvis är en organisation ditt företagsnamn. Ett företag kan dock ha mer än en organisation. Organisationsadministratören kan konfigurera grupper och användare och konfigurera funktioner för enkel inloggning.
+  Vanligtvis är en organisation ditt företagsnamn. Ett företag kan dock ha flera organisationer. Organisationsadministratören kan konfigurera grupper och användare och konfigurera funktioner för enkel inloggning.
 
 * **orgID** är det ID som representerar din organisation i Adobe Experience Platform.
 
-   Mer information finns i [Hitta ditt orgID](https://forums.adobe.com/thread/2339895).
+  Mer information finns i [Hitta ditt orgID](https://forums.adobe.com/thread/2339895).
 
-* The **Experience Cloud ID** en universell, beständig ID som identifierar besökarna i alla lösningar i Experience Cloud.
+* The **EXPERIENCE CLOUD ID** en universell, beständig ID som identifierar besökarna i alla lösningar i Experience Cloud.
 
-   Mer information finns i [Översikt](https://docs.adobe.com/content/help/en/id-service/using/intro/overview.html).
+  Mer information finns i [Ökning](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html).

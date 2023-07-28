@@ -2,9 +2,9 @@
 title: Versionsinformation
 description: Versionsinformation för Platstjänst.
 exl-id: 76da9548-4e32-4b23-9a15-7012973915f3
-source-git-commit: 2b5c53887c9ed0f2a672c377121a39537ee58f01
+source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '1492'
+source-wordcount: '1490'
 ht-degree: 3%
 
 ---
@@ -16,8 +16,8 @@ ht-degree: 3%
 * **Bildtillägg för Platser och Platser**
 
    * Tillägg för Platser och Platsövervakare har lagts till för [Reagera på originalprogram](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#react-native)
-   * Tillägg för Platser och Platsövervakare har lagts till för [Cordova-applikationer](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova)
-   * Mer information finns i: [Använda platstillägg](https://docs.adobe.com/content/help/sv-SE/places/using/places-ext-aep-sdks/places-extension/places-extension.html)
+   * Tillägg för Platser och Platsövervakare har lagts till för [Cordova-program](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova)
+   * Mer information finns i: [Använda Platstillägg](https://experienceleague.adobe.com/docs/places/using/places-ext-aep-sdks/places-extension/places-extension.html)
 
 
 ## 12 maj 2020
@@ -114,12 +114,12 @@ ht-degree: 3%
    * **iOS**
 
       * Lagt till ett nytt API, `setRequestAuthorizationLevel`, för att ange den typ av platsauktoriseringsbegäran som användaren uppmanas att göra.
+
+
    * **Android**
 
       * Lagt till ett nytt API, `setLocationPermission`, för att ange den typ av platsbehörighetsbegäran som användaren uppmanas att göra.
       * Platsövervakaren har nu stöd för Android 10.
-
-
 
 ## 8 aug 2019
 
@@ -162,9 +162,9 @@ Följande uppdateringar gjordes i den här versionen:
 * Hanteringen av återanropet, som är ett resultat av en platsbehörighetsbegäran, kräver inte längre att du utökar PlacesActivity.
 * Ändrade ett befintligt API så att utvecklare kan rensa alla platsdata från enheten:
 
-   Gammalt API: `public static void stop();`
+  Gammalt API: `public static void stop();`
 
-   Nytt API: `public static void stop (final boolean clearData);`
+  Nytt API: `public static void stop (final boolean clearData);`
 
 * Uppdaterad användning av `getNearbyPointsOfInterest` API för att hantera felscenarier effektivare.
 
@@ -176,7 +176,7 @@ Följande uppdateringar gjordes i den här versionen:
 
 * Om du vill ta bort alla platsdata från enheten
 
-   i ACPlacesMonitor ersatte ett befintligt API `+ (void) stop;` med`+ (void) stop: (BOOL) clearData;`.
+  i ACPlacesMonitor ersatte ett befintligt API `+ (void) stop;` med`+ (void) stop: (BOOL) clearData;`.
 
 * Uppdaterat användningen av ACPlaces `getNearbyPointsOfInterest` API för att hantera felscenarier effektivare.
 
@@ -188,7 +188,7 @@ Följande uppdateringar gjordes i den här versionen:
 
 * Ett nytt API har lagts till som tar bort alla platsrelaterade data från delat läge, minne i appen och delade inställningar.
 * Ett problem där det delade tillståndet inte uppdaterades när programmet startades har åtgärdats.
-* Korrigerade ett fel där `getNearbyPointsOfInterest` callback returnerade felkod `SERVER_RESPONSE_ERROR instead of CONNECTIVITY_ERROR` på internet.
+* Ett fel där `getNearbyPointsOfInterest` callback returnerade felkod `SERVER_RESPONSE_ERROR instead of CONNECTIVITY_ERROR` på internet.
 * `getNearbyPointsOfInterest` API (utan errorCallback) har `successCallback` anropas med tom poi-lista om fel uppstår när närliggande intressepunkter hämtas.
 
 ## 19 juli 2019
@@ -257,7 +257,7 @@ Klicka här om du vill ha mer information om Platsövervakaren.
 * Introducerade ett nytt API för getNearByPlaces, som har ett errorCallback och anropas med en errorCode som anger orsaken till felet.
 * Platstillägget placerar nu händelserna i kö tills en konfiguration har hämtats.
 * Stöd för miljömedvetna konfigurationer har lagts till.
-* Felkorrigering: korrigerade nycklarna för regionens in-/avslutshändelser
+* Felkorrigering: nycklarna för in-/avslutshändelser för regionen har korrigerats
 * Lagring av den senast kända platsen respekterar nu användarens sekretessstatus
 
 
@@ -313,10 +313,10 @@ Mer information om tillägget Platser finns i [Platstillägg](/help/places-ext-a
 Du kan använda Places-API:erna för att göra följande:
 
 * Tillåt utvecklare att fylla i och uppdatera sin lista över POI.
-* Bygg ett eget användargränssnitt eller integrera med en befintlig POI-databas.
+* Skapa ett eget användargränssnitt eller integrera med en befintlig POI-databas.
 * Använd Places-API:ts batchslutpunkter för att göra en bulkimport av POI:er.
 
-   Du kan använda det medföljande Python-verktyget för att slutföra bulkimporten.
+  Du kan använda det medföljande Python-verktyget för att slutföra bulkimporten.
 
 Mer information om Places-API:erna finns i [Webbtjänstens API](/help/web-service-api/places-web-services.md).
 
@@ -324,4 +324,4 @@ Mer information om Places-API:erna finns i [Webbtjänstens API](/help/web-servic
 
 #### Analytics-integrering
 
-Tillägget Analytics uppdateras för att automatiskt lägga till platskontextdata från platstjänstdatabasen till alla utgående Analytics-anrop när en användare befinner sig i en POI (passiva anrop). Uppdateringen tillåter även att regler skapas för att starta Analytics-spårningsanrop direkt vid POI-inträde eller -utträde (aktiva anrop).
+Tillägget Analytics uppdateras för att automatiskt lägga till platskontextdata från platstjänstdatabasen till alla utgående Analytics-anrop när en användare befinner sig i en POI (passiva anrop). Den här uppdateringen tillåter även att regler skapas för att starta Analytics-spårningsanrop direkt vid POI-inträde eller -utträde (aktiva anrop).

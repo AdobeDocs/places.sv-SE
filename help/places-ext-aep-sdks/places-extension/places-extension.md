@@ -2,9 +2,9 @@
 title: Tillägget Platser
 description: Med tillägget Platser kan du agera utifrån platsen för dina användare.
 exl-id: 09c02753-09b3-4e07-82b2-b6c72c4e0e42
-source-git-commit: 795808b38851d5afcedc03f58e9a1d6342830934
+source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '691'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ Med tillägget Platser kan du agera utifrån platsen för dina användare. Det h
 
 1. Slutför publiceringsprocessen för att uppdatera SDK-konfigurationen.
 
-   Mer information om publicering i Experience Platform Launch finns i [Publicering](https://docs.adobe.com/content/help/en/launch/using/reference/publish/overview.html).
+   Mer information om publicering i Experience Platform Launch finns i [Publicering](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html).
 
 ### Konfigurera tillägget Platser {#configure-places-extension}
 
@@ -72,7 +72,7 @@ Så här lägger du till platstillägg i appen med Mål-C eller Skift:
    pod 'ACPCore', '~> 2.0'    # minimum Core version for Places is 2.0.3
    ```
 
-   Om du inte använder Cocopods kan du även inkludera Mobile Core och Places-biblioteken manuellt från våra [släpper sida](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) på Github.
+   Om du inte använder Cocopods kan du även inkludera Mobile Core och Places-biblioteken manuellt från våra [releases page](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) på Github.
 
 1. Uppdatera dina Cocopods:
 
@@ -150,7 +150,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 Platsdata kan snabbt bli inaktuella, särskilt om enheten inte tar emot bakgrundsuppdateringar.
 
-Styr tiden för live-visning för platsmedlemsdata på enheten genom att ställa in `places.membershipttl` konfigurationsinställning. Värdet som skickas representerar antalet sekunder som platsläget förblir giltigt för enheten.
+Styr tiden för live-visning av platsmedlemskapsdata på enheten genom att ställa in `places.membershipttl` konfigurationsinställning. Värdet som skickas representerar antalet sekunder som platsläget förblir giltigt för enheten.
 
 #### Android
 

@@ -2,9 +2,9 @@
 title: Använda Platstjänst med Mobiltjänster för meddelanden
 description: I det här avsnittet visas hur du använder Platstjänst med Mobiltjänster för meddelanden.
 exl-id: dfa6b8bb-6bf2-44eb-8bfc-87294807ec3b
-source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
+source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '343'
 ht-degree: 1%
 
 ---
@@ -15,29 +15,29 @@ Innan du kan använda mobiltjänsttillägget för meddelanden bör du kontroller
 
 * Intressepunkter har skapats i Platstjänst. Mer information finns i [Skapa en POI](/help/poi-mgmt-ui/create-a-poi-ui.md).
 
-   >[!IMPORTANT]
-   >
-   >Platstjänsten innehåller en ny och förbättrad POI-databas för din organisation som finns utanför det tidigare användargränssnittet för mobila tjänster. POI som finns i Mobile Service *Hantera platser* sidnavigering fungerar bara för version 4 av SDK.
+  >[!IMPORTANT]
+  >
+  >Platstjänsten innehåller en ny och förbättrad POI-databas för din organisation som finns utanför det tidigare användargränssnittet för mobila tjänster. POI som finns i Mobile Service *Hantera platser* sidnavigering fungerar bara för version 4 av SDK:n.
 
 * Här är *Hantera platser* POI-hanteringssidan i det äldre användargränssnittet för mobila tjänster för äldre versioner av SDK:
 
-   ![Äldre gränssnitt](/help/assets/legacy-location-v4-ui.png)
+  ![Äldre gränssnitt](/help/assets/legacy-location-v4-ui.png)
 
 * Här är användargränssnittet för platstjänster:
 
-   ![Placerar tjänstens gränssnitt för POI-hantering](/help/assets/places-ui.png)
+  ![Placerar tjänstens gränssnitt för POI-hantering](/help/assets/places-ui.png)
 
 * ACP SDK är korrekt konfigurerad med tillägget Platser.
 
-   Det innebär att data är tillgängliga som händelser och/eller villkor i regelmotorn Experience Platform Launch för din mobilapp. Mer information finns i [Platstillägg](/help/places-ext-aep-sdks/places-extension/places-extension.md).
+  Det innebär att data är tillgängliga som händelser och/eller villkor i regelmotorn Experience Platform Launch för din mobilapp. Mer information finns i [Platstillägg](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
 * Bekanta dig med hur du skapar och publicerar Experience Platform Launch-regler för ACP SDK i din mobilapp.
 
-   Mer information finns i [Regelmotor](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine).
+  Mer information finns i [Regelmotor](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine).
 
 * dataelement från Experience Platform Launch skapas från platstillägg som ska användas i regelmotorn.
 
-   Mer information finns i [Dataelement](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine#data-elements).
+  Mer information finns i [Dataelement](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine#data-elements).
 
 ## Rapportering
 
@@ -45,11 +45,11 @@ Innan du kan använda rapportering måste du uppfylla följande krav:
 
 * Platstjänstdata har skickats till Adobe Analytics Report Suite.
 
-   Mer information finns i [Använd Platstjänst med Adobe Analytics](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md).
+  Mer information finns i [Använd Platstjänst med Adobe Analytics](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md).
 
 * Bli bekant med rapporter om mobila tjänster.
 
-   Mer information finns i [Rapporter](https://docs.adobe.com/content/help/en/mobile-services/using/reports-ug/usage.html).
+  Mer information finns i [Rapporter](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html).
 
 ## Visualisering av rapportering
 

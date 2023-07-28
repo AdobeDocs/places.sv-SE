@@ -1,13 +1,13 @@
 ---
-source-git-commit: c79135bed83932095df42869017ed2cc20be6e22
+source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 72%
+source-wordcount: '430'
+ht-degree: 71%
 
 ---
 # Artikel om att bidra
 
-Vi välkomnar bidrag till innehåll från våra medarbetare och Adobe utanför dokumentationsteamen.
+Vi välkomnar bidrag till innehåll från våra medarbetare i communityn och Adobe utanför dokumentationsteamen.
 
 ## Adobes uppförandekod gällande öppen källkod
 
@@ -15,7 +15,7 @@ Detta projekt har antagit [Adobe Open Source Code of Conduct](code-of-conduct.md
 
 ## Om dina bidrag till innehåll hos Adobe
 
-Se [Guiden för bidragsgivare till Adobe Docs](https://docs.adobe.com/help/sv-SE/contributor/contributor-guide/introduction.html).
+Se [Guiden för bidragsgivare till Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=sv).
 
 Hur du bidrar beror på vem du är och vilken typ av ändringar du vill bidra med:
 
@@ -23,7 +23,7 @@ Hur du bidrar beror på vem du är och vilken typ av ändringar du vill bidra me
 
 Klicka på **Logga ett problem** i en artikel som öppnar ett problem i GitHub. Ange en titel och en beskrivning och klicka sedan på **Skicka ny utgåva**.
 
-Klicka på knappen **Redigera den här sidan** i en artikel som öppnar källartikeln i GitHub. Använd GitHub-gränssnittet för att göra uppdateringar. Mer information finns i den allmänna [guiden för bidragsgivare till Adobe Docs](https://docs.adobe.com/help/sv-SE/contributor/contributor-guide/introduction.html).
+Klicka på knappen **Redigera den här sidan** i en artikel som öppnar källartikeln i GitHub. Använd GitHub-gränssnittet för att göra uppdateringar. Mer information finns i den allmänna [guiden för bidragsgivare till Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=sv).
 
 Mindre korrigeringar och förtydliganden som du lämnar in för dokumentation och kodexempel i den här databasen omfattas av Adobes användarvillkor.
 
@@ -45,7 +45,7 @@ Om du är teknikskribent, programchef eller utvecklare för en [!UICONTROL Adobe
 
 Deltagare i vårt community kan använda GitHub-gränssnittet för grundläggande redigeringar eller förgrena databasen för att göra större bidrag.
 
-Mer information finns i [guiden för bidragsgivare till Adobe Docs](https://docs.adobe.com/help/sv-SE/contributor/contributor-guide/introduction.html).
+Mer information finns i [guiden för bidragsgivare till Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=sv).
 
 ## Så använder du markdown för att formatera ditt ämne
 

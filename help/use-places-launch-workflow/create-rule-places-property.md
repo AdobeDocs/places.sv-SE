@@ -1,10 +1,10 @@
 ---
-title: Skapa en regel för platstjänstegenskapen
+title: Skapa en regel för egenskapen Platstjänst
 description: Platserna SDK håller reda på den aktuella platsen, övervakar konfigurerade POI:er runt den aktuella platsen och spårar post- och avslutshändelser för dessa POI:er.
 exl-id: dd5aa7ac-55f9-44dc-8632-e483ef3b91a0
-source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
+source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '861'
 ht-degree: 11%
 
 ---
@@ -25,7 +25,7 @@ Du kan konfigurera en regel som består av en händelse, ett villkor och en åtg
 
 Platstjänsten erbjuder följande händelser som du kan köra en regel för:
 
-* **Ange POI**, som aktiveras av Places SDK när kunden anger det POI som du konfigurerade.
+* **Ange POI**, som utlöses av Places SDK när kunden anger den POI som du konfigurerade.
 * **Avsluta POI**, som aktiveras av Places SDK när kunden lämnar den POI som du konfigurerade.
 
 ### Villkor för platsservice
@@ -54,15 +54,15 @@ Varje POI innehåller följande dataelement:
 
 >[!CAUTION]
 >
->I det här exemplet antas att du har skapat ett bibliotek med alla kaféer i USA. Mer information om hur du skapar POI och bibliotek finns i [Skapa en POI](/help/poi-mgmt-ui/create-a-poi-ui.md) och *Skapa ett bibliotek* in [Hantera flera bibliotek](https://docs.adobe.com/content/help/en/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html).
+>I det här exemplet antas att du har skapat ett bibliotek med alla kaféer i USA. Mer information om hur du skapar POI och bibliotek finns i [Skapa en POI](/help/poi-mgmt-ui/create-a-poi-ui.md) och *Skapa ett bibliotek* in [Hantera flera bibliotek](https://experienceleague.adobe.com/docs/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html).
 
 Följande procedur är ett exempel på hur du skapar en regel som skickar tillbaka ett inlägg till Slack när du går in i en kaffebutik i San Francisco.
 
 Händelsen, villkoret och åtgärden definieras på följande sätt:
 
-* **Händelse**: Platsens starthändelse.
+* **Händelse**: Platshändelse.
 * **Villkor**: Stad för **aktuell intressepunkt** är San Francisco
-* **Åtgärd**: Skicka ett återanslående till Slack på namnet på den kaffebutik som kunden angav.
+* **Åtgärd**: Skicka ett återanslående till Slack av namnet på den kaffebutik som kunden angav.
 
 ### Förutsättning
 
@@ -110,13 +110,13 @@ Så här skapar du ett dataelement i Experience Platform Launch:
 1. I **[!UICONTROL Extension]** nedrullningsbar lista, lämna standardlistan **[!UICONTROL Mobile Core]** markerat alternativ.
 1. Välj en åtgärdstyp, till exempel **[!UICONTROL Send Postback]**.
 
-   a. I **[!UICONTROL URL]** skriver du URL-adressen för återanslående för Slack, till exempel `https://hooks.slack.com/services/`.
+   a. In **[!UICONTROL URL]** skriver du URL-adressen för återanslående för Slack, till exempel `https://hooks.slack.com/services/`.
 
-   b. Om du vill skicka ett inlägg markerar du **[!UICONTROL Add Post Body]** kryssruta.
+   b. Välj **[!UICONTROL Add Post Body]** kryssruta.
 
-   c. I **[!UICONTROL Post Body]**, lägger till texten i posten, till exempel: `{ "text": "A customer has entered" }`
+   c. In **[!UICONTROL Post Body]**, lägger till texten i posten, till exempel: `{ "text": "A customer has entered" }`
 
-   c. Skriv en innehållstyp till exempel **[!UICONTROL application/json]**.
+   c. Skriv en innehållstyp, till exempel **[!UICONTROL application/json]**.
 
    d. Välj ett timeout-värde, till exempel **[!UICONTROL 5]**.
 
@@ -124,10 +124,10 @@ Så här skapar du ett dataelement i Experience Platform Launch:
 
 ### Publicera regeln
 
-1. Om du vill aktivera regeln måste du publicera den. Mer information om hur du publicerar din regel i Experience Platform Launch finns i [Publicering](https://docs.adobe.com/content/help/en/launch/using/reference/publish/overview.html).
+1. Om du vill aktivera regeln måste du publicera den. Mer information om hur du publicerar din regel i Experience Platform Launch finns i [Publicering](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html).
 
 ### Tänk bortom poster och utträden
 
-Det är otroligt kraftfullt att använda platsdata som villkor för att aktivera regler i Experience Platform Launch när du använder platsdata. Du kan till exempel ha en händelseutlösare för en Mobile Core Track-åtgärd klar att utlösas baserat på en särskild trackAction-anropshändelse i din app. Baserat på den här händelsen kan du placera ytterligare platsvillkor för händelsen innan en åtgärd utförs. Öppna t.ex. en undersökning i appen när ett inköp `trackAction` -händelsen inträffar, men **endast** om användarens aktuella plats innehåller specifika metadata för platstjänsten.
+Det är otroligt kraftfullt att använda platsdata som villkor för att aktivera regler i Experience Platform Launch när du använder platsdata. Du kan till exempel ha en händelseutlösare för en Mobile Core Track-åtgärd klar att utlösas baserat på en särskild trackAction-anropshändelse i din app. Baserat på den här händelsen kan du placera ytterligare platsvillkor för händelsen innan en åtgärd utförs. Öppna t.ex. en undersökning i appen när ett inköp `trackAction` inträffar, men **endast** om användarens aktuella plats innehåller specifika metadata för platstjänsten.
 
 ![skapa ett villkor](/help/assets/places-condition.png)
