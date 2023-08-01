@@ -1,8 +1,9 @@
 ---
 title: API-referens för platser
 description: Information om API-referenserna i Platser.
+feature: Mobile SDK
 exl-id: ce1a113c-dee0-49df-8d2f-789ccc1c8322
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+source-git-commit: f521d5e3b0b69977877d88382ce41fcb7d1c54b9
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 31%
@@ -252,7 +253,7 @@ Här är kodexemplet för den här metoden:
 ```
 
 
-## Hämta enhetens plats
+## Hämta platsen för enheten
 
 Begär platsen för enheten, som tidigare kallats, av tillägget Platser.
 
