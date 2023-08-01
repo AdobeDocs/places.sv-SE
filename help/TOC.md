@@ -2,7 +2,8 @@
 audience: end-user
 user-guide-title: Användarhandbok för tjänsten Places
 user-guide-description: Tjänsten Places är en geopositioneringstjänst som gör det möjligt för mobila appar med platsmedvetenhet att förstå platskontexten.
-source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
+feature: Places
+source-git-commit: 30f083087936f54c692ff5aca245a7ee6b970b3a
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 17%
@@ -28,7 +29,7 @@ ht-degree: 17%
    + [Krav för integrering](web-service-api/adobe-i-o-integration.md)
    + API-användning {#api-usage}
       + [API-användningsöversikt](web-service-api/api-usage/api-usage-overview.md)
-      + [Sidhuvuden och parametrar](web-service-api/api-usage/headers-and-parameters.md)
+      + [Huvuden och parametrar](web-service-api/api-usage/headers-and-parameters.md)
       + Hantera bibliotek {#manage-libraries}
          + [Hantera bibliotek - översikt](web-service-api/api-usage/manage-libraries/manage-libraries.md)
          + [Skapa ett bibliotek](web-service-api/api-usage/manage-libraries/create-a-library.md)
