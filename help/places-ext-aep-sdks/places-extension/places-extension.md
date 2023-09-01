@@ -3,107 +3,111 @@ title: Tillägget Platser
 description: Med tillägget Platser kan du agera utifrån platsen för dina användare.
 feature: Mobile SDK
 exl-id: 09c02753-09b3-4e07-82b2-b6c72c4e0e42
-source-git-commit: f521d5e3b0b69977877d88382ce41fcb7d1c54b9
+source-git-commit: 9f2c6fee6e0d6d075b662cc0b6cbee49cf05ee55
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 3%
+source-wordcount: '37'
+ht-degree: 10%
 
 ---
 
 # Tillägget Platser {#places-extension}
 
-Med tillägget Platser kan du agera utifrån platsen för dina användare. Det här tillägget är gränssnittet till API:erna för platstjänster för frågetjänster. Genom att avlyssna händelser som innehåller GPS-koordinater och händelser för geofence-regioner skickar det här tillägget nya händelser som bearbetas av regelmotorn. Tillägget Platser hämtar och levererar även en lista över närmaste POI för appdata som hämtas från API:erna. De regioner som returneras av API:erna lagras i cache och beständighet, vilket tillåter begränsad offlinebearbetning.
+Navigera till utvecklarportalen för Adobe om du vill visa dokumentation för [Placerar SDK-tillägg](https://developer.adobe.com/client-sdks/documentation/places/).
 
-## Installera tillägget Platser i Adobe Experience Platform Launch
+<!-- 
 
-1. Klicka på fliken **[!UICONTROL Extensions]** i Experience Platform Launch.
-1. På **[!UICONTROL Catalog]** -fliken, leta upp **[!UICONTROL Places]** och klicka på **[!UICONTROL Install]**.
-1. Markera de platsbibliotek som du vill använda i den här egenskapen. Det här är de bibliotek som kommer att vara tillgängliga i din app.
-1. Klicka på **[!UICONTROL Save]**.
+The Places extension allows you to act based on the location of your users. This extension is the interface to the Places Query Service APIs. By listening for events that contain GPS coordinates and geofence region events, this extension dispatches new events that are processed by the Rules Engine. The Places extension also retrieves and delivers a list of the nearest POI for the app data that retrieves from the APIs. The regions returned by the APIs are stored in cache and persistence, which allows limited offline processing.
 
-   När du klickar **[!UICONTROL Save]** söker Experience Platform SDK efter POI i de bibliotek du har valt. POI-data inkluderas inte i hämtningen av biblioteket när du skapar appen, men en platsbaserad delmängd av POI hämtas till slutanvändarens enhet under körningen och baseras på användarens GPS-koordinater.
+## Install the Places extension in Adobe Experience Platform Launch
 
-1. Slutför publiceringsprocessen för att uppdatera SDK-konfigurationen.
+1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
+1. On the **[!UICONTROL Catalog]** tab, locate the **[!UICONTROL Places]** extension, and click **[!UICONTROL Install]**.
+1. Select the Places libraries you want to use in this property. These are the libraries that will be accessible in your app.
+1. Click **[!UICONTROL Save]**.
 
-   Mer information om publicering i Experience Platform Launch finns i [Publicering](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html).
+    When you click **[!UICONTROL Save]**, the Experience Platform SDK searches the Places Services for POIs in the libraries that you selected. The POI data is not included in the download of the library when you build the app, but a location-based subset of POIs is downloaded to the end user's device at runtime and is based on the user's GPS coordinates.
 
-### Konfigurera tillägget Platser {#configure-places-extension}
+1. Complete the publishing process to update the SDK configuration.
 
-![](/help/assets/places-extension.png)
+   For more information about publishing in Experience Platform Launch, see [Publishing](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html).
 
-## Lägg till tillägget Platser i din app {#add-places-to-app}
+### Configure the Places extension {#configure-places-extension}
 
-Du kan lägga till tillägget Platser i dina Android- och iOS-appar. Stegen för att lägga till platser i ditt iOS- eller Android-program visas nedan. Platstillägg är också tillgängliga för följande plattformar nedan. Om du vill lägga till platser i programmet när du utvecklar med någon av de här plattformarna läser du följande länkar:
+  ![](/help/assets/places-extension.png)
 
-**[Cordova Places Plugin](https://github.com/adobe/cordova-acpplaces/blob/master/README.md)**
+## Add the Places extension to your app {#add-places-to-app}
 
-**[Plugin-programmet React Native Places](https://github.com/adobe/react-native-acpplaces/blob/master/README.md)**
+You can add the Places extension to your Android and iOS apps. The steps to add Places to your iOS or Android application can be seen below. Places extensions are also available for the following platforms below. For adding Places to your application when developing with one of these platforms see the accompanying links:
 
-**[Plugin-programmet Flutter Places](https://github.com/adobe/flutter-acpplaces_monitor)**
+**[Cordova Places Plugin](https://github.com/adobe/cordova-acpplaces/blob/master/README.md)** 
 
-**[Plugin-programmet Xamarin Places](https://github.com/adobe/xamarin-acpcore)**
+**[React Native Places Plugin](https://github.com/adobe/react-native-acpplaces/blob/master/README.md)** 
+
+**[Flutter Places Plugin](https://github.com/adobe/flutter-acpplaces_monitor)**
+
+**[Xamarin Places Plugin](https://github.com/adobe/xamarin-acpcore)**
 
 
 ### Android
 
-Så här lägger du till tillägget Platser i ditt program med Java:
+To add the Places extension to your app by using Java:
 
-1. Lägg till tillägget Platser i ditt projekt med programmets övertoningsfil.
+1. Add the Places extension to your project using your app's gradle file.
 
    ```java
    implementation 'com.adobe.marketing.mobile:places:1.+'
    implementation 'com.adobe.marketing.mobile:sdk-core:1.+'
    ```
 
-1. Importera tillägget Platser i programmets huvudaktivitet.
+1. Import the Places extension in your application's main activity.
 
-   ```java
-   import com.adobe.marketing.mobile.Places;
-   ```
+    ```java
+    import com.adobe.marketing.mobile.Places;
+    ```
 
 
 ### iOS
 
-Så här lägger du till platstillägg i appen med Mål-C eller Skift:
+To add Places extension to your app by using Objective-C or Swift:
 
-1. Lägg till platserna och [Mobile Core](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core) bibliotek till ditt projekt. Du måste lägga till följande punkter i `Podfile`:
+1. Add the Places and [Mobile Core](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core) libraries to your project. You will need to add the following pods to your `Podfile`:
 
    ```objective-c
    pod 'ACPPlaces', '~> 1.0'
    pod 'ACPCore', '~> 2.0'    # minimum Core version for Places is 2.0.3
    ```
 
-   Om du inte använder Cocopods kan du även inkludera Mobile Core och Places-biblioteken manuellt från våra [releases page](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) på Github.
+   Alternatively, if you are not using Cocoapods, you can manually include the Mobile Core and the Places libraries from our [releases page](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) on Github.
 
-1. Uppdatera dina Cocopods:
+1. Update your Cocoapods:
 
    ```objective-c
    pod update
    ```
 
-1. Öppna Xcode, och i klassen AppDelegate importerar du rubrikerna Core och Places:
+1. Open Xcode, and in your AppDelegate class, import the Core and the Places headers:
 
-   **Mål-C**
+    **Objective-C**
 
-   ```objective-c
-   #import "ACPCore.h"
-   #import "ACPPlaces.h"
-   ```
+    ```objective-c
+    #import "ACPCore.h"
+    #import "ACPPlaces.h"
+    ```
 
-   **Swift**
+    **Swift**
 
-   ```swift
-   import ACPCore
-   import ACPPlaces
-   ```
+    ```swift
+    import ACPCore
+    import ACPPlaces
+    ```
 
-### Registrera tillägget Platser med Mobile Core {#register-places-mobile-core}
+### Register the Places extension with Mobile Core {#register-places-mobile-core}
 
-Du måste registrera Platser-tillägget med Mobile Core i Android och iOS.
+You need to register the Places extension with Mobile Core in Android and iOS.
 
 #### Android
 
-I appen `OnCreate` metod för att registrera platstilläggen:
+In your App's `OnCreate` method register the Places extensions:
 
 ```java
 public class PlacesTestApp extends Application {
@@ -125,9 +129,9 @@ public class PlacesTestApp extends Application {
 
 #### iOS
 
-I appen `application:didFinishLaunchingWithOptions:` registrerar du platstillägget med dina andra SDK-registreringsanrop:
+In your App's `application:didFinishLaunchingWithOptions:` method, register the Places extension with your other SDK registration calls:
 
-**Mål-C**
+**Objective-C**
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -147,15 +151,15 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
 ```
 
-### Ändra plats för medlemskap från tid till publicering {#places-ttl}
+### Modifying Places membership time-to-live {#places-ttl}
 
-Platsdata kan snabbt bli inaktuella, särskilt om enheten inte tar emot bakgrundsuppdateringar.
+Location data can quickly become stale, especially if the device is not receiving background location updates.
 
-Styr tiden för live-visning av platsmedlemskapsdata på enheten genom att ställa in `places.membershipttl` konfigurationsinställning. Värdet som skickas representerar antalet sekunder som platsläget förblir giltigt för enheten.
+Control the time-to-live for Places membership data on the device by setting the `places.membershipttl` configuration setting. The value passed in represents the number of seconds that the Places state will remain valid for the device.
 
 #### Android
 
-Inuti återanropet av `MobileCore.start()` uppdatera konfigurationen med nödvändiga ändringar innan anrop görs `lifecycleStart`:
+Inside the callback of `MobileCore.start()` update the configuration with the necessary changes prior to calling `lifecycleStart`:
 
 ```java
 public class PlacesTestApp extends Application {
@@ -189,9 +193,9 @@ public class PlacesTestApp extends Application {
 
 #### iOS
 
-På den första raden i återanropet av `ACPCore`&#39;s `start:` metod, anrop `updateConfiguration:`
+On the first line in the callback of `ACPCore`'s `start:` method, call `updateConfiguration:`
 
-**Mål-C**
+**Objective-C**
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -229,12 +233,14 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
 ```
 
-## Konfigurationsnycklar
+## Configuration keys
 
-Om du vill uppdatera SDK-konfigurationen programmatiskt vid körning använder du följande information för att ändra platsens tilläggskonfigurationsvärden. Mer information finns i [API-referens för konfiguration](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/configuration/configuration-api-reference).
+To update the SDK configuration programmatically at runtime, use the following information to change your Places extension configuration values. For more information, see [Configuration API Reference](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/configuration/configuration-api-reference).
 
-| Nyckel | Obligatoriskt | Beskrivning |
+| Key | Required | Description |
 | :--- | :--- | :--- |
-| `places.libraries` | Ja | Platstilläggsbiblioteken för mobilappen. Den anger biblioteks-ID och namnet på biblioteket som mobilappen stöder. |
-| `places.endpoint` | Ja | Standardslutpunkten för platstjänster, som används för att hämta information om bibliotek och POI. |
-| `places.membershipttl` | Nej | Standardvärdet är 3 600 (sekunder i en timme). Anger hur länge, i sekunder, information om platshållarmedlemskap för enheten ska vara giltig. |
+| `places.libraries` | Yes | The Places extension libraries for the mobile app. It specifies the library ID and the name of the library that the mobile app supports. |
+| `places.endpoint` | Yes | The default Places Query Service endpoint, which is used to get information about libraries and POIs. |
+| `places.membershipttl` | No | Default value of 3600 (seconds in an hour). Indicates how long, in seconds, Places membership information for the device will remain valid. |
+
+-->

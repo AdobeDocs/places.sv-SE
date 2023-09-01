@@ -3,9 +3,9 @@ audience: end-user
 user-guide-title: Användarhandbok för tjänsten Places
 user-guide-description: Tjänsten Places är en geopositioneringstjänst som gör det möjligt för mobila appar med platsmedvetenhet att förstå platskontexten.
 feature: Places
-source-git-commit: 30f083087936f54c692ff5aca245a7ee6b970b3a
+source-git-commit: 9f2c6fee6e0d6d075b662cc0b6cbee49cf05ee55
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '290'
 ht-degree: 17%
 
 ---
@@ -54,11 +54,7 @@ ht-degree: 17%
             + [Ta bort flera POI](web-service-api/api-usage/manage-pois/batch-apis/delete-multiple-pois.md)
       + [Fråga API:er](web-service-api/api-usage/query-apis.md)
 + Tillägg för mobil SDK {#places-ext-aep-sdks}
-   + Tillägget Platser {#places-extension}
-      + [Tillägget Platser](places-ext-aep-sdks/places-extension/places-extension.md)
-      + [API-referens för platser](places-ext-aep-sdks/places-extension/places-api-reference.md)
-      + [Händelsereferens för platser](places-ext-aep-sdks/places-extension/places-event-ref.md)
-      + [Egna platsobjekt](places-ext-aep-sdks/places-extension/cust-places-objects.md)
+   + [Tillägget Platser](places-ext-aep-sdks/places-extension/places-extension.md)
 + [Använd Platstjänst med din egen övervakningslösning](using-your-own-monitor.md)
 + [Använd platstjänsten utan övervakning av aktiva regioner](use-places-without-active-monitoring.md)
 + Använd platstjänsten som en del av arbetsflödet i Experience Platform Launch {#use-places-launch-workflow}

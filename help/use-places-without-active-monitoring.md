@@ -2,9 +2,9 @@
 title: Använd platstjänsten utan övervakning av aktiva regioner
 description: Det här avsnittet innehåller information om hur du använder platstjänsten utan övervakning av aktiva områden.
 exl-id: 0ba7949a-447e-4754-9b45-945e58e29541
-source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
+source-git-commit: 33cbef9b3226be3f013fe82d619b82e093a9752a
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Så här använder du platstjänsten utan övervakning av aktiva områden:
 
 ## 1. Samla in användarens plats
 
-Apputvecklaren måste samla in enhetens aktuella plats med hjälp av `CoreLocation.framework` (iOS) eller `Location` API:er från Google Play Services (Android).
+Apputvecklaren måste samla in enhetens aktuella plats med hjälp av `CoreLocation.framework` eller iOS `Location` API:er från Google Play Services (Android).
 
 Mer information finns i följande dokumentation:
 
@@ -116,7 +116,7 @@ func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
 
 ## 3. Bifoga platsdata till era Analytics-förfrågningar
 
-Genom att ringa `getNearbyPointsOfInterest` API: Platser-SDK gör alla POI-data som är relevanta för enheten tillgängliga via dataelement i Launch. Genom att använda en [Bifoga data](https://aep-sdks.gitbook.io/docs/resources/user-guides/attach-data) placeringsdata kan automatiskt läggas till i framtida förfrågningar till Analytics. Detta eliminerar behovet av ett engångsanrop till Analytics när platsen för enheten samlas in.
+Genom att ringa `getNearbyPointsOfInterest` API: Platser-SDK gör alla POI-data som är relevanta för enheten tillgängliga via dataelement i Launch. Genom att använda [Bifoga data](https://aep-sdks.gitbook.io/docs/resources/user-guides/attach-data) placeringsdata kan automatiskt läggas till i framtida förfrågningar till Analytics. Detta eliminerar behovet av ett engångsanrop till Analytics när platsen för enheten samlas in.
 
 Se [Lägg till platskontext i analysbegäranden](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md) om du vill veta mer om det här ämnet.
 
@@ -124,17 +124,17 @@ Se [Lägg till platskontext i analysbegäranden](use-places-with-other-solutions
 
 >[!TIP]
 >
->Rekommenderat sätt att samla in platsdata är att [Bifoga platsdata till era Analytics-förfrågningar](#attach-places-data-to-your-analytics-requests).
+>Rekommenderat sätt att samla in platsdata är att [Bifoga platsdata till era analysförfrågningar](#attach-places-data-to-your-analytics-requests).
 >
->Om användningsfallet kräver en [regionsinmatningshändelse](places-ext-aep-sdks/places-extension/places-event-ref.md#processregionevent) för att aktiveras av SDK måste detta göras manuellt enligt nedan.
+>Om användningsfallet kräver en [regionpost, händelse](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) för att aktiveras av SDK måste detta göras manuellt enligt nedan.
 
-Listan som returneras av `getNearbyPointsOfInterest` API innehåller [anpassade objekt](places-ext-aep-sdks/places-extension/cust-places-objects.md) som anger om användaren befinner sig inom en POI. Om användaren befinner sig i en POI kan du låta SDK utlösa en starthändelse för den regionen.
+Listan som returneras av `getNearbyPointsOfInterest` API innehåller [anpassade objekt](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#additional-classes-and-enums) som anger om användaren befinner sig inom en POI. Om användaren befinner sig i en POI kan du låta SDK utlösa en starthändelse för den regionen.
 
 >[!IMPORTANT]
 >
 >Om du vill förhindra att din app utlöser flera anmälningshändelser vid ett besök, ska du hålla en lista över de områden där du vet att användaren har angivit. När du bearbetar svar från närliggande POI:er från SDK utlöser du bara en starthändelse när regionen inte finns i din lista.
 >
->I följande kodexempel `NSUserDefaults` (iOS) och `SharedPreferences` (Android) används för att hantera listan med regioner:
+>I följande kodexempel `NSUserDefaults` (iOS) `SharedPreferences` (Android) används för att hantera listan med regioner:
 
 ### Android
 
@@ -243,7 +243,7 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 
 Kodexemplen nedan visar hur du hämtar enhetens aktuella plats, utlöser nödvändiga starthändelser och ser till att du inte får flera poster för samma plats vid ett besök.
 
-Det här kodexemplet innehåller det valfria steget i [utlösa en starthändelse när användaren befinner sig i en POI](#trigger-entry-events-when-the-user-is-in-a-poi).
+Det här kodexemplet innehåller det valfria steget [utlösa en starthändelse när användaren befinner sig i en POI](#trigger-entry-events-when-the-user-is-in-a-poi).
 
 >[!IMPORTANT]
 >
