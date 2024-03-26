@@ -2,10 +2,10 @@
 title: Places Service
 description: Platstjänsten är ett viktigt sammanhang när det gäller att förstå mobilanvändarnas engagemang. Genom att använda det här sammanhanget kan utvecklare av mobilappar förbättra appdesignen och göra den till en mer personaliserad och engagerande upplevelse.
 exl-id: 7369176f-c072-437a-9ee3-b463c5ff1d12
-source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
+source-git-commit: e78e3c5ee6623d6cdf2a33c0582667a70283fdc6
 workflow-type: tm+mt
-source-wordcount: '671'
-ht-degree: 8%
+source-wordcount: '663'
+ht-degree: 7%
 
 ---
 
@@ -44,7 +44,7 @@ Platstjänsten omfattar följande komponenter:
 
   Visualisera POI på en karta för att förstå det spatiala sammanhanget och för att lägga till/redigera POI och deras anpassade metadata.
 
-* **Tillägget Platser**
+* **Platstillägg**
 
   Det mobila API-gränssnittet för flera plattformar för att integrera platskontexten i era mobilappar. Mer information om SDK:er finns i [Platstillägg](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
@@ -85,3 +85,4 @@ Här är några vanliga termer som används i den här dokumentationen:
 * The **EXPERIENCE CLOUD ID** en universell, beständig ID som identifierar besökarna i alla lösningar i Experience Cloud.
 
   Mer information finns i [Ökning](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html).
+
