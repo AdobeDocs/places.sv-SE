@@ -5,7 +5,7 @@ exl-id: a4cf28ae-1e3c-4724-bca3-ac1d0cd6da09
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '398'
-ht-degree: 6%
+ht-degree: 0%
 
 ---
 
@@ -40,19 +40,19 @@ POI och bibliotek skapas och hanteras i platsdatabasen med hjälp av användargr
 
    * Per bibliotek:
 
-      a. Välj ett bibliotek.
+     a. Välj ett bibliotek.
 
    * Efter egenskap:
 
-      a. I listrutan Egenskaper väljer du **[!UICONTROL Country]**, **[!UICONTROL State]**, eller **[!UICONTROL City]**.
+     a. Välj **[!UICONTROL Country]**, **[!UICONTROL State]** eller **[!UICONTROL City]** i listrutan Egenskaper.
 
-      b. Ange ett värde på nästa rad.
+     b. Ange ett värde på nästa rad.
 
-      Du kan till exempel välja **[!UICONTROL State]** och text **[!UICONTROL California]**.
+     Du kan till exempel välja **[!UICONTROL State]** och skriva **[!UICONTROL California]**.
 
    * Med metadata:
 
-      a. Ange en nyckel och ett värde.
+     a. Ange en nyckel och ett värde.
 
 ## Definiera en geofence-POI
 
@@ -67,10 +67,10 @@ Geofence är en typ av POI och definieras i databasen baserat på följande nyck
 | Ikon | Hjälpa till med visualiseringar av POI. | Ja (tilldelad standard) |
 | Färg | Hjälpa till med visualiseringar av POI. | Ja (tilldelad standard) |
 | Kategori | Tilldela ett gemensamt ramverk med kategorier som är gemensamma för alla POI i alla bibliotek. | Nej |
-| Adress | Gatuadress. | Nej |
+| Adress | Gatuadress | Nej |
 | Ort | Postens stad. | Nej |
 | Stat/region | Postens delstat eller region. | Nej |
 | Land | POI-land. | Nej |
-| Latitud | Latitudkoordinat för POI-centrum. | Ja |
+| Latitude | Latitudkoordinat för POI-centrum. | Ja |
 | Longitud | Longituskoordinat för POI-centrum. | Ja |
 | Metadata | Anpassade nyckel- och värdepar som kan tilldelas POI:er. Dessa metadata effektiviserar framtida arbetsflöden genom att göra det möjligt att gruppera POI i bibliotek för var och en att använda regler och filter i arbetsflöden längre fram i kedjan, till exempel skicka ett push-meddelande när någon skriver ett POI med Type = Competitor. | Nej |

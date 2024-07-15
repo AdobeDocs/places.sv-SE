@@ -11,5 +11,5 @@ ht-degree: 0%
 
 # Använd platstjänsten som en del av arbetsflödet i Experience Platform Launch {#loc-service-launch-workflow}
 
-* Information om hur du definierar dataelement finns i [Definiera dataelement](/help/use-places-launch-workflow/define-data-elements.md).
-* Information om hur du skapar regler för inträde och utträde finns i [Skapa regler för inträde och utträde](/help/use-places-launch-workflow/create-rule-places-property.md).
+* Mer information om hur du definierar dataelement finns i [Definiera dataelement](/help/use-places-launch-workflow/define-data-elements.md).
+* Mer information om hur du skapar regler för inträde och utträde finns i [Skapa regler för inträde och utträde](/help/use-places-launch-workflow/create-rule-places-property.md).

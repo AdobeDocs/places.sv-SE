@@ -167,4 +167,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYI
 
 >[!IMPORTANT]
 >
->Ersätt, `<API KEY>`, `<TOKEN>`och `<ORGID>` med faktiska värden.
+>Ersätt &#39;&#39;, `<API KEY>`, `<TOKEN>` och `<ORGID>` med faktiska värden.

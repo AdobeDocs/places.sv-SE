@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Ta bort flera POI {#delete-multiple-pois}
 
-En metod som gör att du kan ta bort flera POI-POSTER.
+En POST som gör att du kan ta bort flera POI.
 
 ## Begäran
 
@@ -47,7 +47,7 @@ curl -X POST 'https://api-places.adobe.io/places/placesapi/v1/pois/batchDelete' 
 
 >[!IMPORTANT]
 >
->Ersätt `<API KEY>`, `<TOKEN>`, `<ORGID>`och `<PATHTOBATCHDELETEJSONFILE>` med verkliga värden.
+>Ersätt `<API KEY>`, `<TOKEN>`, `<ORGID>` och `<PATHTOBATCHDELETEJSONFILE>` med verkliga värden.
 
 ## JSON-exempelfil
 

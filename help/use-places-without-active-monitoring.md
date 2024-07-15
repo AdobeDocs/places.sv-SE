@@ -4,7 +4,7 @@ description: Det här avsnittet innehåller information om hur du använder plat
 exl-id: 0ba7949a-447e-4754-9b45-945e58e29541
 source-git-commit: 33cbef9b3226be3f013fe82d619b82e093a9752a
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ Utvecklaren samlar in enhetens plats med de API:er som finns i målplattformens 
 
 >[!TIP]
 >
->Om appens användningsfall kräver övervakning av aktiva områden finns mer information i [Använd Platstjänst med din egen övervakningslösning](/help/using-your-own-monitor.md).
+>Om användningsexemplen för din app kräver övervakning av aktiva områden läser du [Använd platstjänsten med din egen övervakningslösning](/help/using-your-own-monitor.md).
 
 Så här använder du platstjänsten utan övervakning av aktiva områden:
 
 ## 1. Samla in användarens plats
 
-Apputvecklaren måste samla in enhetens aktuella plats med hjälp av `CoreLocation.framework` eller iOS `Location` API:er från Google Play Services (Android).
+Apputvecklaren måste samla in enhetens aktuella plats med hjälp av `CoreLocation.framework` (iOS) eller `Location`-API:erna från Google Play Services (Android).
 
 Mer information finns i följande dokumentation:
 
@@ -84,7 +84,7 @@ public class LocationBroadcastReceiver extends BroadcastReceiver {
 
 ### Mål-C
 
-Här är ett exempel på implementering för iOS. Koden visar implementering av [`locationManager:didUpdateLocations:`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager?language=objc) metoden i [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager?language=objc):
+Här är ett exempel på implementering för iOS. Koden visar implementering av metoden [`locationManager:didUpdateLocations:`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager?language=objc) i [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager?language=objc):
 
 ```objectivec
 - (void) locationManager:(CLLocationManager*)manager didUpdateLocations:(NSArray<CLLocation*>*)locations {
@@ -100,7 +100,7 @@ Här är ett exempel på implementering för iOS. Koden visar implementering av 
 
 ### Swift
 
-Här är ett exempel på implementering för iOS. Koden visar implementering av [`locationManager(_:didUpdateLocations:)`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager) metoden i [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager):
+Här är ett exempel på implementering för iOS. Koden visar implementering av metoden [`locationManager(_:didUpdateLocations:)`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager) i [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager):
 
 ```swift
 func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -116,29 +116,29 @@ func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
 
 ## 3. Bifoga platsdata till era Analytics-förfrågningar
 
-Genom att ringa `getNearbyPointsOfInterest` API: Platser-SDK gör alla POI-data som är relevanta för enheten tillgängliga via dataelement i Launch. Genom att använda [Bifoga data](https://aep-sdks.gitbook.io/docs/resources/user-guides/attach-data) placeringsdata kan automatiskt läggas till i framtida förfrågningar till Analytics. Detta eliminerar behovet av ett engångsanrop till Analytics när platsen för enheten samlas in.
+Genom att anropa `getNearbyPointsOfInterest`-API:t kommer platsens SDK att göra alla POI-data som är relevanta för enheten tillgängliga via dataelement i Launch. Genom att använda en [Koppla data](https://aep-sdks.gitbook.io/docs/resources/user-guides/attach-data)-regel kan platsdata automatiskt läggas till i framtida förfrågningar till Analytics. Detta eliminerar behovet av ett engångsanrop till Analytics när platsen för enheten samlas in.
 
-Se [Lägg till platskontext i analysbegäranden](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md) om du vill veta mer om det här ämnet.
+Mer information om det här ämnet finns i [Lägg till platskontext i Analytics-begäranden](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md).
 
 ## Valfritt - Utlös anmälningshändelser när användaren är i en POI
 
 >[!TIP]
 >
->Rekommenderat sätt att samla in platsdata är att [Bifoga platsdata till era analysförfrågningar](#attach-places-data-to-your-analytics-requests).
+>Rekommenderat sätt att samla in platsdata är att [bifoga platsdata till dina Analytics-förfrågningar](#attach-places-data-to-your-analytics-requests).
 >
->Om användningsfallet kräver en [regionpost, händelse](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) för att aktiveras av SDK måste detta göras manuellt enligt nedan.
+>Om ett användningsfall kräver att en [regionposthändelse](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) aktiveras av SDK måste det göras manuellt enligt instruktionerna nedan.
 
-Listan som returneras av `getNearbyPointsOfInterest` API innehåller [anpassade objekt](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#additional-classes-and-enums) som anger om användaren befinner sig inom en POI. Om användaren befinner sig i en POI kan du låta SDK utlösa en starthändelse för den regionen.
+Den lista som returneras av `getNearbyPointsOfInterest`-API:t innehåller [ anpassade objekt ](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#additional-classes-and-enums) som anger om användaren befinner sig i en POI. Om användaren befinner sig i en POI kan du låta SDK utlösa en starthändelse för den regionen.
 
 >[!IMPORTANT]
 >
 >Om du vill förhindra att din app utlöser flera anmälningshändelser vid ett besök, ska du hålla en lista över de områden där du vet att användaren har angivit. När du bearbetar svar från närliggande POI:er från SDK utlöser du bara en starthändelse när regionen inte finns i din lista.
 >
->I följande kodexempel `NSUserDefaults` (iOS) `SharedPreferences` (Android) används för att hantera listan med regioner:
+>I följande kodexempel används `NSUserDefaults` (iOS) och `SharedPreferences` (Android) för att hantera listan med regioner:
 
 ### Android
 
-I följande kodexempel visas hur det resultat som angavs i återanropet till `getNearbyPointsOfInterest`, a `List<PlacesPOI>`:
+I följande kodexempel visas hur det resultat som angavs i återanropet för `getNearbyPointsOfInterest`, en `List<PlacesPOI>`, hanteras:
 
 ```java
 void handleUpdatedPOIs(final List<PlacesPOI> nearbyPois) {
@@ -176,7 +176,7 @@ void handleUpdatedPOIs(final List<PlacesPOI> nearbyPois) {
 
 ### Mål-C
 
-I följande kodexempel visas hur det resultat som angavs i återanropet till `getNearbyPointsOfInterest:limit:callback:errorCallback:`, en `NSArray<ACPPlacesPoi *> *`:
+I följande kodexempel visas hur det resultat som angavs i återanropet för `getNearbyPointsOfInterest:limit:callback:errorCallback:`, en `NSArray<ACPPlacesPoi *> *`, hanteras:
 
 ```objectivec
 - (void) handleUpdatedPOIs:(NSArray<ACPPlacesPoi *> *)nearbyPois {
@@ -210,7 +210,7 @@ I följande kodexempel visas hur det resultat som angavs i återanropet till `ge
 
 ### Swift
 
-I följande kodexempel visas hur det resultat som angavs i återanropet till `getNearbyPoints(_ ofInterest: CLLocation, limit: UInt, callback: (([ACPPlacesPoi]?) -> Void)?, errorCallback: ((ACPPlacesRequestError) -> Void)?)`, en `[ACPPlacesPoi]`:
+I följande kodexempel visas hur det resultat som angavs i återanropet för `getNearbyPoints(_ ofInterest: CLLocation, limit: UInt, callback: (([ACPPlacesPoi]?) -> Void)?, errorCallback: ((ACPPlacesRequestError) -> Void)?)`, en `[ACPPlacesPoi]`, hanteras:
 
 ```swift
 func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
@@ -243,11 +243,11 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 
 Kodexemplen nedan visar hur du hämtar enhetens aktuella plats, utlöser nödvändiga starthändelser och ser till att du inte får flera poster för samma plats vid ett besök.
 
-Det här kodexemplet innehåller det valfria steget [utlösa en starthändelse när användaren befinner sig i en POI](#trigger-entry-events-when-the-user-is-in-a-poi).
+Det här kodexemplet innehåller det valfria steget [som utlöser en inmatningshändelse när användaren befinner sig i en POI](#trigger-entry-events-when-the-user-is-in-a-poi).
 
 >[!IMPORTANT]
 >
->Dessa fragment är **endast** exempel. Utvecklarna måste bestämma hur de vill implementera funktionen, och i beslutet bör man ta hänsyn till de bästa metoderna som rekommenderas av måloperativsystemet.
+>De här fragmenten är **endast** exempel. Utvecklarna måste bestämma hur de vill implementera funktionen, och i beslutet bör man ta hänsyn till de bästa metoderna som rekommenderas av måloperativsystemet.
 
 ### Android
 
@@ -410,6 +410,6 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 }
 ```
 
-Förutom att utlösa platstjänstinmatningshändelser i SDK kan alla data som definierar dina POI-poster användas av resten av SDK via `data elements` i Experience Platform Launch. Med Experience Platform Launch `rules`kan du bifoga platsdata dynamiskt till inkommande händelser som bearbetas av SDK. Du kan till exempel bifoga metadata för en POI där användaren befinner sig och skicka data till Analytics som kontextdata.
+Förutom att utlösa platstjänster-posthändelser i SDK kan alla data som definierar dina POI användas av resten av SDK via `data elements` i Experience Platform Launch på grund av de utlösande starthändelserna. Med Experience Platform Launch `rules` kan du bifoga platstjänstdata dynamiskt till inkommande händelser som bearbetas av SDK. Du kan till exempel bifoga metadata för en POI där användaren befinner sig och skicka data till Analytics som kontextdata.
 
 Mer information finns i [Använda Platstjänst med andra Adobe-lösningar](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md).

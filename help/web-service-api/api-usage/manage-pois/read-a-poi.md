@@ -69,4 +69,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H 'x
 
 >[!IMPORTANT]
 >
->Ersätt `<POIID>`, `<API KEY>`, `<TOKEN>`och `<ORIGIN>` med faktiska värden.
+>Ersätt `<POIID>`, `<API KEY>`, `<TOKEN>` och `<ORIGIN>` med faktiska värden.

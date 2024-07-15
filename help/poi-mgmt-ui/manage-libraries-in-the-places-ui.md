@@ -4,8 +4,8 @@ description: Hantera dina bibliotek med hjälp av användargränssnittet för pl
 exl-id: 2fb999b4-854a-430f-bb89-4c786d1a89cc
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 23%
+source-wordcount: '421'
+ht-degree: 13%
 
 ---
 
@@ -21,12 +21,12 @@ Bibliotek definieras av följande:
 | :--- | :--- |
 | ID | en unik identifierare som tilldelas biblioteket när det skapas |
 | Namn | ett eget namn som tilldelats ett bibliotek |
-| Rankning | Dessa rankningar kan ignoreras om det inte finns några överlappande geofence i din organisation. Om det finns överlappande intressepunkter bör du placera alla geostaket i separata bibliotek, så att de kan viktas i förhållande till varandra. En användare kan bara finnas i ett geostaket åt gången. <br><br>Den högsta rankningen av de geostaket en användare är i avgör hans eller hennes aktuella geostaket-medlemskap. Om det finns geofence som har samma biblioteksrankning är den minsta geofence användarens aktuella geofence. <br><br>SDK:t känner också av *senast angivna* och *senast lämnade* intressepunkter, så du har fullständig kontroll över hur du vill att reglerna ska utlösas baserat på användarnas interaktion med intressepunkterna. |
+| Rankning | Dessa rankningar kan ignoreras om det inte finns några överlappande geofence i din organisation. Om det finns överlappande intressepunkter bör du placera alla geostaket i separata bibliotek, så att de kan viktas i förhållande till varandra. En användare kan bara finnas i ett geostaket åt gången. <br><br>Den högsta rankningen av de geostaket en användare är i avgör hans eller hennes aktuella geostaket-medlemskap. Om det finns geofence som har samma biblioteksrankning är den minsta geofence användarens aktuella geofence. <br><br>SDK:n känner också till POI:n *Senast angiven* och *Senast avslutad*, så du har fullständig kontroll över hur du vill att reglerna ska aktiveras baserat på användarinteraktion med dina POI:er. |
 
 ## Skapa ett bibliotek
 
 1. Logga in på platser med din Adobe ID.
-1. Klicka på längst upp till höger **[!UICONTROL ...]**  > **[!UICONTROL Manage Libraries]**.
+1. Klicka på **[!UICONTROL ...]** > **[!UICONTROL Manage Libraries]** överst till höger.
 1. Klicka på **[!UICONTROL New]**.
 1. Skriv namnet.
 1. Klicka på **[!UICONTROL Confirm]**.
@@ -34,13 +34,13 @@ Bibliotek definieras av följande:
 ## Ändra rangordningen för ett bibliotek i användargränssnittet för platser
 
 1. Logga in på Platser med din Adobe ID.
-1. Klicka på längst upp till höger **[!UICONTROL ...]**  > **[!UICONTROL Manage Libraries]**.
+1. Klicka på **[!UICONTROL ...]** > **[!UICONTROL Manage Libraries]** överst till höger.
 1. Klicka på ikonen till vänster om biblioteksnamnet och dra biblioteket till den nya ordningen.
 
 ## Byta namn på ett bibliotek
 
 1. Logga in på Platser med din Adobe ID.
-1. Klicka på längst upp till höger **[!UICONTROL ...]** > **[!UICONTROL Manage Libraries]**.
+1. Klicka på **[!UICONTROL ...]** > **[!UICONTROL Manage Libraries]** överst till höger.
 1. Leta reda på det bibliotek som du vill ta bort.
 1. Klicka på **[!UICONTROL ...]** och välj **[!UICONTROL Rename]**.
 1. Uppdatera namnet och klicka på **[!UICONTROL Save]**.
@@ -48,6 +48,6 @@ Bibliotek definieras av följande:
 ## Ta bort ett bibliotek
 
 1. Logga in på Platser med din Adobe ID.
-1. Klicka på längst upp till höger **[!UICONTROL ...]** > **[!UICONTROL Manage Libraries]**.
+1. Klicka på **[!UICONTROL ...]** > **[!UICONTROL Manage Libraries]** överst till höger.
 1. Leta reda på det bibliotek som du vill ta bort.
 1. Klicka på **[!UICONTROL ...]** och välj **[!UICONTROL Delete]**.

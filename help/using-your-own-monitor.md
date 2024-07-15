@@ -23,7 +23,7 @@ Gör så här i iOS:
 
 1. Skicka platsuppdateringar som hämtats från iOS bastjänst till Platser-tillägget.
 
-1. Använd `getNearbyPointsOfInterest` Placerar tilläggs-API:t för att hämta arrayen med `ACPPlacesPoi` objekt runt den aktuella platsen.
+1. Använd API:t för tillägget `getNearbyPointsOfInterest` för att hämta arrayen med `ACPPlacesPoi` objekt runt den aktuella platsen.
 
    ```objective-c
    - (void) locationManager: (CLLocationManager*) manager didUpdateLocations: (NSArray<CLLocation*>*) locations {
@@ -33,7 +33,7 @@ Gör så här i iOS:
    }
    ```
 
-1. Extrahera informationen från de `ACPPlacesPOI` och börja övervaka dessa POI.
+1. Extrahera informationen från de `ACPPlacesPOI` insamlade objekten och börja övervaka dessa POI.
 
    ```objective-c
    - (void) startMonitoringGeoFences: (NSArray*) newGeoFences {
@@ -57,9 +57,9 @@ Gör så här i iOS:
 
 ### Android
 
-1. Skicka platsuppdateringar som hämtats från Google Play eller Android-platstjänsterna till platstillägget.
+1. Skicka platsuppdateringar från Google Play eller Android positioneringstjänster till platstillägget.
 
-1. Använd `getNearbyPointsOfInterest` Placerar tilläggs-API:t för att hämta listan över `PlacesPoi` objekt runt den aktuella platsen.
+1. Använd API:t `getNearbyPointsOfInterest` Platser för tillägg för att få en lista över `PlacesPoi`-objekt runt den aktuella platsen.
 
    ```java
    LocationCallback callback = new LocationCallback() {
@@ -77,7 +77,7 @@ Gör så här i iOS:
    };
    ```
 
-1. Extrahera data från de `PlacesPOI` och börja övervaka dessa POI.
+1. Extrahera data från de `PlacesPOI` hämtade objekten och börja övervaka dessa POI.
 
    ```java
    private void startMonitoringFences(final List<PlacesPOI> nearByPOIs) {
@@ -102,7 +102,7 @@ Gör så här i iOS:
    ```
 
 
-Anropar `getNearbyPointsOfInterest` API resulterar i ett nätverksanrop som hämtar platsen runt den aktuella platsen.
+Anrop av API:t `getNearbyPointsOfInterest` resulterar i ett nätverksanrop som hämtar platsen runt den aktuella platsen.
 
 >[!IMPORTANT]
 >
@@ -112,7 +112,7 @@ Anropar `getNearbyPointsOfInterest` API resulterar i ett nätverksanrop som häm
 
 ### iOS
 
-I iOS ringer du `processGeofenceEvent` Placerar API i `CLLocationManager` delegat. Detta API meddelar dig om användaren har angivit eller avslutat en viss region.
+Anropa API:t `processGeofenceEvent` för platser i `CLLocationManager`-delegaten i iOS. Detta API meddelar dig om användaren har angivit eller avslutat en viss region.
 
 ```objective-c
 - (void) locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region {
@@ -126,7 +126,7 @@ I iOS ringer du `processGeofenceEvent` Placerar API i `CLLocationManager` delega
 
 ### Android
 
-I Android ringer du `processGeofence` tillsammans med lämplig övergångshändelse i Geofence-sändningsmottagaren. Du kanske vill strukturera listan över geofences som tagits emot för att förhindra dubblettposter/-utträden.
+I Android anropar du metoden `processGeofence` tillsammans med lämplig övergångshändelse i Geofence-sändningsmottagaren. Du kanske vill strukturera listan över geofences som tagits emot för att förhindra dubblettposter/-utträden.
 
 ```java
 void onGeofenceReceived(final Intent intent) {

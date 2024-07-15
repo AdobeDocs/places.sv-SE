@@ -45,4 +45,4 @@ curl -X DELETE 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRA
 
 >[!IMPORTANT]
 >
->Ersätt variabler som `<lIBRARYID>`, `<API KEY>`, `<TOKEN>`och `<ORGID>`med faktiska värden.
+>Ersätt variabler som `<lIBRARYID>`, `<API KEY>`, `<TOKEN>` och `<ORGID>` med faktiska värden.

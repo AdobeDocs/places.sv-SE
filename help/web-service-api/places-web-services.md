@@ -5,7 +5,7 @@ exl-id: 9e7358d1-3ba0-4304-aeb2-fed7162afb57
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '335'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ Med API:erna för webbtjänster kan du göra följande:
 
 Det här avsnittet innehåller information om hur du använder REST API:er och POI-databasen, som innehåller organisationens POI-data.
 
-## REST API:er 
+## REST API:er
 
 Med hjälp av REST-API:t för platstjänster kan du programmässigt arbeta med organisationens POI. Med dessa API:er kan du skapa, uppdatera och ta bort dina bibliotek och POI:er i dessa bibliotek. Dessa API:er använder JSON-standarder (JavaScript Object Notation) för att formatera data som skickas och tas emot. En stor fördel med JSON är att det gör det enkelt för utvecklare och datorer att skriva, läsa och tolka API-frågor.
 
@@ -29,13 +29,13 @@ Innan du kan använda API:t för webbtjänster måste du kontrollera att följan
 
 * Platstjänsten tillhandahålls i din organisation och du har lämplig åtkomst som användare.
 
-   Mer information finns i *Krav för användaråtkomst* in [Översikt över integrationen och krav](/help/web-service-api/adobe-i-o-integration.md).
+  Mer information finns i *Krav för användaråtkomst* i [Integreringsöversikt och krav](/help/web-service-api/adobe-i-o-integration.md).
 
 * När Platstjänst har etablerats i din organisation och du har åtkomst skapar du en Adobe-integrering för Platstjänst.
 
-   Mer information finns i *Skapa en platsintegrering* in [Översikt över integrationen och krav](/help/web-service-api/adobe-i-o-integration.md).
+  Mer information finns i *Skapa en platsintegrering* i [Integreringsöversikt och krav](/help/web-service-api/adobe-i-o-integration.md).
 
 Ytterligare information:
 
-* Mer information om tillgängliga API:er och hur du använder dem finns i [Hantera bibliotek](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md) och [Hantera POI](/help/web-service-api/api-usage/manage-pois/manage-pois.md).
+* Mer information om tillgängliga API:er och hur du använder dem finns i [Hantera bibliotek](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md) och [Hantera POI:er](/help/web-service-api/api-usage/manage-pois/manage-pois.md).
 * Mer information om rubriker och parametrar i dessa API:er finns i [Sidhuvuden och parametrar](/help/web-service-api/api-usage/headers-and-parameters.md).

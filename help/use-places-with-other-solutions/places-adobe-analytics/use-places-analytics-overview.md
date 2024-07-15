@@ -15,4 +15,4 @@ Genom att använda Platstjänst med Adobe Analytics kan du utföra följande upp
 
 * [Skicka POI-post och avsluta data via Analytics](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
 * [Lägg till platskontext i Analytics-begäranden](/help/use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)
-* [Rapport om platsdata på arbetsytan i Analytics](/help/use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)
+* [Rapport om platsdata i Analytics Workspace](/help/use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)

@@ -45,4 +45,4 @@ curl -X DELETE 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H
 
 >[!IMPORTANT]
 >
->Ersätt `<POIID>`, `<API KEY>`, `<TOKEN>`och `<ORGID>` med faktiska värden.
+>Ersätt `<POIID>`, `<API KEY>`, `<TOKEN>` och `<ORGID>` med faktiska värden.

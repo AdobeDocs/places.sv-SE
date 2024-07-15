@@ -5,8 +5,8 @@ feature: Mobile SDK
 exl-id: 98210ef4-5ff1-4792-b97b-2845ce02e78a
 source-git-commit: f521d5e3b0b69977877d88382ce41fcb7d1c54b9
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 7%
+source-wordcount: '247'
+ht-degree: 4%
 
 ---
 
@@ -18,7 +18,7 @@ Här är en lista över de händelser som hanteras av tillägget Platser.
 
 **Händelseinformation**
 
-| Typ | Källa | Namn | Parade |
+| Typ | Source | Namn | Parade |
 | :--- | :--- | :--- | :--- |
 | PLATSER | REQUEST_CONTENT | `requestgetuserwithinplaces` | True |
 
@@ -34,7 +34,7 @@ n/a
 
 **Händelseinformation**
 
-| Typ | Källa | Namn | Parade |
+| Typ | Source | Namn | Parade |
 | :--- | :--- | :--- | :--- |
 | PLATSER | REQUEST_CONTENT | `requestgetnearbyplaces` | True |
 
@@ -46,16 +46,16 @@ Den här händelsen är en begäran om att få närliggande POI genom att ta hä
 
 | Nyckel | Värdetyp | Obligatoriskt | Standardvärde | Beskrivning |
 | :--- | :--- | :--- | :--- | :--- |
-| latitud | double | sant | n/a | Innehåller latitudvärdet för mitten av sökningen efter närliggande POI. |
-| longitud | double | sant | n/a | Innehåller longitudvärdet för mitten av sökningen efter närliggande POI. |
-| radie | heltal | falskt | n/a | Radie, i meter, används vid sökning efter närliggande POI. |
-| count | heltal | falskt | 10 | Maximalt antal POI som ska returneras i den resulterande svarshändelsen. |
+| latitud | double | true | n/a | Innehåller latitudvärdet för mitten av sökningen efter närliggande POI. |
+| longitud | double | true | n/a | Innehåller longitudvärdet för mitten av sökningen efter närliggande POI. |
+| radie | heltal | false | n/a | Radie, i meter, används vid sökning efter närliggande POI. |
+| count | heltal | false | 10 | Maximalt antal POI som ska returneras i den resulterande svarshändelsen. |
 
 ## ProcessRegionEvent
 
 **Händelseinformation**
 
-| Typ | Källa | Namn | Parade |
+| Typ | Source | Namn | Parade |
 | :--- | :--- | :--- | :--- |
 | PLATSER | REQUEST_CONTENT | `requestprocessregionevent` | Falskt |
 
@@ -67,8 +67,8 @@ Den här händelsen gör att Platser-tillägget bearbetar en geofence-post eller
 
 | Nyckel | Värdetyp | Obligatoriskt | Beskrivning |
 | :--- | :--- | :--- | :--- |
-| regionid | string | sant | ID för regionen som genererar händelsen. |
-| regionEventType | int | sant | Typ av regionhändelse som genereras. 1 för inträde och 2 för utförsel. |
+| regionid | string | true | ID för regionen som genererar händelsen. |
+| regionEventType | int | true | Typ av regionhändelse som genereras. 1 för inträde och 2 för utförsel. |
 
 ## Händelser som skickas av tillägget Platser
 

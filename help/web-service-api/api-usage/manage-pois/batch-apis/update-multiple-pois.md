@@ -47,7 +47,7 @@ curl -X POST 'https://api-places.adobe.io/places/placesapi/v1/pois/batchUpdate' 
 
 >[!IMPORTANT]
 >
->Ersätt `<API KEY>`, `<TOKEN>`, `<ORGID>`och `<PATHTOBATCHUPDATEJSONFILE>` med verkliga värden.
+>Ersätt `<API KEY>`, `<TOKEN>`, `<ORGID>` och `<PATHTOBATCHUPDATEJSONFILE>` med verkliga värden.
 
 ## JSON-exempelfil
 

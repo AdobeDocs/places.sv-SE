@@ -4,8 +4,8 @@ description: I det här avsnittet visas hur du använder Platstjänst med Mobilt
 exl-id: dfa6b8bb-6bf2-44eb-8bfc-87294807ec3b
 source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 1%
+source-wordcount: '328'
+ht-degree: 0%
 
 ---
 
@@ -17,15 +17,15 @@ Innan du kan använda mobiltjänsttillägget för meddelanden bör du kontroller
 
   >[!IMPORTANT]
   >
-  >Platstjänsten innehåller en ny och förbättrad POI-databas för din organisation som finns utanför det tidigare användargränssnittet för mobila tjänster. POI som finns i Mobile Service *Hantera platser* sidnavigering fungerar bara för version 4 av SDK:n.
+  >Platstjänsten innehåller en ny och förbättrad POI-databas för din organisation som finns utanför det tidigare användargränssnittet för mobila tjänster. POI:er som finns på sidnavigeringen *Hantera platser* i mobiltjänsten fungerar bara för version 4 av SDK:n.
 
-* Här är *Hantera platser* POI-hanteringssidan i det äldre användargränssnittet för mobila tjänster för äldre versioner av SDK:
+* Här är POI-hanteringssidan *Hantera platser* i det äldre gränssnittet för mobila tjänster för äldre versioner av SDK:
 
   ![Äldre gränssnitt](/help/assets/legacy-location-v4-ui.png)
 
 * Här är användargränssnittet för platstjänster:
 
-  ![Placerar tjänstens gränssnitt för POI-hantering](/help/assets/places-ui.png)
+  ![Plats för tjänstens POI-hanteringsgränssnitt](/help/assets/places-ui.png)
 
 * ACP SDK är korrekt konfigurerad med tillägget Platser.
 
@@ -45,11 +45,11 @@ Innan du kan använda rapportering måste du uppfylla följande krav:
 
 * Platstjänstdata har skickats till Adobe Analytics Report Suite.
 
-  Mer information finns i [Använd Platstjänst med Adobe Analytics](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md).
+  Mer information finns i [Använda platstjänst med Adobe Analytics](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md).
 
 * Bli bekant med rapporter om mobila tjänster.
 
-  Mer information finns i [Rapporter](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html).
+  Mer information finns i [Rapporter](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.htmlhtml?lang=sv).
 
 ## Visualisering av rapportering
 

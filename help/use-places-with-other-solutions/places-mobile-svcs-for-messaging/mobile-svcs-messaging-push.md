@@ -4,8 +4,8 @@ description: I det här avsnittet visas hur du använder platstjänsten med push
 exl-id: c094fe9c-6148-45ba-850a-f4c520d3362c
 source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 1%
+source-wordcount: '211'
+ht-degree: 2%
 
 ---
 
@@ -21,18 +21,18 @@ Kontrollera att du har utfört följande uppgifter innan du börjar:
 
 * Push-meddelandekanalen i Mobile Services har konfigurerats.
 
-  Mer information finns i [Skapa ett push-meddelande](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html).
+  Mer information finns i [Skapa ett push-meddelande](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.htmlhtml?lang=sv).
 
 * Lär dig hur du skickar ett push-meddelande till ett Analytics-segment i Mobiltjänster.
 
-  Mer information finns i [Skapa ett push-meddelande](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html).
+  Mer information finns i [Skapa ett push-meddelande](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.htmlhtml?lang=sv).
 
 ## Skicka ett meddelande
 
-På **[!UICONTROL Audience]** -fliken i *Skapa push-meddelande* kan du skapa målgruppen för det här meddelandet på något av följande sätt:
+På fliken **[!UICONTROL Audience]** i arbetsflödet *Skapa push-meddelanden* kan du skapa målgruppen för det här meddelandet på något av följande sätt:
 
-* I **[!UICONTROL Analytics Segments]** väljer du ett tidigare skapat Adobe Analytics-segment.
+* I listrutan **[!UICONTROL Analytics Segments]** väljer du ett tidigare skapat Adobe Analytics-segment.
 
-* I **[!UICONTROL Custom Segment]** kan du skapa en målgrupp med hjälp av tillgängliga anpassade segmentparametrar.
+* I avsnittet **[!UICONTROL Custom Segment]** kan du skapa en målgrupp genom att använda de tillgängliga anpassade segmentparametrarna.
 
-![konfigurera ett push-meddelande](/help/assets/push-set-up.png)
+![konfigurerar ett push-meddelande](/help/assets/push-set-up.png)

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Ange en rankning i dina bibliotek {#set-rank-on-libraries}
 
-En PUT-metod som gör att du kan ange en rangordning för alla dina bibliotek.
+En PUT-metod som gör att du kan ange en rangordningsordning för alla dina bibliotek.
 
 ## Begäran
 
@@ -47,4 +47,4 @@ curl -X PUT `'https://api-places.adobe.io/places/placesapi/v1/libraries/rank'` -
 
 >[!IMPORTANT]
 >
->Ersätt variabler som `<API KEY>`, `<TOKEN>`och `<ORGID>` med faktiska värden.
+>Ersätt variabler som `<API KEY>`, `<TOKEN>` och `<ORGID>` med faktiska värden.

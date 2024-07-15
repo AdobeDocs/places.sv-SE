@@ -3,8 +3,8 @@ title: Använda Experience Platform Launch-regler och dataelement med platsdata.
 description: Information om regler, dataelement och platsdata.
 source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 32%
+source-wordcount: '229'
+ht-degree: 35%
 
 ---
 

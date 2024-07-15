@@ -1,15 +1,15 @@
 ---
-title: Sidhuvuden och parametrar
+title: Huvuden och parametrar
 description: Sidhuvuden och parametrar som är tillgängliga i platstjänstens REST-API:er.
 exl-id: 3c7e76de-f0ff-4966-a3ec-7f64d819c140
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 3%
+source-wordcount: '377'
+ht-degree: 1%
 
 ---
 
-# Sidhuvuden och parametrar {#headers-and-parameters}
+# Huvuden och parametrar {#headers-and-parameters}
 
 Här är information om de rubriker och parametrar som är tillgängliga i Platstjänst REST API:
 

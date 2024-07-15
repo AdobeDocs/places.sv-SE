@@ -19,7 +19,7 @@ POI-metadata kan användas på flera olika sätt. Ur POI-hanteringsperspektiv ka
 
 I Experience Platform Launch kan du skapa dataelement för varje metadatafält för Platstjänster som är viktigt för spårning och meddelanden.
 
-![dataelement för gymmet-anläggningen](/help/assets/gymfacility.png)
+![dataelement för gymmet](/help/assets/gymfacility.png)
 
 Du kan sedan skapa en åtgärd med Analytics-tillägget för att skapa en ny träff som innehåller alla metadata du vill ha som kontextdata.
 
@@ -29,4 +29,4 @@ Du kan sedan skapa en åtgärd med Analytics-tillägget för att skapa en ny tr�
 
 Metadata kan användas som ett filter för lokala meddelanden och meddelanden i appen som definieras i Adobe Campaign Standard. Genom att använda metadata som ett filter kan du skapa ett mer relevant meddelande som är sammanhangsberoende till den faktiska platsen.
 
-![filtrera lokala meddelanden och meddelanden i appen i ACS](/help/assets/ACS_gym_metadata.png)
+![filtrera lokala meddelanden och meddelanden i programmet i ACS](/help/assets/ACS_gym_metadata.png)

@@ -41,4 +41,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/rank ' -H
 
 >[!IMPORTANT]
 >
->Ersätt variabler som `<API KEY>`, `<TOKEN>`och `<ORGID>` med faktiska värden.
+>Ersätt variabler som `<API KEY>`, `<TOKEN>` och `<ORGID>` med faktiska värden.

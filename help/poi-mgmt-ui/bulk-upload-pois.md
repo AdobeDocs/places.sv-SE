@@ -4,16 +4,16 @@ description: I det här avsnittet finns information om hur du överför dina POI
 exl-id: 72704bfc-5837-4439-bdb2-e77ddf935639
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '835'
 ht-degree: 0%
 
 ---
 
 # Massöverföring av POI {#bulk-upload-pois}
 
-The **Importera POI** -knappen i platstjänsten kan användas för att massöverföra nya POI-filer med hjälp av en CSV-fil. En exempelmall för kalkylblad finns för att visa vilka datakolumner som krävs och hur du lägger till valfria anpassade metadata.
+Knappen **Importera POI** i platstjänsten kan användas för att massöverföra nya POI:er med hjälp av en CSV-fil. En exempelmall för kalkylblad finns för att visa vilka datakolumner som krävs och hur du lägger till valfria anpassade metadata.
 
-![Skärm för massimport](/help/assets/Bulk-import.png)
+![Massimportskärm](/help/assets/Bulk-import.png)
 
 I den här videon visas processen för massimport och massredigering:
 
@@ -23,41 +23,41 @@ I den här videon visas processen för massimport och massredigering:
 
 ## Python API-skript
 
-En uppsättning Python-skript har skapats för att förenkla batchimporten av POI från en CSV-fil till en POI-databas med hjälp av webbtjänstens API:er. Dessa skript kan laddas ned från den här öppna källkoden [git repo](https://github.com/adobe/places-scripts).
+En uppsättning Python-skript har skapats för att förenkla batchimporten av POI från en CSV-fil till en POI-databas med hjälp av webbtjänstens API:er. Dessa skript kan hämtas från den här öppna källkoden [git repo](https://github.com/adobe/places-scripts).
 
-Innan du kör dessa skript kan du få åtkomst till webbtjänstens API:er på *Krav för användaråtkomst* in [Översikt över integrationen och krav](/help/web-service-api/adobe-i-o-integration.md).
+Innan du kör dessa skript kan du få åtkomst till webbtjänstens API:er i *Krav för användaråtkomst* i [Integreringsöversikt och -krav](/help/web-service-api/adobe-i-o-integration.md).
 
 Här är lite information om skripten:
 
 >[!TIP]
 >
->Den här informationen finns även i en Viktigt-fil i [git repo](https://github.com/adobe/places-scripts).
+>Den här informationen ingår också i en Viktigt-fil i [Git-repo](https://github.com/adobe/places-scripts).
 
 ## CSV-fil
 
-Ett exempel på en CSV-fil, `places_sample.csv`, är en del av det här paketet och innehåller de sidhuvuden och en rad med exempeldata. Dessa rubriker är små och motsvarar reserverade metadatanycklar som används i platsdatabasen. Kolumner som du lägger till i CSV-filen läggs till i POI-databasen i ett separat metadataavsnitt för varje POI som nyckel/värde-par, och rubrikvärdet används som nyckel.
+Ett exempel på en CSV-fil, `places_sample.csv`, är en del av det här paketet och innehåller de rubriker som krävs och en rad med exempeldata. Dessa rubriker är små och motsvarar reserverade metadatanycklar som används i platsdatabasen. Kolumner som du lägger till i CSV-filen läggs till i POI-databasen i ett separat metadataavsnitt för varje POI som nyckel/värde-par, och rubrikvärdet används som nyckel.
 
 Här är en lista över kolumnerna och de värden som du behöver använda:
 
 * `lib_id`
 
-   Ett giltigt biblioteks-ID som hämtas från POI-databasen.
+  Ett giltigt biblioteks-ID som hämtas från POI-databasen.
 
 * `type`
 
-   Point är för närvarande det enda giltiga värdet.
+  Point är för närvarande det enda giltiga värdet.
 
 * `longitude`
 
-   Ett värde mellan -180 och 180.
+  Ett värde mellan -180 och 180.
 
 * `latitude`
 
-   Ett värde mellan -85 och 85.
+  Ett värde mellan -85 och 85.
 
 * `radius`
 
-   Ett värde mellan 10 och 20 000.
+  Ett värde mellan 10 och 20 000.
 
 ### Kolumnvärden
 
@@ -67,15 +67,15 @@ Värdena för följande kolumner används i användargränssnittet för platstj�
    * Giltiga värden är &quot;&quot;, #3E76D0, #AA99E8, #DC2ABA, #FC685B, #FC962E, #F6C436, #BECE5D, #61B56B, #3DC8DE och &quot;&quot;.
    * Om värdet lämnas tomt används blått som standardfärg i användargränssnittet för Platstjänster.
 
-      Värdena motsvarar blått (#3E76D0), lila (#AA99E8), fuschia (#DC2ABA), orange (#FC685B), ljusorange (#FC962E), gult (#F6C436), ljusgrönt (#BECE5D), grönt (#61B 56B) och ljusblå (#3DC8DE).
+     Värdena motsvarar blått (#3E76D0), lila (#AA99E8), fuschia (#DC2ABA), orange (#FC685B), ljusorange (#FC962E), gult (#F6C436), ljusgrönt (#BECE5D), grönt (#61B 56B) och ljusblå (#3DC8DE).
 
 * -ikonen, som används som ikon på det stift som representerar platsen för POI på kartan för användargränssnitt för Platstjänst.
 
-   * Giltiga värden är &quot;&quot;, shop, hotelbed, car, airplane, train, ship, stadium, amusementpark, anchor, beaker, bell, bid, book, box, portfölj, browse, brush, building, calculator, camera, clock, education, flashlight, follow, game, hon, hon, present, hammer, home, key, launch, lightbulb, mailbox, money, pin, pin, Promote, ribbon, shoppingCart, star, target, teapot, thumbDown, thumbUp, trap, trophy, wrench.
+   * Giltiga värden är &quot;&quot;, shop, hotelbed, car, airplane, train, ship, stadium, amusementpark, anchor, beaker, bell, bid, book, box, portfölj, browse, brush, building, calculator, camera, clock, education, flashlight, follow, game, hon, hon, present, hammer, home, key, launch, lightbulb, mailbox, money, pin, pin, marknadsför, band, shoppingCart, star, target, teapot, thumbDown, thumbUp, trap, trophy, wrench.
 
-      Ikonvärdena visas i den ordning som de visas på följande bild:
+     Ikonvärdena visas i den ordning som de visas på följande bild:
 
-      ![ikoner i användargränssnittet](/help/assets/UI_icons.png)
+     ![ikoner i gränssnittet](/help/assets/UI_icons.png)
 
    * Om värdet lämnas tomt används stjärnan som standardikon.
 
@@ -83,45 +83,46 @@ Värdena för följande kolumner används i användargränssnittet för platstj�
 
 ## Köra skriptet
 
-1. Hämta filer från [git repo](https://github.com/adobe/places-scripts) till din lokala katalog.
-1. I en textredigerare öppnar du `config.py` och utföra följande uppgifter:
+1. Hämta filer från [Git-repo](https://github.com/adobe/places-scripts) till din lokala katalog.
+1. Öppna filen `config.py` i en textredigerare och utför följande uppgifter:
 
    a. Redigera följande variabelvärden som strängar:
 
    * `csv_file_path`
 
-      Det här är vägen till `.csv`  -fil.
+     Det här är sökvägen till din `.csv`-fil.
 
    * `access_code`
 
-      Det här är din åtkomstkod som hämtats från anropet till Adobe IMS. Mer information om hur du får åtkomst till den här åtkomstkoden finns i *Krav för användaråtkomst* in [Översikt över integrationen och krav](/help/web-service-api/adobe-i-o-integration.md).
+     Det här är din åtkomstkod som hämtats från anropet till Adobe IMS. Mer information om hur du hämtar den här åtkomstkoden finns i *Krav för användaråtkomst* i [Integreringsöversikt och -krav](/help/web-service-api/adobe-i-o-integration.md).
 
    * `org_id`
 
-      Det Experience Cloud orgID som POI ska importeras till. Mer information om hur du får tag i ditt företags-ID finns i *Krav för användaråtkomst* in [Översikt över integrationen och krav](/help/web-service-api/adobe-i-o-integration.md).
+     Det Experience Cloud orgID som POI ska importeras till. Mer information om hur du hämtar organisation-ID:t finns i *Krav för användaråtkomst* i [Integreringsöversikt och krav](/help/web-service-api/adobe-i-o-integration.md).
 
    * `api_key`
 
-      Det här är den REST API-nyckel som du får från integreringen för Adobe I/O Platser. Mer information om hur du hämtar API-nyckeln finns i *Krav för användaråtkomst* in [Översikt över integrationen och krav](/help/web-service-api/adobe-i-o-integration.md).
+     Det här är den REST API-nyckel som du får från integreringen för Adobe I/O Platser. Mer information om hur du hämtar API-nyckeln finns i *Krav för användaråtkomst* i [Integreringsöversikt och krav](/help/web-service-api/adobe-i-o-integration.md).
+
    b. Spara ändringarna.
 
-1. I ett terminalfönster går du till `…/places-scripts/import/` katalog.
-1. Retur `python ./places_import.py` och trycker på **[!UICONTROL enter]** (**[!UICONTROL return]**).
+1. Navigera till katalogen `…/places-scripts/import/` i ett terminalfönster.
+1. Ange `python ./places_import.py` och tryck på **[!UICONTROL enter]** (**[!UICONTROL return]**).
 
 
 ## CSV-kontroller före import
 
 Skriptet slutför först följande kontroller av CSV-filen:
 
-* Om `.csv` filen angavs.
+* Om en `.csv`-fil har angetts.
 * Anger om filsökvägen är giltig.
 * Anger om reserverade metadatarubriker inkluderas.
 
-   De reserverade metadatarubrikerna är lib_id, name, description, type, longitude, latitude, radius, country, state, city, street, category, icon och color.
+  De reserverade metadatarubrikerna är lib_id, name, description, type, longitude, latitude, radius, country, state, city, street, category, icon och color.
 
-   >[!TIP]
-   >
-   >Alla rubriker är små och kan listas i vilken ordning som helst.
+  >[!TIP]
+  >
+  >Alla rubriker är små och kan listas i vilken ordning som helst.
 
 * Verifierar värdena för kolumnerna som anges i CSV-filavsnittet.
 
@@ -129,4 +130,4 @@ Om fel hittas skrivs skriptet ut och avbryts. Om inga fel hittas försöker skri
 
 ## Enhetstester
 
-Enhetstester finns i `tests.py` filen, ska köras före varje pull-begäran och ska alla skickas. Ytterligare tester bör läggas till med ny kod. Navigera till `…/places-scripts/import/` och ange `python ./places_import.py` i terminal.
+Enhetstester finns i filen `tests.py`, ska köras före varje pull-begäran och ska alla utföras. Ytterligare tester bör läggas till med ny kod. Om du vill köra testerna går du till katalogen `…/places-scripts/import/` och anger `python ./places_import.py` i terminalen.

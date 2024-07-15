@@ -1,18 +1,18 @@
 ---
-title: Tillägget Platser
+title: Platstillägg
 description: Med tillägget Platser kan du agera utifrån platsen för dina användare.
 feature: Mobile SDK
 exl-id: 09c02753-09b3-4e07-82b2-b6c72c4e0e42
 source-git-commit: 9f2c6fee6e0d6d075b662cc0b6cbee49cf05ee55
 workflow-type: tm+mt
-source-wordcount: '37'
-ht-degree: 10%
+source-wordcount: '33'
+ht-degree: 0%
 
 ---
 
-# Tillägget Platser {#places-extension}
+# Platstillägg {#places-extension}
 
-Navigera till utvecklarportalen för Adobe om du vill visa dokumentation för [Placerar SDK-tillägg](https://developer.adobe.com/client-sdks/documentation/places/).
+Gå till utvecklarportalen för Adobe om du vill visa dokumentation för [Places SDK-tilläggen](https://developer.adobe.com/client-sdks/documentation/places/).
 
 <!-- 
 

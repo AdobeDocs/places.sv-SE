@@ -5,7 +5,7 @@ exl-id: 57e88a37-0b0b-4064-ab72-382a36a0d01d
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '456'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -17,38 +17,38 @@ Följande information hjälper dig att förstå dataelement och hur du skapar oc
 
 Dataelement är byggstenarna för programmets dataordlista och används för att samla in, organisera och leverera data över marknadsförings- och annonseringsteknologi.
 
-Ett dataelement är en variabel där värdet kan mappas till ett besökar-ID, ett bärarnamn, ett annons-ID, ett push-ID och så vidare. I Experience Platform Launch kan du referera till det här värdet med hjälp av dess variabelnamn. Den här samlingen dataelement blir en ordlista med definierade data som du kan använda för att skapa regler (händelser, villkor och åtgärder), och den här ordlistan delas över Experience Platform Launch där den kan användas med valfritt tillägg i din egenskap.
+Ett dataelement är en variabel där värdet kan mappas till ett besökar-ID, ett bärarnamn, ett Advertising-ID, ett push-ID och så vidare. I Experience Platform Launch kan du referera till det här värdet med hjälp av dess variabelnamn. Den här samlingen dataelement blir en ordlista med definierade data som du kan använda för att skapa regler (händelser, villkor och åtgärder), och den här ordlistan delas över Experience Platform Launch där den kan användas med valfritt tillägg i din egenskap.
 
 Med tillägget Platser kan du referera till värden från följande mål:
 
 * Aktuell POI, som avser den POI där kunden befinner sig.
 
-   Om användaren finns i flera POI:er väljs den som tillhör biblioteket med högre rankning. Om flera POI tillhör det högsta rangordnade biblioteket väljs det med den minsta radien.
+  Om användaren finns i flera POI:er väljs den som tillhör biblioteket med högre rankning. Om flera POI tillhör det högsta rangordnade biblioteket väljs det med den minsta radien.
 * Senaste exponerade POI, som refererar till den senaste POI som användaren lämnade.
 * Senaste inmatade POI, som refererar till den senaste POI som användaren angav.
 
 Varje POI innehåller följande datareferenser:
 
-* **[!UICONTROL Category]**: POI-kategori
-* **[!UICONTROL City]**: POI-staden
+* **[!UICONTROL Category]**: kategori för POI
+* **[!UICONTROL City]**: POI-postens stad
 * **[!UICONTROL Country]**: POI-land
 * **[!UICONTROL Latitude]**: POI-latitud
 * **[!UICONTROL Longitude]**: POI-longitud
 * **[!UICONTROL Metadata]**: anpassade metadata för POI
-* **[!UICONTROL Name]**: POI-namn
-* **[!UICONTROL Radius]**: POI-radie
+* **[!UICONTROL Name]**: POI-namnet
+* **[!UICONTROL Radius]**: POI-radien
 * **[!UICONTROL Region ID]**: ID för POI
 * **[!UICONTROL Region/State]**: region, provins eller delstat i POI
 
 ### Skapa ett dataelement
 
-1. På sidan Egenskaper för din app klickar du på **[!UICONTROL Data Elements]** -fliken.
+1. Klicka på fliken **[!UICONTROL Data Elements]** på egenskapssidan för din app.
 
 1. Klicka på **[!UICONTROL Create New Data Element]**.
 
-1. I listan med installerade tillägg hittar du **[!UICONTROL Places]**.
+1. I listan med installerade tillägg söker du efter **[!UICONTROL Places]**.
 
-1. I **[!UICONTROL Data Element Type]** väljer du en datareferens för det här dataelementet.
+1. Välj en datareferens för det här dataelementet i listrutan **[!UICONTROL Data Element Type]**.
 
 1. Välj ett POI-mål.
 
@@ -63,12 +63,12 @@ Varje POI innehåller följande datareferenser:
 
 När ett dataelement har skapats kan du, om det finns en dataelementväljare, använda dataelementet från valfri regelkomponent.
 
-![Använda dataelementet](/help/assets/use-de-v2.png)
+![Använd dataelementet](/help/assets/use-de-v2.png)
 
-Om det inte finns någon dataelementväljare i regelkomponenten kan du använda dataelementet genom att radbryta dataelementets namn med **[!UICONTROL %%]** variabler.
-Om dataelementnamnet till exempel är **[!UICONTROL Last POI City]** kan du lägga till **[!UICONTROL LAST POI City]** till en textinmatning.
+Om det inte finns någon dataelementväljare i regelkomponenten kan du använda dataelementet genom att kapsla in dataelementnamnet med **[!UICONTROL %%]**-tokens.
+Om dataelementnamnet till exempel är **[!UICONTROL Last POI City]** kan du lägga till **[!UICONTROL LAST POI City]** i en textinmatning.
 
 
-## Publicera dataelement
+## Publish dataelement
 
 Om dataelement används i någon av regelkomponenterna måste dessa dataelement också inkluderas i biblioteket och publiceras.

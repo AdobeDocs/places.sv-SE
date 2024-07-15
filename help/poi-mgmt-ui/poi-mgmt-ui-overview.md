@@ -13,7 +13,7 @@ ht-degree: 0%
 
 POI och bibliotek skapas och hanteras i platstjänstens databas med hjälp av användargränssnittet för platstjänster.
 
-* Information om hur du skapar ett bibliotek eller hanterar flera bibliotek finns i [Hantera bibliotek](/help/poi-mgmt-ui/manage-libraries-in-the-places-ui.md).
-* Information om hur du skapar en POI finns i [Skapa en POI](/help/poi-mgmt-ui/create-a-poi-ui.md).
-* Information om hur du hanterar flera POI:er finns i [Hantera tidigare skapade POI](/help/poi-mgmt-ui/managing-pois-in-the-places-ui.md).
-* Information om hur du utför en massimport av POI-filer finns i [Massimport av POI](/help/poi-mgmt-ui/bulk-upload-pois.md).
+* Mer information om hur du skapar ett bibliotek eller hanterar flera bibliotek finns i [Hantera bibliotek](/help/poi-mgmt-ui/manage-libraries-in-the-places-ui.md).
+* Mer information om hur du skapar en POI finns i [Skapa en POI](/help/poi-mgmt-ui/create-a-poi-ui.md).
+* Mer information om hur du hanterar flera POI finns i [Hantera tidigare skapade POI](/help/poi-mgmt-ui/managing-pois-in-the-places-ui.md).
+* Mer information om hur du utför en massimport av POI:er finns i [Massimport av POI:er](/help/poi-mgmt-ui/bulk-upload-pois.md).

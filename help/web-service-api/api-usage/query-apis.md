@@ -4,7 +4,7 @@ description: Förstå och använda API:er för frågor.
 exl-id: cc61a49c-1cf2-407f-b81a-3d38fcb622cc
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
@@ -25,24 +25,24 @@ Med följande indata returnerar tjänsten en lista över de POI:er som är närm
 * ID:n för de POI-bibliotek som ska inkluderas i sökningen.
 * Det maximala antalet POI som ska returneras.  Standardvärdet är 100.
 
-   Avståndet mellan anroparen och POI definieras som avståndet från anroparen till kanten på POI:s geofence. I svaret markeras POI som innehåller anroparen som anroparen.
+  Avståndet mellan anroparen och POI definieras som avståndet från anroparen till kanten på POI:s geofence. I svaret markeras POI som innehåller anroparen som anroparen.
 
 Argument anges som följande frågeparametrar:
 
-* (**Obligatoriskt**) `latitude`
+* (**Obligatorisk**) `latitude`
 
-   Anroparens latitud, som måste vara mellan -85 och 85.
-* (**Obligatoriskt**) `longitude`
+  Anroparens latitud, som måste vara mellan -85 och 85.
+* (**Obligatorisk**) `longitude`
 
-   Uppringarens longitud, som måste vara mellan -180 och 180.
+  Uppringarens longitud, som måste vara mellan -180 och 180.
 
 * (**Valfritt**) `limit`
 
-   Det maximala antalet POI som ska returneras.
+  Det maximala antalet POI som ska returneras.
 
-* (**Obligatoriskt**) `library`
+* (**Obligatorisk**) `library`
 
-   ID för det bibliotek som ska frågas. Om du vill fråga flera bibliotek måste du ta med flera kopior av biblioteksparametern i frågan.
+  ID för det bibliotek som ska frågas. Om du vill fråga flera bibliotek måste du ta med flera kopior av biblioteksparametern i frågan.
 
 Här följer ett exempel på det returnerade JSON-formatet:
 
@@ -107,7 +107,7 @@ Här följer ett exempel på det returnerade JSON-formatet:
 }
 ```
 
-POI under `places.pois` sorteras efter avstånd från anroparen till kanten på POI:n. POI under `places.userWithin` innehåller anroparen, och dessa POI:er ordnas efter rangordning och sedan efter radie.
+POI under `places.pois` sorteras efter avstånd från anroparen till kanten av POI:n. POI under `places.userWithin` innehåller anroparen och dessa POI sorteras efter rangordning och sedan genom att radien ökas.
 
 ## Exempel på samtal
 

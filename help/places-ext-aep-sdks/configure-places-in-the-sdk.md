@@ -19,12 +19,12 @@ Så här konfigurerar du platstillägget:
 
 1. Konfigurera tillägget Platser i Launch.
 
-   Mer information finns i *Konfigurera Platstillägget i Launch* in [Platstillägg](/help/places-ext-aep-sdks/places-extension/places-extension.md).
+   Mer information finns i *Konfigurera Platser-tillägget i Launch* i [Platstillägg](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
 1. Lägg till tillägget Platser i din mobilapp.
 
-   Mer information finns i *Lägg till tillägget Platser i din app* in [Platstillägg](/help/places-ext-aep-sdks/places-extension/places-extension.md).
+   Mer information finns i *Lägg till tillägget Platser i appen* i tillägget [Platser](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
 1. Registrera platser med tillägget Mobile Core.
 
-   Mer information finns i *Registrera platser med Mobile Core* in [Platstillägg](/help/places-ext-aep-sdks/places-extension/places-extension.md).
+   Mer information finns i *Registrera platser med Mobile core* i tillägget [Platser](/help/places-ext-aep-sdks/places-extension/places-extension.md).

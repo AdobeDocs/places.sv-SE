@@ -27,7 +27,7 @@ Detta gör att du kan vidta åtgärder från platssignaler i realtid, när och v
 
 Här är några sätt att använda platser:
 
-* Skicka ett meddelande i realtid när någon anger ett POI, *&quot;Hallå..Välkommen till stadion.&quot;*
+* Skicka ett meddelande i realtid när någon anger ett POI, *&quot;Hej...Välkommen till stadion.&quot;*
 * Analysera fottrafiken i era egna butiker jämfört med konkurrentbutikerna.
 * Segmentera en målgrupp baserat på offlinebeteende genom att använda målgruppsprofiler med positionskontext.
 * Rikta en användare med en butiksupplevelse när det är relevant.
@@ -38,9 +38,9 @@ Platstjänsten omfattar följande komponenter:
 
 * **Webbtjänst**
 
-  Du kan skapa och hantera POI med hjälp av Places REST API:er. Mer information om REST API:er finns i [Hantera bibliotek](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md) och [Hantera POI](/help/web-service-api/api-usage/manage-pois/manage-pois.md).
+  Du kan skapa och hantera POI med hjälp av Places REST API:er. Mer information om REST API:er finns i [Hantera bibliotek](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md) och [Hantera POI:er](/help/web-service-api/api-usage/manage-pois/manage-pois.md).
 
-* **POI Management-gränssnitt**
+* **Gränssnitt för POI-hantering**
 
   Visualisera POI på en karta för att förstå det spatiala sammanhanget och för att lägga till/redigera POI och deras anpassade metadata.
 
@@ -48,7 +48,7 @@ Platstjänsten omfattar följande komponenter:
 
   Det mobila API-gränssnittet för flera plattformar för att integrera platskontexten i era mobilappar. Mer information om SDK:er finns i [Platstillägg](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
-* **Starta regler**
+* **Startregler**
 
   De geointelligenta startreglerna som gör att du kan aktivera åtgärder med start- och avslutningshändelser. Reglerna gör det även möjligt att använda geo-attribut i villkor för att personalisera upplevelsen.
 
@@ -56,21 +56,21 @@ Platstjänsten omfattar följande komponenter:
 
 Här är några vanliga termer som används i den här dokumentationen:
 
-* A **intressepunkt (POI)** är en geografisk plats som är av intresse för din organisation.
+* En **intressepunkt (POI)** är en geoplats som är av intresse för din organisation.
 
   Du kan definiera POI med attribut som namn, radie, adress, kategori och metadatataggar.
 
-* A **geofence** är en typ av POI.
+* En **geofence** är en typ av POI.
 
   Denna POI-typ är en virtuell geografisk gräns som definieras av latitud- och longitudkoordinater.
 
-* A **beacon** är en typ av POI.
+* En **fyr** är en typ av POI.
 
   Den här POI-typen är en fysisk enhet som representerar en plats genom att skicka en blå tand med låg effekt. Stöd för beacons kommer i en kommande version.
 
 * Ett **bibliotek** är en samling intressepunkter, som grupperas för att enkelt koppla regler till en uppsättning i stället för till en intressepunkt.
 
-* An **extension** är tillägget Experience Platform Launch som krävs för att integrera platsens SDK i dina mobilappar.
+* Ett **tillägg** är det Experience Platform Launch-tillägg som krävs för att integrera platsens SDK i dina mobilappar.
 
   Det tillägg som används tillsammans med andra SDK:er för mobiler för att lägga till platskontext i era upplevelser.
 
@@ -80,9 +80,9 @@ Här är några vanliga termer som används i den här dokumentationen:
 
 * **orgID** är det ID som representerar din organisation i Adobe Experience Platform.
 
-  Mer information finns i [Hitta ditt orgID](https://forums.adobe.com/thread/2339895).
+  Mer information finns i [Söka efter ditt orgID](https://forums.adobe.com/thread/2339895).
 
-* The **EXPERIENCE CLOUD ID** en universell, beständig ID som identifierar besökarna i alla lösningar i Experience Cloud.
+* Tjänsten **Experience Cloud ID** tillhandahåller ett universellt, beständigt ID som identifierar dina besökare i alla lösningar i Experience Cloud.
 
-  Mer information finns i [Ökning](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html).
+  Mer information finns i [Översikt](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html).
 

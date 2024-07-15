@@ -1,25 +1,25 @@
 ---
-title: Frågor och svar
+title: Vanliga frågor och svar
 description: Det här avsnittet innehåller ytterligare information om några vanliga frågor och svar.
 exl-id: cee9f447-5e50-4ed8-b37b-baecbc0e9b7b
 source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '541'
 ht-degree: 1%
 
 ---
 
-# Frågor och svar
+# Vanliga frågor och svar
 
 Här är information och vanliga frågor om Platstjänst.
 
 ## Migrera från trackLocation i v4 SDK
 
-Om du migrerar från v4 SDK och letar efter en ersättning till `trackLocation` API, se ämnet [Använd platstjänst utan övervakning av aktiv region](use-places-without-active-monitoring.md).
+Om du migrerar från v4 SDK och letar efter en ersättning till `trackLocation` API:t kan du läsa avsnittet [Använd platstjänst utan Active Region-övervakning](use-places-without-active-monitoring.md).
 
 ## Storlek och tillförlitlighet
 
-Observera alla geofences som används i regionövervakning från en mobilapp, oavsett om Adobe eller någon annan tjänst används. Operativsystemen rekommenderar att du tar hänsyn till vissa parametrar när du skapar geofences. För maximal tillförlitlighet bör geofences ha en radie på minst 100 meter. Det går bra att skapa mindre geofences, men start- och avslutshändelser kanske inte genereras eller kan genereras när användaren slutar flytta under en period.
+Observera alla geofences som används i regionövervakning från en mobilapp, oavsett om Adobe eller någon annan tjänst används. Operativsystemen rekommenderar att du tar hänsyn till vissa parametrar när du skapar geofences. För maximal tillförlitlighet bör geofences ha en radie på minst 100 meter. Det går bra att skapa mindre geofences, men start- och avslutshändelser kanske inte genereras eller kan genereras efter att användaren har slutat flytta under en period.
 
 Dessutom kan tillförlitligheten och tillförlitligheten minskas beroende på maskinvaruförhållanden som att wi-fi är avstängd eller inte är tillgängliga, och även utifrån enhetens placering i förhållande till hur GPS-signalerna hindras. Exempelvis kan bergsområden, stadsinställningar och inomhusområden minska positionens exakthet från operativsystemen iOS och Android.
 

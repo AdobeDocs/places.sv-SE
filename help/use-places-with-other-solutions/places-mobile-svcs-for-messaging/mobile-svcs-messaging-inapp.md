@@ -4,8 +4,8 @@ description: I det här avsnittet visas hur du använder Platstjänst med meddel
 exl-id: c655e64b-0737-44d5-b453-2ac02fb9cbcc
 source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 1%
+source-wordcount: '636'
+ht-degree: 0%
 
 ---
 
@@ -31,9 +31,9 @@ Här är en lista över tillgängliga meddelandetyper i appen:
 
 Dessa typer är meddelanden i appen eftersom de aktiveras av SDK:n. Lokala meddelanden ser ut och känns som push-meddelanden eftersom de visas när programmet är i bakgrunden. Dessa meddelanden skickar även meddelanden i realtid när användare anger eller avslutar dina POI-dokument när programmet är i bakgrunden.
 
-### Förutsättningar
+### Förhandskrav
 
-Innan du börjar förstår du hur du skickar och skapar ett meddelande i appen i Mobiltjänster och hur utlösarna fungerar. Mer information finns i [Skapa ett meddelande i appen.](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html)
+Innan du börjar förstår du hur du skickar och skapar ett meddelande i appen i Mobiltjänster och hur utlösarna fungerar. Mer information finns i [Skapa ett meddelande i appen.](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.htmlhtml?lang=sv)
 
 ## Regler i Experience Platform Launch
 
@@ -53,18 +53,18 @@ När regeln har konfigurerats med rätt händelse- och villkorsparametrar slutf�
 
 Så här skapar du en åtgärd:
 
-1. Välj **[!UICONTROL Adobe Analytics]** tillägg.
+1. Välj tillägget **[!UICONTROL Adobe Analytics]**.
 1. I listrutan **[!UICONTROL Action type]** väljer du **[!UICONTROL Track.]**
 1. Skriv ett namn för åtgärden.
-1. I den högra rutan, i **[!UICONTROL Context Data]** väljer du nyckelvärdepar för att ange de kontextdata som ska skickas till Analytics.
+1. I den högra rutan i **[!UICONTROL Context Data]** väljer du nyckelvärdepar för att ange de kontextdata som ska skickas till Analytics (Analyser).
 
-Du kan t.ex. välja `poiname` som tangenten och `{%%Last Entered POI Name}` som värdet.
+Du kan till exempel välja `poiname` som nyckel och `{%%Last Entered POI Name}` som värde.
 
 >[!TIP]
 >
->Analysbearbetningsregler kan anges för att hämta kontextdata. Mer information finns i [Bearbetar regler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html). I exemplet i *Skapa en åtgärd* skickar funktionsmakrot `poiname` som kontext för att beskriva POI-händelsen som skickas till Analytics.
+>Analysbearbetningsregler kan anges för att hämta kontextdata. Mer information finns i [Bearbetningsregler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html). I exemplet i *Skapa en åtgärd* skickar åtgärden `poiname` som kontext för att beskriva POI-händelsen som skickas till Analytics.
 
-![skapa ett funktionsmakro](/help/assets/configure-action.png)
+![skapar en åtgärd](/help/assets/configure-action.png)
 
 Här är ett exempel på den fullständiga regeln:
 
@@ -79,10 +79,10 @@ Som en del av dina utlösarparametrar kan du skapa målgruppen för meddelandet 
 
   Det här alternativet kan användas med en platsspecifik åtgärd, till exempel en post, eller som kontext till en annan händelse, till exempel en start eller ett knappklick.
 
-  Här är ett exempel på hur du konfigurerar ett meddelande i appen för att välkomna användare som anger ett POI som har **[!UICONTROL Adobe]** i namnet:
+  Här följer ett exempel på hur du konfigurerar ett meddelande i appen för att välkomna användare som anger ett POI som har **[!UICONTROL Adobe]** i namnet:
 
-  ![trigger parameters](/help/assets/trigger-parameters.png)
+  ![utlösarparametrar](/help/assets/trigger-parameters.png)
 
-* Parametrar i platstjänstens rubriker i *Utlösare och traits* sidan i Mobiltjänster fungerar inte med data från Platstjänst.
+* Parametrar i platstjänstens rubriker på sidan *Utlösare och traits* i Mobiltjänster fungerar inte med data från platstjänsten.
 
   De här parametrarna gäller endast för den gamla platstjänstdatabasen som skapades i Mobile Services.

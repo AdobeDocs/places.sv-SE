@@ -47,4 +47,4 @@ curl -X PUT 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H 'x
 
 >[!IMPORTANT]
 >
->Ersätt `<POIID>`, `<API KEY>`, `<TOKEN>`, `<ORGID>`och `<SINGLEPOIDATA>` med faktiska värden.
+>Ersätt `<POIID>`, `<API KEY>`, `<TOKEN>`, `<ORGID>` och `<SINGLEPOIDATA>` med faktiska värden.
