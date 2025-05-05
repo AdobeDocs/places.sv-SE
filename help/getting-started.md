@@ -17,7 +17,7 @@ Här är en praktisk video med en översikt över Platstjänster:
 Test of different youtube link for exl
 -->
 
->[!VIDEO](https://video.tv.adobe.com/v/41647)
+>[!VIDEO](https://video.tv.adobe.com/v/3455116?captions=swe)
 
 ## Använda Platstjänst
 
