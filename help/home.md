@@ -84,5 +84,5 @@ Här är några vanliga termer som används i den här dokumentationen:
 
 * Tjänsten **Experience Cloud ID** tillhandahåller ett universellt, beständigt ID som identifierar dina besökare i alla lösningar i Experience Cloud.
 
-  Mer information finns i [Översikt](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html).
+  Mer information finns i [Översikt](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=sv-SE).
 

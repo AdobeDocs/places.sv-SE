@@ -23,7 +23,7 @@ Det här dokumentet förutsätter följande:
 
 1. Adobe Analytics-användaren är administratör och har tillgång till bearbetningsregler.
 
-   Mer information om hur du bearbetar regler finns i [Översikt över bearbetningsregler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html).
+   Mer information om hur du bearbetar regler finns i [Översikt över bearbetningsregler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html?lang=sv-SE).
 
 1. I Launch-egenskapen har dataelement skapats för platstjänstvariablerna som du vill använda.
 
@@ -44,7 +44,7 @@ I det här exemplet har regelns åtgärd följande värden definierade för Anal
 
 ## 2. Skapa analysvariabler
 
-För att mappa kontextdata (skickas i steg 1) måste variabler först skapas för Analytics-rapportsviten. Mer information om hur du skapar variabler i Analytics finns i [Konverteringsvariabler (eVars)](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html).
+För att mappa kontextdata (skickas i steg 1) måste variabler först skapas för Analytics-rapportsviten. Mer information om hur du skapar variabler i Analytics finns i [Konverteringsvariabler (eVars)](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html?lang=sv-SE).
 
 I det här exemplet har en konverteringsvariabel, **[!UICONTROL Evar2]**, skapats och fått namnet **[!UICONTROL Places POI Name]**. Ytterligare variabler måste skapas för varje platsvariabel som du vill visa i rapporter.
 
@@ -52,7 +52,7 @@ I det här exemplet har en konverteringsvariabel, **[!UICONTROL Evar2]**, skapat
 
 ## 3. Skapa bearbetningsregler
 
-Det här steget behövs för att mappa kontextdata (steg 1) till analysvariabler (steg 2). Mer information om hur du skapar bearbetningsregler finns i [Översikt över bearbetningsregler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html).
+Det här steget behövs för att mappa kontextdata (steg 1) till analysvariabler (steg 2). Mer information om hur du skapar bearbetningsregler finns i [Översikt över bearbetningsregler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html?lang=sv-SE).
 
 I det här exemplet har en bearbetningsregel skapats för att mappa kontextdatavärdet **[!UICONTROL poi.name]** till **[!UICONTROL Places POI Name (eVar2)]**. Ytterligare bearbetningsregler måste skapas för varje platsvariabel som skapas.
 
@@ -60,7 +60,7 @@ I det här exemplet har en bearbetningsregel skapats för att mappa kontextdatav
 
 ## 4. Generera en rapport i Workspace
 
-I det här steget visas en grundläggande rapport i Analytics Workspace för att visa de data som samlats in i steg 1-3. Mer information om hur du använder Analytics Workspace finns i [Analytics Workspace - översikt](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html).
+I det här steget visas en grundläggande rapport i Analytics Workspace för att visa de data som samlats in i steg 1-3. Mer information om hur du använder Analytics Workspace finns i [Analytics Workspace - översikt](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=sv-SE).
 
 I det här exemplet har rapporten följande inställningar:
 

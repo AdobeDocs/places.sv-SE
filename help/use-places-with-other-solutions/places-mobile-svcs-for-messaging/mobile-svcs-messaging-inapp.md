@@ -62,7 +62,7 @@ Du kan till exempel välja `poiname` som nyckel och `{%%Last Entered POI Name}` 
 
 >[!TIP]
 >
->Analysbearbetningsregler kan anges för att hämta kontextdata. Mer information finns i [Bearbetningsregler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html). I exemplet i *Skapa en åtgärd* skickar åtgärden `poiname` som kontext för att beskriva POI-händelsen som skickas till Analytics.
+>Analysbearbetningsregler kan anges för att hämta kontextdata. Mer information finns i [Bearbetningsregler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html?lang=sv-SE). I exemplet i *Skapa en åtgärd* skickar åtgärden `poiname` som kontext för att beskriva POI-händelsen som skickas till Analytics.
 
 ![skapar en åtgärd](/help/assets/configure-action.png)
 

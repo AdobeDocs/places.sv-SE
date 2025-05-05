@@ -37,7 +37,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Stora förändringar från anställda hos Adobe
 
-Om du är teknikskribent, programchef eller utvecklare för en [!UICONTROL Adobe Experience Cloud] och det är ditt jobb att bidra till eller skriva tekniska artiklar, du bör använda den privata databasen på `https://git.corp.adobe.com/AdobeDocs`. Se [Handbok för internt samarbete](https://experienceleague.adobe.com/docs/collaborative-doc-instructions/collaboration-guide/home.html).
+Om du är teknikskribent, programchef eller utvecklare för en [!UICONTROL Adobe Experience Cloud] och det är ditt jobb att bidra till eller skriva tekniska artiklar, du bör använda den privata databasen på `https://git.corp.adobe.com/AdobeDocs`. Se [Handbok för internt samarbete](https://experienceleague.adobe.com/docs/collaborative-doc-instructions/collaboration-guide/home.html?lang=sv-SE).
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 

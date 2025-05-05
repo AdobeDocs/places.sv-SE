@@ -13,7 +13,7 @@ ht-degree: 35%
 
 ## Regler
 
-Experience Platform Launch är ett regelbaserat system, som letar efter användarinteraktion och tillhörande data. När villkoren som beskrivs i reglerna är uppfyllda utlöser regeln tillägget, skriptet eller HTML-koden som du identifierat. Du kan bygga regler för att integrera data och funktioner hos marknadsförings- och annonsteknologier som sammanför olika produkter i en och samma lösning. Mer information om regler finns i [Regler](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html) och [Skapa en regel](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html#create-a-rule).
+Experience Platform Launch är ett regelbaserat system, som letar efter användarinteraktion och tillhörande data. När villkoren som beskrivs i reglerna är uppfyllda utlöser regeln tillägget, skriptet eller HTML-koden som du identifierat. Du kan bygga regler för att integrera data och funktioner hos marknadsförings- och annonsteknologier som sammanför olika produkter i en och samma lösning. Mer information om regler finns i [Regler](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=sv-SE) och [Skapa en regel](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=sv-SE#create-a-rule).
 
 ## Dataelement
 
@@ -21,5 +21,5 @@ Dataelement är byggstenarna för din dataordlista eller datamappning. Ni kan an
 
 Ett dataelement är en variabel och värdet för den här variabeln kan mappas till frågesträngar, URL:er, cookie-värden, JavaScript-variabler och så vidare. I Experience Platform Launch kan du referera till det här värdet med hjälp av dess variabelnamn. Samlingen av dataelement blir ett lexikon med definierade data som du kan använda för att skapa regler (händelser, villkor och åtgärder), och dataordlistan delas mellan Experience Platform Launch och kan användas med tillägget Platser.
 
-Mer information om dataelement finns i [Dataelement](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html) och [Skapa ett dataelement](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html#create-a-data-element).
+Mer information om dataelement finns i [Dataelement](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=sv-SE) och [Skapa ett dataelement](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=sv-SE#create-a-data-element).
 

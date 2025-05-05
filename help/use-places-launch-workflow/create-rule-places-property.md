@@ -54,7 +54,7 @@ Varje POI innehåller följande dataelement:
 
 >[!CAUTION]
 >
->I det här exemplet antas att du har skapat ett bibliotek med alla kaféer i USA. Mer information om hur du skapar POI:er och bibliotek finns i [Skapa en POI](/help/poi-mgmt-ui/create-a-poi-ui.md) och *Skapa ett bibliotek* i [Hantera flera bibliotek](https://experienceleague.adobe.com/docs/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html).
+>I det här exemplet antas att du har skapat ett bibliotek med alla kaféer i USA. Mer information om hur du skapar POI:er och bibliotek finns i [Skapa en POI](/help/poi-mgmt-ui/create-a-poi-ui.md) och *Skapa ett bibliotek* i [Hantera flera bibliotek](https://experienceleague.adobe.com/docs/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html?lang=sv-SE).
 
 Följande procedur är ett exempel på hur du skapar en regel som skickar tillbaka ett inlägg till Slack när du går in i en kaffebutik i San Francisco.
 
@@ -124,7 +124,7 @@ Så här skapar du ett dataelement i Experience Platform Launch:
 
 ### Publish - regeln
 
-1. Om du vill aktivera regeln måste du publicera den. Mer information om hur du publicerar din regel i Experience Platform Launch finns i [Publicera](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html).
+1. Om du vill aktivera regeln måste du publicera den. Mer information om hur du publicerar din regel i Experience Platform Launch finns i [Publicera](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=sv-SE).
 
 ### Tänk bortom poster och utträden
 
