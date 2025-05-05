@@ -56,12 +56,12 @@ Så här skapar du ett projekt för platstjänstens API:
 11. Klicka på **[!UICONTROL Save and configure API]**.
 12. Klicka på länken **[!UICONTROL OAuth Server-to-Server]** under AUTENTISERINGSUPPGIFTER i den vänstra panelen
 13. Den här sidan innehåller följande:
-   * Ett sätt att generera en åtkomsttoken som ska användas i platstjänstens REST API-begäranden.
-   * Visa ett bol-kommando som exempel på hur du kan skapa en åtkomsttoken från din egen kod.
-   * Visa klient-ID (kallas även API-nyckel)
-   * Visa klienthemligheten
-   * Visa organisations-ID
-   * Alla krävs i förfrågningarna till platstjänstens REST API.
+    * Ett sätt att generera en åtkomsttoken som ska användas i platstjänstens REST API-begäranden.
+    * Visa ett bol-kommando som exempel på hur du kan skapa en åtkomsttoken från din egen kod.
+    * Visa klient-ID (kallas även API-nyckel)
+    * Visa klienthemligheten
+    * Visa organisations-ID
+    * Alla krävs i förfrågningarna till platstjänstens REST API.
 14. Du kan byta namn på projektet till något mer beskrivande genom att klicka på projektnamnet i sökvägen längst upp till vänster i fönstret
 15. Klicka sedan på knappen **[!UICONTROL Edit project]** längst upp till höger på sidan.
 

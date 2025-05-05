@@ -47,4 +47,4 @@ En intressepunkt (POI) är en plats eller en punkt på en karta som är viktig f
    1. Skriv nyckelnamnet.
    1. Skriv nyckelvärdet.
 
-1. Klicka på **[!UICONTROL  Save]**.
+1. Klicka på **[!UICONTROL &#x200B; Save]**.

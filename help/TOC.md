@@ -57,7 +57,7 @@ ht-degree: 13%
    + [Platstillägg](places-ext-aep-sdks/places-extension/places-extension.md)
 + [Använd Platstjänst med din egen övervakningslösning](using-your-own-monitor.md)
 + [Använd platstjänsten utan övervakning av aktiva regioner](use-places-without-active-monitoring.md)
-+ Använd platstjänsten som en del av arbetsflödet {#use-places-launch-workflow} i Experience Platform Launch
++ Använd platstjänsten som en del av arbetsflödet i Experience Platform Launch {#use-places-launch-workflow}
    + [Använd platstjänsten som en del av arbetsflödet i Experience Platform Launch](use-places-launch-workflow/places-launch-workflow.md)
    + [Definiera dataelement](use-places-launch-workflow/define-data-elements.md)
    + [Skapa regler för inträde och utträde](use-places-launch-workflow/create-rule-places-property.md)
