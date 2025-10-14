@@ -62,7 +62,7 @@ I det här exemplet skapas ett villkor som gör att regeln bara utlöses när de
 
 1. Klicka på **[!UICONTROL Keep Changes]**.
 
-   ![ anger ett villkor ](/help/assets/pt-setCondition.png)
+   ![&#x200B; anger ett villkor &#x200B;](/help/assets/pt-setCondition.png)
 
 
 ## 4. Definiera åtgärden

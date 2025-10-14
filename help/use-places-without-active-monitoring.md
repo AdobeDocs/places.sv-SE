@@ -128,7 +128,7 @@ Mer information om det här ämnet finns i [Lägg till platskontext i Analytics-
 >
 >Om ett användningsfall kräver att en [regionposthändelse](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) aktiveras av SDK måste det göras manuellt enligt instruktionerna nedan.
 
-Den lista som returneras av `getNearbyPointsOfInterest`-API:t innehåller [ anpassade objekt ](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#additional-classes-and-enums) som anger om användaren befinner sig i en POI. Om användaren befinner sig i en POI kan du låta SDK utlösa en starthändelse för den regionen.
+Den lista som returneras av `getNearbyPointsOfInterest`-API:t innehåller [&#x200B; anpassade objekt &#x200B;](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#additional-classes-and-enums) som anger om användaren befinner sig i en POI. Om användaren befinner sig i en POI kan du låta SDK utlösa en starthändelse för den regionen.
 
 >[!IMPORTANT]
 >
