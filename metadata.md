@@ -36,7 +36,7 @@ Filen metadata.md innehåller metadata på lagringsplatsnivå som skickas till T
 | tutorials-title | Används sällan när Tutorials inte är lämpligt |
 | tutorials-url | Länk till videosjälvstudiekurser – antingen helpx-självstudiekurser eller KT-självstudiekurser |
 | mini-toc-levels | Anger antalet rubriknivåer som visas i det högra fältet. standard är två |
-| git-repo | https://github.com/AdobeDocs/places.en |
+| git-repo | https://github.com/AdobeDocs/places.sv-SE |
 | index | set index=no for soft launch |
 
 I filen TOC.md
