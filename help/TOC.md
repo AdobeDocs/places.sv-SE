@@ -6,7 +6,7 @@ feature: Places
 source-git-commit: 9f2c6fee6e0d6d075b662cc0b6cbee49cf05ee55
 workflow-type: tm+mt
 source-wordcount: '290'
-ht-degree: 13%
+ht-degree: 14%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 13%
 + [Versionsinformation](release-notes.md)
 + [Komma igång](getting-started.md)
 + [Få åtkomst till platstjänsten](places-gain-access.md)
-+ Platstjänstens gränssnitt {#poi-mgmt-ui}
++ Användargränssnitt för platstjänst {#poi-mgmt-ui}
    + [Översikt över användargränssnittet för Platstjänst](poi-mgmt-ui/poi-mgmt-ui-overview.md)
    + [Skapa en POI](poi-mgmt-ui/create-a-poi-ui.md)
    + [Hantera tidigare skapade POI](poi-mgmt-ui/managing-pois-in-the-places-ui.md)
@@ -53,15 +53,15 @@ ht-degree: 13%
             + [Uppdatera flera POI](web-service-api/api-usage/manage-pois/batch-apis/update-multiple-pois.md)
             + [Ta bort flera POI](web-service-api/api-usage/manage-pois/batch-apis/delete-multiple-pois.md)
       + [Fråga API:er](web-service-api/api-usage/query-apis.md)
-+ Tillägg för Mobile SDK:er {#places-ext-aep-sdks}
++ Tillägg för mobil SDK {#places-ext-aep-sdks}
    + [Platstillägg](places-ext-aep-sdks/places-extension/places-extension.md)
 + [Använd Platstjänst med din egen övervakningslösning](using-your-own-monitor.md)
 + [Använd platstjänsten utan övervakning av aktiva regioner](use-places-without-active-monitoring.md)
-+ Använd platstjänsten som en del av arbetsflödet i Experience Platform Launch {#use-places-launch-workflow}
-   + [Använd platstjänsten som en del av arbetsflödet i Experience Platform Launch](use-places-launch-workflow/places-launch-workflow.md)
++ Använd Platstjänst som en del av Experience Platform Launch-arbetsflödet {#use-places-launch-workflow}
+   + [Använd Platstjänst som en del av Experience Platform Launch-arbetsflödet](use-places-launch-workflow/places-launch-workflow.md)
    + [Definiera dataelement](use-places-launch-workflow/define-data-elements.md)
    + [Skapa regler för inträde och utträde](use-places-launch-workflow/create-rule-places-property.md)
-+ Använd platstjänsten med andra Adobe-lösningar {#use-places-with-other-solutions}
++ Använd Platstjänst med andra Adobe-lösningar {#use-places-with-other-solutions}
    + Adobe Analytics {#places-adobe-analytics}
       + [Använd Platstjänst med Adobe Analytics](use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md)
       + [Skicka POI-post och avsluta data till Analytics](use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
@@ -77,6 +77,6 @@ ht-degree: 13%
       + [Meddelanden i appen](use-places-with-other-solutions/places-acs/places-acs-in-app-messages.md)
    + Adobe Target {#places-target}
       + [Använd Platstjänst med Adobe Target](use-places-with-other-solutions/places-target/places-target.md)
-+ Testa och validera {#places-testing-validation}
++ Testning och validering {#places-testing-validation}
    + [Testa och validera platstjänst](places-testing-validation/test-validate-places.md)
 + [Vanliga frågor och svar](places-faqs.md)
